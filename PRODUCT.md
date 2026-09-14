@@ -11,6 +11,7 @@ A public coaching website for Mary McNutt, M.A., serving adults, professionals, 
 Build the homepage now, in semantic static HTML, CSS and minimal vanilla JavaScript. Archive every discoverable original page for later interior-page work. The user explicitly supplied exact desktop and mobile composition references and requested the green palette from center4excellence.netlify.app. This settled brief replaces an additional design interview.
 
 ## Brand commitments
+Use the client-supplied circular green dragonfly logo, with restrained contrast enhancement, everywhere. It supersedes the initial M monogram.
 Name: Mary McNutt. Target domain: https://marymcnutt.com/. Use the supplied Celeste screenshots as composition authority and the Center for Excellence greens as color authority. Preserve Mary's likeness in generated photography. No React. No filler, fabricated claims, or demo business details.
 
 ## Verified product truth

@@ -1,8 +1,8 @@
 {
   "checks": "Local references, anchors, image decoding, image alt/dimensions, fonts, one H1, structured data JSON, canonical, robots and sitemap",
   "issues": [],
-  "local_references": 24,
-  "images": 18,
+  "local_references": 25,
+  "images": 20,
   "schema_nodes": 4,
-  "public_bytes": 1614296
+  "public_bytes": 1667622
 }

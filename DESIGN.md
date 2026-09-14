@@ -215,6 +215,8 @@ Manual selectors use generous button boxes (32px square) around small outlined d
 
 ## Do's and Don'ts
 
+The client-supplied circular dragonfly is the brand mark. Use `mary-mcnutt-dragonfly-logo.svg` with its intrinsic proportions: 64px desktop/footer, 54px compact desktop, 44px mobile, and 40px on the narrowest screens. The previous M monogram is retired.
+
 ### Do:
 - **Do** preserve Mary's likeness and use personal, natural photography with space for readable copy.
 - **Do** carry the complete light-surface or green-surface color pairing when reusing a component.

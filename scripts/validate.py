@@ -32,7 +32,16 @@ for tag,a in p.elements:
 for ref in refs:
  if not (dist/ref.lstrip('/')).is_file():issues.append('Missing local asset: '+ref)
 for f in (dist/'assets/images').iterdir():
- try:Image.open(f).verify()
+ try:
+  if f.suffix=='.svg':
+   svg=ET.parse(f)
+   assert svg.getroot().tag=='{http://www.w3.org/2000/svg}svg'
+   import base64,io
+   for node in svg.iter('{http://www.w3.org/2000/svg}image'):
+    data=node.attrib.get('href','')
+    if data.startswith('data:image/'):
+     Image.open(io.BytesIO(base64.b64decode(data.split(',',1)[1]))).verify()
+  else:Image.open(f).verify()
  except Exception as e:issues.append(f'Invalid image {f.name}: {e}')
 for f in (dist/'assets/fonts').glob('*.woff2'):
  if f.read_bytes()[:4]!=b'wOF2':issues.append('Wrong font format: '+f.name)
