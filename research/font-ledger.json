@@ -1,0 +1,14 @@
+[
+  {
+    "family": "Roboto",
+    "source": "https://fonts.gstatic.com/s/roboto/v51/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2",
+    "bytes": 43136,
+    "format": "wOF2"
+  },
+  {
+    "family": "Nunito Sans",
+    "source": "https://fonts.gstatic.com/s/nunitosans/v19/pe0TMImSLYBIv1o4X1M8ce2xCx3yop4tQpF_MeTm0lfGWVpNn64CL7U8upHZIbMV51Q42ptCp7t1R-s.woff2",
+    "bytes": 31076,
+    "format": "wOF2"
+  }
+]

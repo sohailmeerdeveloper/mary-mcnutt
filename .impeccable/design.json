@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-14T11:55:23.881Z",
+  "title": "Design System: Mary McNutt",
+  "extensions": {
+    "colorMeta": {
+      "forest": {
+        "role": "primary",
+        "displayName": "Forest",
+        "tonalRamp": [
+          "oklch(15.00% 0.04518 180.75)",
+          "oklch(26.43% 0.04518 180.75)",
+          "oklch(37.86% 0.04518 180.75)",
+          "oklch(49.29% 0.04518 180.75)",
+          "oklch(60.71% 0.04518 180.75)",
+          "oklch(72.14% 0.04518 180.75)",
+          "oklch(83.57% 0.04518 180.75)",
+          "oklch(95.00% 0.04518 180.75)"
+        ]
+      },
+      "green": {
+        "role": "primary",
+        "displayName": "Coaching Green",
+        "tonalRamp": [
+          "oklch(15.00% 0.10235 161.84)",
+          "oklch(26.43% 0.10235 161.84)",
+          "oklch(37.86% 0.10235 161.84)",
+          "oklch(49.29% 0.10235 161.84)",
+          "oklch(60.71% 0.10235 161.84)",
+          "oklch(72.14% 0.10235 161.84)",
+          "oklch(83.57% 0.10235 161.84)",
+          "oklch(95.00% 0.10235 161.84)"
+        ]
+      },
+      "panel": {
+        "role": "primary",
+        "displayName": "Panel Green",
+        "tonalRamp": [
+          "oklch(15.00% 0.11544 161.50)",
+          "oklch(26.43% 0.11544 161.50)",
+          "oklch(37.86% 0.11544 161.50)",
+          "oklch(49.29% 0.11544 161.50)",
+          "oklch(60.71% 0.11544 161.50)",
+          "oklch(72.14% 0.11544 161.50)",
+          "oklch(83.57% 0.11544 161.50)",
+          "oklch(95.00% 0.11544 161.50)"
+        ]
+      },
+      "mint": {
+        "role": "primary",
+        "displayName": "Mint",
+        "tonalRamp": [
+          "oklch(15.00% 0.13627 154.45)",
+          "oklch(26.43% 0.13627 154.45)",
+          "oklch(37.86% 0.13627 154.45)",
+          "oklch(49.29% 0.13627 154.45)",
+          "oklch(60.71% 0.13627 154.45)",
+          "oklch(72.14% 0.13627 154.45)",
+          "oklch(83.57% 0.13627 154.45)",
+          "oklch(95.00% 0.13627 154.45)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Body Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.01810 168.09)",
+          "oklch(26.43% 0.01810 168.09)",
+          "oklch(37.86% 0.01810 168.09)",
+          "oklch(49.29% 0.01810 168.09)",
+          "oklch(60.71% 0.01810 168.09)",
+          "oklch(72.14% 0.01810 168.09)",
+          "oklch(83.57% 0.01810 168.09)",
+          "oklch(95.00% 0.01810 168.09)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Sage Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.01840 160.11)",
+          "oklch(26.43% 0.01840 160.11)",
+          "oklch(37.86% 0.01840 160.11)",
+          "oklch(49.29% 0.01840 160.11)",
+          "oklch(60.71% 0.01840 160.11)",
+          "oklch(72.14% 0.01840 160.11)",
+          "oklch(83.57% 0.01840 160.11)",
+          "oklch(95.00% 0.01840 160.11)"
+        ]
+      },
+      "pale": {
+        "role": "neutral",
+        "displayName": "Pale Sage",
+        "tonalRamp": [
+          "oklch(15.00% 0.00508 145.54)",
+          "oklch(26.43% 0.00508 145.54)",
+          "oklch(37.86% 0.00508 145.54)",
+          "oklch(49.29% 0.00508 145.54)",
+          "oklch(60.71% 0.00508 145.54)",
+          "oklch(72.14% 0.00508 145.54)",
+          "oklch(83.57% 0.00508 145.54)",
+          "oklch(95.00% 0.00508 145.54)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 0.00)",
+          "oklch(26.43% 0.00000 0.00)",
+          "oklch(37.86% 0.00000 0.00)",
+          "oklch(49.29% 0.00000 0.00)",
+          "oklch(60.71% 0.00000 0.00)",
+          "oklch(72.14% 0.00000 0.00)",
+          "oklch(83.57% 0.00000 0.00)",
+          "oklch(95.00% 0.00000 0.00)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline base; mobile has a separate compact size."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Light section headings with selectively bold phrases."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Light card and content titles; related sizes adapt by context."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Readable Nunito Sans paragraph text."
+      },
+      "label": {
+        "displayName": "Action Label",
+        "purpose": "Bold functional button labels; uppercase in the component CSS."
+      }
+    },
+    "shadows": [
+      {
+        "name": "featured-service",
+        "value": "0 12px 22px #052e2826",
+        "purpose": "Desktop featured service lift; removed on mobile."
+      },
+      {
+        "name": "focus-card-hover",
+        "value": "0 10px 28px #052e2820",
+        "purpose": "Interactive focus-card hover."
+      },
+      {
+        "name": "mobile-menu",
+        "value": "0 10px 20px #052e2812",
+        "purpose": "Separate the open mobile menu from page content."
+      },
+      {
+        "name": "map-annotation",
+        "value": "0 8px 24px #052e2814",
+        "purpose": "Separate the map's white annotation from the map image."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control-state",
+        "value": "background-color .2s ease, color .2s ease, border-color .2s ease",
+        "purpose": "Button state transitions."
+      },
+      {
+        "name": "navigation-underline",
+        "value": "transform .2s",
+        "purpose": "Reveal the short navigation underline."
+      },
+      {
+        "name": "focus-card-shadow",
+        "value": "box-shadow .25s",
+        "purpose": "Focus-card hover feedback."
+      },
+      {
+        "name": "article-image",
+        "value": "transform .5s cubic-bezier(.16,1,.3,1)",
+        "purpose": "Small hover zoom to scale(1.035)."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-desktop",
+        "value": "1700px"
+      },
+      {
+        "name": "compact-desktop",
+        "value": "1150px"
+      },
+      {
+        "name": "mobile-layout",
+        "value": "800px"
+      },
+      {
+        "name": "mobile-two-column-start",
+        "value": "540px"
+      },
+      {
+        "name": "narrow-phone",
+        "value": "370px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Square action for a white or pale surface.",
+      "html": "<a class=\"ds-button ds-primary\" href=\"#coaching\">Find out more</a>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:18px;padding:16px 27px;min-height:48px;line-height:1.2;font-family:var(--body,'Nunito Sans',Arial,sans-serif);font-size:14px;font-weight:900;text-transform:uppercase;text-decoration:none;border:2px solid transparent;border-radius:0;cursor:pointer;transition:background-color .2s ease,color .2s ease,border-color .2s ease}.ds-button:focus-visible{outline:3px solid #1962ad;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}.ds-primary{background:var(--green,#13734f);color:var(--white,#fff)}.ds-primary:hover{background:var(--forest,#052e28)}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Square action for a white or pale surface.",
+      "html": "<a class=\"ds-button ds-outline\" href=\"#coaching\">Client testimonials</a>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:18px;padding:16px 27px;min-height:48px;line-height:1.2;font-family:var(--body,'Nunito Sans',Arial,sans-serif);font-size:14px;font-weight:900;text-transform:uppercase;text-decoration:none;border:2px solid transparent;border-radius:0;cursor:pointer;transition:background-color .2s ease,color .2s ease,border-color .2s ease}.ds-button:focus-visible{outline:3px solid #1962ad;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}.ds-outline{background:transparent;border-color:var(--forest,#052e28);color:var(--forest,#052e28)}.ds-outline:hover{background:var(--forest,#052e28);color:var(--white,#fff)}"
+    },
+    {
+      "name": "White Button",
+      "kind": "button",
+      "refersTo": "button-white",
+      "description": "Square action for a solid green surface.",
+      "html": "<div class=\"ds-stage\"><a class=\"ds-button ds-white\" href=\"#coaching\">Explore life coaching</a></div>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:18px;padding:16px 27px;min-height:48px;line-height:1.2;font-family:var(--body,'Nunito Sans',Arial,sans-serif);font-size:14px;font-weight:900;text-transform:uppercase;text-decoration:none;border:2px solid transparent;border-radius:0;cursor:pointer;transition:background-color .2s ease,color .2s ease,border-color .2s ease}.ds-button:focus-visible{outline:3px solid #1962ad;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}.ds-white{background:var(--white,#fff);color:var(--forest,#052e28)}.ds-white:hover{background:var(--mint,#86efac)}.ds-stage{background:var(--panel,#12845a);padding:32px}"
+    },
+    {
+      "name": "Light Outline Button",
+      "kind": "button",
+      "refersTo": "button-light-outline",
+      "description": "Square action for a solid green surface.",
+      "html": "<div class=\"ds-stage\"><a class=\"ds-button ds-light-outline\" href=\"#coaching\">Mary’s approach</a></div>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:18px;padding:16px 27px;min-height:48px;line-height:1.2;font-family:var(--body,'Nunito Sans',Arial,sans-serif);font-size:14px;font-weight:900;text-transform:uppercase;text-decoration:none;border:2px solid transparent;border-radius:0;cursor:pointer;transition:background-color .2s ease,color .2s ease,border-color .2s ease}.ds-button:focus-visible{outline:3px solid #1962ad;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}.ds-light-outline{background:transparent;border-color:var(--white,#fff);color:var(--white,#fff)}.ds-light-outline:hover{background:var(--white,#fff);color:var(--forest,#052e28)}.ds-stage{background:var(--panel,#12845a);padding:32px}"
+    },
+    {
+      "name": "Desktop Navigation",
+      "kind": "nav",
+      "description": "Uppercase links with a short green hover or current-page underline.",
+      "html": "<nav class=\"ds-nav\" aria-label=\"Main navigation\"><a href=\"#about\">About</a><a href=\"#coaching\" aria-current=\"page\">Coaching</a><a href=\"#journal\">Journal</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:clamp(18px,2vw,40px);background:rgba(255,255,255,.7)}.ds-nav a{font-family:var(--heading,Roboto,Arial,sans-serif);font-size:14px;text-transform:uppercase;font-weight:400;position:relative;line-height:44px;color:#142e22;text-decoration:none}.ds-nav a:after{content:'';position:absolute;bottom:5px;left:0;width:22px;height:2px;background:var(--green,#13734f);transform:scaleX(0);transform-origin:left;transition:transform .2s}.ds-nav a:hover:after,.ds-nav a[aria-current]:after{transform:scaleX(1)}.ds-nav a:focus-visible{outline:3px solid #1962ad;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-nav a:after{transition:none}}"
+    },
+    {
+      "name": "Service Panel",
+      "kind": "card",
+      "refersTo": "service-panel",
+      "description": "Square green card with a light heading, readable body, and bottom-aligned white action.",
+      "html": "<article class=\"ds-service\"><h2>Life &amp; personal growth</h2><p>Discover your strengths, clarify your values, and take meaningful steps toward a life that feels authentic and fulfilling.</p><a class=\"ds-button ds-service-action\" href=\"#coaching\">Explore life coaching</a></article>",
+      "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:18px;padding:16px 27px;min-height:48px;line-height:1.2;font-family:var(--body,'Nunito Sans',Arial,sans-serif);font-size:14px;font-weight:900;text-transform:uppercase;text-decoration:none;border:2px solid transparent;border-radius:0;cursor:pointer;transition:background-color .2s ease,color .2s ease,border-color .2s ease}.ds-button:focus-visible{outline:3px solid #1962ad;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}.ds-service{background:var(--panel,#12845a);color:var(--white,#fff);display:flex;flex-direction:column;align-items:flex-start;padding:clamp(30px,3vw,58px);min-height:350px;font-family:var(--body,'Nunito Sans',Arial,sans-serif)}.ds-service h2{margin:0;font-family:var(--heading,Roboto,Arial,sans-serif);font-weight:100;font-size:clamp(25px,2.05vw,39px);letter-spacing:-.025em;line-height:1.2}.ds-service p{font-size:16px;line-height:1.5;margin:26px 0 32px}.ds-service-action{margin-top:auto;background:var(--white,#fff);color:var(--forest,#052e28);font-size:12px;padding:13px 19px;min-height:44px}.ds-service-action:hover{background:var(--mint,#86efac)}"
+    },
+    {
+      "name": "Inline Action",
+      "kind": "custom",
+      "description": "Underlined green action with the shipped inline SVG arrow.",
+      "html": "<a class=\"ds-text-link\" href=\"#credentials\">Explore Mary’s credentials <svg class=\"ds-arrow\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a>",
+      "css": ".ds-text-link{display:inline-flex;align-items:center;gap:14px;color:var(--green,#13734f);border-bottom:1px solid currentColor;font-family:var(--body,'Nunito Sans',Arial,sans-serif);font-size:14px;font-weight:700;text-decoration:none;line-height:1.65}.ds-text-link:focus-visible{outline:3px solid #1962ad;outline-offset:5px}.ds-arrow{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none;vertical-align:middle}"
+    },
+    {
+      "name": "Testimonial Selector",
+      "kind": "custom",
+      "description": "Manual dot selectors expose the selected testimonial with aria-pressed; application JavaScript switches the content.",
+      "html": "<div class=\"ds-testimonials\"><div class=\"ds-slide-controls\" aria-label=\"Choose a client testimonial\"><button type=\"button\" aria-label=\"Show Sarah’s testimonial\" aria-pressed=\"true\"></button><button type=\"button\" aria-label=\"Show Mark’s testimonial\" aria-pressed=\"false\"></button><button type=\"button\" aria-label=\"Show Emily’s testimonial\" aria-pressed=\"false\"></button></div></div>",
+      "css": ".ds-testimonials{background:var(--panel,#12845a);padding:24px}.ds-slide-controls{display:flex;justify-content:center;gap:2px;margin-top:12px}.ds-slide-controls button{width:32px;height:32px;background:none;border:0;display:grid;place-items:center;cursor:pointer}.ds-slide-controls button:before{content:'';display:block;width:7px;height:7px;border:1px solid white;border-radius:50%;transition:background .2s}.ds-slide-controls button[aria-pressed=true]:before{background:white}.ds-slide-controls button:focus-visible{outline:3px solid var(--mint,#86efac);outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-slide-controls button:before{transition:none}}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Personal Coaching Editorial",
+    "overview": "Mary's visual world combines personal, welcoming photography with restrained editorial typography. Thin headings leave room for conversation; bold phrases give the reader an immediate point of emphasis. White space, natural imagery, and green panels create a calm but confident public coaching presence.\n\nThe user-supplied Celeste desktop and mobile compositions establish the homepage's visual authority, while Center for Excellence supplies the green identity. Preserve Mary's likeness in any portrait work. The shipped system uses broad photographic areas, square surfaces, and deliberate overlaps; it does not depend on a conventional rounded application-card aesthetic.",
+    "keyCharacteristics": [
+      "Personal photography with open space for readable copy.",
+      "Hairline Roboto headings with bold, colored emphasis.",
+      "Nunito Sans paragraphs and compact, decisive action labels.",
+      "White editorial space alternating with solid green surfaces.",
+      "Square panels and controlled photographic overlaps."
+    ],
+    "rules": [
+      {
+        "name": "The Surface Pairing Rule",
+        "body": "Use green emphasis against white or pale backgrounds; use white and mint for hierarchy on green panels. Carry each complete pairing when reusing a component.",
+        "section": "colors"
+      },
+      {
+        "name": "The Emphasized Phrase Rule",
+        "body": "Set large headings in Roboto at weight (100), then promote only the key phrase to weight (700). On white, that phrase uses Coaching Green; in the prominent green banners, white carries the bold phrase and mint carries the light text.",
+        "section": "typography"
+      },
+      {
+        "name": "The Responsive Overlap Rule",
+        "body": "Overlapping panels are a desktop composition device. The raised service and offset testimonial treatment flatten into the mobile reading order; retain their green/photographic relationship while removing the desktop offsets.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat Resting Surface Rule",
+        "body": "Keep ordinary editorial cards flat at rest. Reserve shadows for the existing raised, overlay, and interactive roles.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do preserve Mary's likeness and use personal, natural photography with space for readable copy.",
+      "Do carry the complete light-surface or green-surface color pairing when reusing a component.",
+      "Do maintain the light-heading and bold-phrase relationship with the locally hosted Roboto font.",
+      "Do keep square buttons and panels, generous reading space, and the documented mobile reading order.",
+      "Do preserve visible keyboard focus, reduced-motion handling, and explicit labels on icon controls."
+    ],
+    "donts": [
+      "Don't replace the established green identity with an unrelated accent system.",
+      "Don't apply pill shapes, rounded cards, or hard offset shadows to the editorial surface vocabulary.",
+      "Don't carry desktop portrait crops and negative overlaps unchanged onto narrow screens.",
+      "Don't turn the existing small promotional eyebrows or text-character icons into reusable house styles; use meaningful headings and inline SVG where the role needs an icon."
+    ]
+  }
+}

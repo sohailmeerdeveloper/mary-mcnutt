@@ -1,0 +1,10 @@
+.sites-runtime/
+node_modules/
+.env*
+!dist/
+research/raw/
+research/assets/
+research/*screenshot*.png
+research/qa/
+*.tar.gz
+*.zip

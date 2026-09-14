@@ -1,0 +1,132 @@
+[
+  {
+    "file": "dist/assets/images/personal-growth.webp",
+    "source": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/life-coach-excerpt-01-1280x854.jpg",
+    "type": "Reference demo photography",
+    "license": "Demo source; confirm reusable stock license before public launch."
+  },
+  {
+    "file": "dist/assets/images/business-coaching.webp",
+    "source": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/life-coach-excerpt-02-1280x854.jpg",
+    "type": "Reference demo photography",
+    "license": "Demo source; confirm reusable stock license before public launch."
+  },
+  {
+    "file": "dist/assets/images/family-balance.webp",
+    "source": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/life-coach-excerpt-03-1280x854.jpg",
+    "type": "Reference demo photography",
+    "license": "Demo source; confirm reusable stock license before public launch."
+  },
+  {
+    "file": "dist/assets/images/new-beginnings.webp",
+    "source": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/life-coach-excerpt-04-1280x854.jpg",
+    "type": "Reference demo photography",
+    "license": "Demo source; confirm reusable stock license before public launch."
+  },
+  {
+    "file": "dist/assets/images/reflection-and-growth.webp",
+    "source": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2017/10/img-blog-post-01-640x427.jpg",
+    "type": "Reference demo photography",
+    "license": "Demo source; confirm reusable stock license before public launch."
+  },
+  {
+    "file": "dist/assets/images/support-and-connection.webp",
+    "source": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2017/10/img-blog-post-02-640x427.jpg",
+    "type": "Reference demo photography",
+    "license": "Demo source; confirm reusable stock license before public launch."
+  },
+  {
+    "file": "dist/assets/images/steps-toward-change.webp",
+    "source": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2017/10/img-blog-post-03-640x427.jpg",
+    "type": "Reference demo photography",
+    "license": "Demo source; confirm reusable stock license before public launch."
+  },
+  {
+    "file": "dist/assets/images/personal-reflection.webp",
+    "source": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-box-01.jpg",
+    "type": "Reference demo photography",
+    "license": "Demo source; confirm reusable stock license before public launch."
+  },
+  {
+    "file": "dist/assets/images/purpose-and-learning.webp",
+    "source": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-box-02.jpg",
+    "type": "Reference demo photography",
+    "license": "Demo source; confirm reusable stock license before public launch."
+  },
+  {
+    "file": "dist/assets/images/professional-development.webp",
+    "source": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-box-03.jpg",
+    "type": "Reference demo photography",
+    "license": "Demo source; confirm reusable stock license before public launch."
+  },
+  {
+    "file": "dist/assets/images/confidence-at-work.webp",
+    "source": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-box-04.jpg",
+    "type": "Reference demo photography",
+    "license": "Demo source; confirm reusable stock license before public launch."
+  },
+  {
+    "file": "dist/assets/images/coaching-community.webp",
+    "source": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/bgn-coaching-principles.jpg",
+    "type": "Reference demo photography",
+    "license": "Demo source; confirm reusable stock license before public launch."
+  },
+  {
+    "file": "dist/assets/images/coaching-programs.webp",
+    "source": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/bgn-courses.jpg",
+    "type": "Reference demo photography",
+    "license": "Demo source; confirm reusable stock license before public launch."
+  },
+  {
+    "file": "dist/assets/images/mary-mcnutt-life-business-coach-960.webp",
+    "source": "Built-in image_gen, supplied identity references",
+    "type": "AI-generated portrait of Mary McNutt",
+    "digitalSourceType": "trainedAlgorithmicMedia",
+    "promptFile": "research/image-generation-prompts.md"
+  },
+  {
+    "file": "dist/assets/images/mary-mcnutt-life-business-coach-1920.webp",
+    "source": "Built-in image_gen, supplied identity references",
+    "type": "AI-generated portrait of Mary McNutt",
+    "digitalSourceType": "trainedAlgorithmicMedia",
+    "promptFile": "research/image-generation-prompts.md"
+  },
+  {
+    "file": "dist/assets/images/mary-mcnutt-coaching-philosophy-960.webp",
+    "source": "Built-in image_gen, supplied identity references",
+    "type": "AI-generated portrait of Mary McNutt",
+    "digitalSourceType": "trainedAlgorithmicMedia",
+    "promptFile": "research/image-generation-prompts.md"
+  },
+  {
+    "file": "dist/assets/images/mary-mcnutt-coaching-philosophy-1920.webp",
+    "source": "Built-in image_gen, supplied identity references",
+    "type": "AI-generated portrait of Mary McNutt",
+    "digitalSourceType": "trainedAlgorithmicMedia",
+    "promptFile": "research/image-generation-prompts.md"
+  },
+  {
+    "file": "dist/assets/images/mary-mcnutt-consultation-960.webp",
+    "source": "Built-in image_gen, supplied identity references",
+    "type": "AI-generated portrait of Mary McNutt",
+    "digitalSourceType": "trainedAlgorithmicMedia",
+    "promptFile": "research/image-generation-prompts.md"
+  },
+  {
+    "file": "dist/assets/images/mary-mcnutt-consultation-1920.webp",
+    "source": "Built-in image_gen, supplied identity references",
+    "type": "AI-generated portrait of Mary McNutt",
+    "digitalSourceType": "trainedAlgorithmicMedia",
+    "promptFile": "research/image-generation-prompts.md"
+  },
+  {
+    "file": "dist/assets/images/mary-mcnutt-original-portrait.webp",
+    "source": "C:/Users/sohai/Downloads/IMG_1872.jpg",
+    "type": "User-supplied portrait"
+  },
+  {
+    "file": "dist/assets/images/mary-mcnutt-original-brand-portrait.webp",
+    "source": "C:/Users/sohai/Downloads/demo1-slide01-Picsart-AiImageEnhancer.png",
+    "type": "User-supplied portrait"
+  }
+]

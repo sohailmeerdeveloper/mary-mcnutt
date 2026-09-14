@@ -1,0 +1,290 @@
+{
+  "html": "<html class=\"no-js\" lang=\"en\"><head>\n\n<script>\n\tdocument.addEventListener(\"DOMContentLoaded\", function() {\n   // same code here\n});\n\n</script>\n\t\t<meta charset=\"utf-8\">\n\t\t<meta http-equiv=\"x-ua-compatible\" content=\"ie=edge\">\n\t\t<title>Goldilocks Wisdom</title>\n\t\t<meta name=\"robots\" content=\"noindex, follow\">\n\t\t<meta name=\"description\" content=\"\">\n\t\t<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n\t\t<!-- Favicon -->\n\t\t<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/images/fevicon.png\">\n\t\t<!-- CSS\n\t\t\t============================================ -->\n\t\t<!-- Bootstrap CSS -->\n\t\t<link rel=\"stylesheet\" href=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/css/bootstrap.min.css\">\n\t\t<!-- Fontawesome -->\n\t\t<link rel=\"stylesheet\" href=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/css/fontawesome.css\">\n\t\t<!-- Flaticon -->\n\t\t<link rel=\"stylesheet\" href=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/css/flaticon.html\">\n\t\t<!-- Base Icons -->\n\t\t<link rel=\"stylesheet\" href=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/css/pbminfotech-base-icons.css\">\n\t\t<!-- Themify Icons -->\n\t\t<link rel=\"stylesheet\" href=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/css/themify-icons.css\">\n\t\t<!-- Slick -->\n\t\t<link rel=\"stylesheet\" href=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/css/swiper.min.css\">\n\t\t<!-- Magnific -->\n\t\t<link rel=\"stylesheet\" href=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/css/magnific-popup.css\">\n\t\t<!-- AOS -->\n\t\t<link rel=\"stylesheet\" href=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/css/aos.css\">\n\t\t<!-- Shortcode CSS -->\n\t\t<link rel=\"stylesheet\" href=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/css/shortcode.css\">\n\t\t<!-- Base CSS -->\n\t\t<link rel=\"stylesheet\" href=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/css/base.css\">\n\t\t<!-- Style CSS -->\n\t\t<link rel=\"stylesheet\" href=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/css/style.css\">\n\t\t<!-- Responsive CSS -->\n\t\t<link rel=\"stylesheet\" href=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/css/responsive.css\">\n         \n\t\t\n\n\t\t\n\t\t\n\t</head>\n\t<body data-aos-easing=\"ease\" data-aos-duration=\"400\" data-aos-delay=\"0\" style=\"\">\n      \n\t<!-- page wrapper -->\n\t<div class=\"page-wrapper pbmit-bg-color-light\">\n\n\t\t<!-- Header Main Area -->\n\t\t<header class=\"site-header header-style-1\">\n\t\t\t<div class=\"pbmit-pre-header-wrapper\">\n\t\t\t\t<div class=\"container-fluid\">\n\t\t\t\t\t<div class=\"d-flex justify-content-between\">\n\t\t\t\t\t\t<div class=\"pbmit-pre-header-left\">\n\t\t\t\t\t\t\t<ul class=\"pbmit-contact-info\">\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<i style=\"color: black\" class=\"pbmit-base-icon-phone\"></i>(808) 662-3784\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li>\n\t\t\t\t\t\t\t\t\t<i style=\"color: black\" class=\"pbmit-base-icon-mail-alt\"></i> <a href=\"Mary@MaryMcNutt.com\" class=\"__cf_email__\" data-cfemail=\"a7cec9c1c8e7d7c5cacec9c1c8d3c2c4cf89c4c8ca\">Mary@MaryMcNutt.com</a>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"pbmit-pre-header-right\">\n\t\t\t\t\t\t\t<ul class=\"pbmit-social-links\">\n\t\t\t\t\t\t\t\t<li class=\"pbmit-social-li pbmit-social-facebook\">\n\t\t\t\t\t\t\t\t\t<a title=\"Facebook\" href=\"#\" target=\"_blank\">\n\t\t\t\t\t\t\t\t\t\t<span>\n\t\t\t\t\t\t\t\t\t\t\t<i class=\"pbmit-base-icon-facebook-f\"></i>\n\t\t\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"pbmit-social-li pbmit-social-twitter\">\n\t\t\t\t\t\t\t\t\t<a title=\"Twitter\" href=\"#\" target=\"_blank\">\n\t\t\t\t\t\t\t\t\t\t<span>\n\t\t\t\t\t\t\t\t\t\t\t<i class=\"pbmit-base-icon-twitter-2\"></i>\n\t\t\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"pbmit-social-li pbmit-social-linkedin\">\n\t\t\t\t\t\t\t\t\t<a title=\"LinkedIn\" href=\"#\" target=\"_blank\">\n\t\t\t\t\t\t\t\t\t\t<span>\n\t\t\t\t\t\t\t\t\t\t\t<i class=\"pbmit-base-icon-linkedin-in\"></i>\n\t\t\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t<li class=\"pbmit-social-li pbmit-social-instagram\">\n\t\t\t\t\t\t\t\t\t<a title=\"Instagram\" href=\"#\" target=\"_blank\">\n\t\t\t\t\t\t\t\t\t\t<span>\n\t\t\t\t\t\t\t\t\t\t\t<i class=\"pbmit-base-icon-instagram\"></i>\n\t\t\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"container-fluid main-container\">\n\t\t\t\t<div class=\"pbmit-header-content d-flex justify-content-between align-items-center\">\n\t\t\t\t\t<div class=\"pbmit-logo-menuarea d-flex justify-content-between align-items-center\">\n\t\t\t\t\t\t<div class=\"site-branding\">\n\t\t\t\t\t\t\t<h1 class=\"site-title\">\n\t\t\t\t\t\t\t\t<a href=\"https://marymcnutt.com\">\n\t\t\t\t\t\t\t\t\t<img class=\"logo-img\" src=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/images/homepage-1/logo/MaryMcNutt-logo.png\" alt=\"Spaville\">\n\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t</h1>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"site-navigation\">\n\t\t\t\t\t\t\t<nav class=\"main-menu navbar-expand-xl navbar-light\">\n\t\t\t\t\t\t\t\t<div class=\"navbar-header\">\n\t\t\t\t\t\t\t\t\t<!-- Toggle Button --> \n\t\t\t\t\t\t\t\t\t<button class=\"navbar-toggler\" type=\"button\">\n\t\t\t\t\t\t\t\t\t\t<i class=\"pbmit-base-icon-menu-1\"></i>\n\t\t\t\t\t\t\t\t\t</button>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"pbmit-mobile-menu-bg\"></div>\n\t\t\t\t\t\t\t\t<div class=\"collapse navbar-collapse clearfix show\" id=\"pbmit-menu\">\n\t\t\t\t\t\t\t\t\t<div class=\"pbmit-menu-wrap\">\n\t\t\t\t\t\t\t\t\t\t<span class=\"closepanel\">\n\t\t\t\t\t\t\t\t\t\t\t<svg class=\"qodef-svg--close qodef-m\" xmlns=\"http://www.w3.org/2000/svg\" width=\"20.163\" height=\"20.163\" viewBox=\"0 0 26.163 26.163\">\n\t\t\t\t\t\t\t\t\t\t\t\t<rect width=\"36\" height=\"1\" transform=\"translate(0.707) rotate(45)\"></rect>\n\t\t\t\t\t\t\t\t\t\t\t\t<rect width=\"36\" height=\"1\" transform=\"translate(0 25.456) rotate(-45)\"></rect>\n\t\t\t\t\t\t\t\t\t\t\t</svg>\n\t\t\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t <ul id=\"menu-main-menu\" class=\"navigation clearfix\"><li id=\"menu-item-185\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-185\"><a href=\"https://marymcnutt.com/\">Home</a></li>\n<li id=\"menu-item-201\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-201 dropdown\"><a href=\"#\">Meet Mary</a>\n<ul class=\"sub-menu\">\n\t<li id=\"menu-item-187\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-187\"><a href=\"https://marymcnutt.com/about-mary/\">About Mary</a></li>\n\t<li id=\"menu-item-200\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-200\"><a href=\"https://marymcnutt.com/why-choose-mary/\">My Methodology</a></li>\n\t<li id=\"menu-item-193\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-193\"><a href=\"https://marymcnutt.com/marys-credentials/\">Mary’s Credentials</a></li>\n</ul>\n<span class=\"righticon\"><i class=\"pbmit-base-icon-angle-right\"></i></span></li>\n<li id=\"menu-item-305\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-305\"><a href=\"https://marymcnutt.com/goldilocks/\">Goldilocks</a></li>\n<li id=\"menu-item-203\" class=\"menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-203 dropdown\"><a href=\"#\">Services</a>\n<ul class=\"sub-menu dropdown_style\">\n\t<li id=\"menu-item-217\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-217\"><a href=\"https://marymcnutt.com/problem-and-compulsive-gambling/\">Problem and Compulsive Gambling</a></li>\n\t<li id=\"menu-item-218\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-218\"><a href=\"https://marymcnutt.com/process-addictions/\">Process Addictions</a></li>\n\t<li id=\"menu-item-212\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-212\"><a href=\"https://marymcnutt.com/financial-disorder/\">Financial Disorder</a></li>\n\t<li id=\"menu-item-224\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-224\"><a href=\"https://marymcnutt.com/trauma-resolution/\">Trauma Resolution</a></li>\n\t<li id=\"menu-item-225\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-225\"><a href=\"https://marymcnutt.com/womens-issue/\">Women’s Issue</a></li>\n\t<li id=\"menu-item-222\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-222\"><a href=\"https://marymcnutt.com/shopping/\">Shopping</a></li>\n\t<li id=\"menu-item-209\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-209\"><a href=\"https://marymcnutt.com/eating-disorders/\">Eating Disorders</a></li>\n\t<li id=\"menu-item-206\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-206\"><a href=\"https://marymcnutt.com/couples-intensive/\">Couple’s Intensive Coaching</a></li>\n\t<li id=\"menu-item-210\" class=\"menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-124 current_page_item menu-item-210 active \"><a href=\"https://marymcnutt.com/family-counseling/\" aria-current=\"page\">Family Coaching</a></li>\n\t<li id=\"menu-item-215\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-215\"><a href=\"https://marymcnutt.com/parenting-support/\">Parenting Support</a></li>\n\t<li id=\"menu-item-220\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-220\"><a href=\"https://marymcnutt.com/relationship-grief-trauma-issues/\">Relationship, Grief, Trauma Issues</a></li>\n\t<li id=\"menu-item-213\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-213\"><a href=\"https://marymcnutt.com/healthy-management-of-grief-and-loss/\">Healthy Management of Grief and Loss</a></li>\n\t<li id=\"menu-item-205\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-205\"><a href=\"https://marymcnutt.com/conflict-resolution/\">Conflict Resolution</a></li>\n\t<li id=\"menu-item-211\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-211\"><a href=\"https://marymcnutt.com/family-of-origin-issues/\">Family of Origin Issues</a></li>\n\t<li id=\"menu-item-208\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-208\"><a href=\"https://marymcnutt.com/drug-prevention-classes/\">Drug Prevention Classes</a></li>\n\t<li id=\"menu-item-223\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-223\"><a href=\"https://marymcnutt.com/sober-companion-services/\">Sober Companion Services</a></li>\n\t<li id=\"menu-item-219\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-219\"><a href=\"https://marymcnutt.com/relapse-prevention/\">Relapse Prevention</a></li>\n\t<li id=\"menu-item-214\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-214\"><a href=\"https://marymcnutt.com/interventions/\">Interventions</a></li>\n\t<li id=\"menu-item-216\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-216\"><a href=\"https://marymcnutt.com/personal-development-and-business-growth/\">Personal Development and Business Growth</a></li>\n</ul>\n<span class=\"righticon\"><i class=\"pbmit-base-icon-angle-right\"></i></span></li>\n<li id=\"menu-item-195\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-195\"><a href=\"https://marymcnutt.com/rates-insurance/\">Rates &amp; Insurance</a></li>\n<li id=\"menu-item-186\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-186\"><a href=\"https://marymcnutt.com/marys-blog/\">Mary’s Blog</a></li>\n<li id=\"menu-item-202\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-202 dropdown\"><a href=\"#\">Resources</a>\n<ul class=\"sub-menu\">\n\t<li id=\"menu-item-188\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-188\"><a href=\"https://marymcnutt.com/addiction/\">Addiction</a></li>\n\t<li id=\"menu-item-189\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-189\"><a href=\"https://marymcnutt.com/addition-related-links/\">Addition &amp; Related Links</a></li>\n\t<li id=\"menu-item-196\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-196\"><a href=\"https://marymcnutt.com/serenity-prayer/\">Serenity Prayer</a></li>\n\t<li id=\"menu-item-198\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-198\"><a href=\"https://marymcnutt.com/the-12-steps/\">The 12 Steps</a></li>\n\t<li id=\"menu-item-191\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-191\"><a href=\"https://marymcnutt.com/disclaimer/\">Disclaimer</a></li>\n\t<li id=\"menu-item-199\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-199\"><a href=\"https://marymcnutt.com/the-twelve-traditions-of-aa/\">The Twelve Traditions of AA</a></li>\n\t<li id=\"menu-item-194\" class=\"menu-item menu-item-type-post_type menu-item-object-page menu-item-194\"><a href=\"https://marymcnutt.com/privacy-policy/\">Privacy Policy</a></li>\n\t<li id=\"menu-item-263\" class=\"menu-item menu-item-type-custom menu-item-object-custom menu-item-263\"><a href=\"https://marymcnutt.com/wp-content/uploads/2025/10/dea-drug_of_abuse.pdf\">Download the US Department of Justice Drug and Abuse Guide</a></li>\n</ul>\n<span class=\"righticon\"><i class=\"pbmit-base-icon-angle-right\"></i></span></li>\n</ul>\n\t\t\t\t\t\t\t\t\t\t<!-- <ul class=\"navigation clearfix\">\n\t\t\t\t\t\t\t\t\t\t\t<li class=\"dropdown active\">\n\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"index.html\">Home</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t\t<li class=\"dropdown \">\n\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"index.html\">Meet Mary</a>\n\t\t\t\t\t\t\t\t\t\t\t\t<ul >\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"active\"><a href=\"about-us.html\">About Mary</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"why-choose-us.html\">Why Choose Mary</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Mary's Credentials</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t\t<li class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"goldilocks.html\">Goldilocks</a>\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t\t<li class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"#\">Service</a>\n\t\t\t\t\t\t\t\t\t\t\t\t<ul class=\"dropdown_style\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Problem and Compulsive Gambling</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Sex Addiction</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Process Addictions</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Financial Disorder</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Trauma Resolution</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Women’s Issues</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Shopping</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Eating Disorders</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Couples Intensive</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Family Counseling</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Parenting Support</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Relationship, Grief, Trauma Issues caused by Substance Use Abus</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Healthy Management of Grief and Loss</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Conflict Resolution</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Family of Origin Issues</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Drug Prevention Classes~ Speaking and Teaching</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Sober Companion</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Relapse Prevention</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Chemical Health Assessments</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Driving With Care Classes</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Interventions</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Relapse Prevention</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Sober Companion</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Personal Development and Growth</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t\t<li class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"rates-insuranse.html\">Rates & Insurance</a>\n\t\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t\t<li class=\"dropdown\">\n\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"blog.html\">Mary's Blog</a>\n\t\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t<li class=\"dropdown \">\n\t\t\t\t\t\t\t\t\t\t\t\t<a href=\"#\">Resources</a>\n\t\t\t\t\t\t\t\t\t\t\t\t<ul class=\"dropdown_style\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li class=\"active\"><a href=\"#\">Addiction</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Serenity Prayer</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">The 12 Steps</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">The Twelve Traditions of AA</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Controlled Substances Act</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Addiction & Related Links</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Disclaimer</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<li><a href=\"#\">Privacy Policy</a></li>\n\t\t\t\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t</ul> -->\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</nav>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"pbmit-right-box d-flex align-items-center\">\n\t\t\t\t\t\t<div class=\"pbmit-button-box-second\">\n\t\t\t\t\t\t\t<a class=\"pbmit-btn\" href=\"https://marymcnutt.com/contact\">\n\t\t\t\t\t\t\t\t<span class=\"pbmit-button-content-wrapper\">\n\t\t\t\t\t\t\t\t\t<span class=\"pbmit-button-text\">Contact Us</span>\n\t\t\t\t\t\t\t\t\t<svg class=\"pbmit-svg-arrow\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"10\" height=\"19\" viewBox=\"0 0 19 19\" xml:space=\"preserve\">\n\t\t\t\t\t\t\t\t\t\t<line x1=\"1\" y1=\"18\" x2=\"17.8\" y2=\"1.2\"></line>\n\t\t\t\t\t\t\t\t\t\t<line x1=\"1.2\" y1=\"1\" x2=\"18\" y2=\"1\"></line>\n\t\t\t\t\t\t\t\t\t\t<line x1=\"18\" y1=\"17.8\" x2=\"18\" y2=\"1\"></line>\n\t\t\t\t\t\t\t\t\t</svg>\n\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t\n\t\t</header>\n\t\t<!-- Header Main Area End Here -->\n\n        <!-- Title Bar -->\n\t\t<!-- Title Bar -->\n        <div class=\"pbmit-title-bar-wrapper\" style=\"background-image: url('https://marymcnutt.com/wp-content/uploads/2025/10/breadcrumb-6.jpg');\">\n    <div class=\"container\">\n        <div class=\"pbmit-title-bar-content\">\n            <div class=\"pbmit-title-bar-content-inner\">\n                <div class=\"pbmit-tbar\">\n                    <div class=\"pbmit-tbar-inner container\">\n                        <h1 class=\"pbmit-tbar-title\">Family Coaching</h1>\n                    </div>\n                </div>\n                <div class=\"pbmit-breadcrumb\">\n                    <div class=\"pbmit-breadcrumb-inner\">\n                        <span>\n                            <a title=\"\" href=\"https://marymcnutt.com\" class=\"home\"><span>Home</span></a>\n                        </span>\n                        <span class=\"sep\">\n                            <i class=\"pbmit-base-icon-angle-right\"></i>\n                        </span>\n                        <span><span class=\"post-root post post-post current-item\">Family Coaching</span></span>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>\n\n        <!-- Title Bar End-->\n        <!-- Title Bar End-->\n\n        <!-- Page Content -->\n        <div class=\"page-content\">\n\n            <!-- Service Details --> \n             <section class=\"site-content service-details\">\n\t\t\t\t<div class=\"container\">\n\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t<div class=\"col-md-12 col-xl-9 service-left-col\">\n<!-- \t\t\t\t\t\t\t<div class=\"pbmit-service-feature-image\">\n\t\t\t\t\t\t\t\t<img src=\"https://marymcnutt.com/wp-content/uploads/2025/10/breadcrumb-6.jpg\" class=\"img-fluid w-100\" alt=\"\">\n\t\t\t\t\t\t\t</div> -->\n\t\t\t\t\t\t\t<div class=\"pbmit-entry-content\">\n\t\t\t\t\t\t\t\t<div class=\"pbmit-service_content\">\n\t\t\t\t\t\t\t\t\t<div class=\"pbmit-heading animation-style2\">\n\t\t\t\t\t\t\t\t\t\t<h3 class=\"pbmit-title mb-3\" style=\"perspective: 400px;\"><div class=\"split-line\" style=\"display: block; text-align: start; position: relative;\"><div style=\"position:relative;display:inline-block;\"><div style=\"position: relative; display: inline-block; transform: translate(50px, 0px); opacity: 0;\">F</div><div style=\"position: relative; display: inline-block; transform: translate(50px, 0px); opacity: 0;\">a</div><div style=\"position: relative; display: inline-block; transform: translate(50px, 0px); opacity: 0;\">m</div><div style=\"position: relative; display: inline-block; transform: translate(50px, 0px); opacity: 0;\">i</div><div style=\"position: relative; display: inline-block; transform: translate(50px, 0px); opacity: 0;\">l</div><div style=\"position: relative; display: inline-block; transform: translate(50px, 0px); opacity: 0;\">y</div></div> <div style=\"position:relative;display:inline-block;\"><div style=\"position: relative; display: inline-block; transform: translate(50px, 0px); opacity: 0;\">C</div><div style=\"position: relative; display: inline-block; transform: translate(50px, 0px); opacity: 0;\">o</div><div style=\"position: relative; display: inline-block; transform: translate(50px, 0px); opacity: 0;\">a</div><div style=\"position: relative; display: inline-block; transform: translate(50px, 0px); opacity: 0;\">c</div><div style=\"position: relative; display: inline-block; transform: translate(50px, 0px); opacity: 0;\">h</div><div style=\"position: relative; display: inline-block; transform: translate(50px, 0px); opacity: 0;\">i</div><div style=\"position: relative; display: inline-block; transform: translate(50px, 0px); opacity: 0;\">n</div><div style=\"position: relative; display: inline-block; transform: translate(50px, 0px); opacity: 0;\">g</div></div></div></h3>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\n<p class=\"wp-block-paragraph\">Family Coaching is a form of therapy that focuses on improving communication, resolving conflicts, and strengthening the emotional bonds within a family system. Every family faces challenges at some point, whether due to stress, financial struggles, behavioral issues, loss, or major life changes. When these difficulties begin to create tension, misunderstandings, or emotional distance, family coaching provides a safe and supportive environment where members can express their feelings, listen to one another, and work toward healthier relationships.</p>\n\n\n\n<p class=\"wp-block-paragraph\">In family coaching, the therapist helps identify patterns of behavior and communication that may be contributing to conflict or disconnection. By guiding conversations and encouraging empathy, coaching allows each member to better understand the perspectives and needs of others. Families often learn practical skills such as conflict resolution, boundary setting, and problem-solving strategies that can help them manage challenges more effectively.</p>\n\n\n\n<p class=\"wp-block-paragraph\">This type of coaching can be especially helpful in situations involving parent-child conflicts, marital stress, blended family adjustments, or when a family is coping with trauma, addiction, or mental health concerns. It emphasizes collaboration, showing that every member plays a role in both the problem and the solution. Rather than focusing on one individual, family coaching treats the family as a unit, helping it function more harmoniously.</p>\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"col-md-12 col-xl-3 service-right-col sidebar\">\n\t\t\t\t\t\t\t<aside class=\"service-sidebar\">\n\t\t\t\t\t\t\t\t<aside class=\"widget post-list\">\n\t\t\t\t\t\t\t\t\t<h2 class=\"widget-title\">Our Services</h2>\n\t\t\t\t\t\t\t\t\t<div class=\"all-post-list\">\n\t\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t\t                                   <li class=\"post-active\"><a href=\"https://marymcnutt.com/personal-development-and-business-growth/\">Personal Development and Business Growth</a></li>\n                                                                <li class=\"post-active\"><a href=\"https://marymcnutt.com/sober-companion-services/\">Sober Companion Services</a></li>\n                                                                <li class=\"post-active\"><a href=\"https://marymcnutt.com/family-of-origin-issues/\">Family of Origin Issues</a></li>\n                                                                <li class=\"post-active\"><a href=\"https://marymcnutt.com/relapse-prevention/\">Relapse Prevention</a></li>\n                                                                <li class=\"post-active\"><a href=\"https://marymcnutt.com/drug-prevention-classes/\">Drug Prevention Classes</a></li>\n                                                                    \n\t\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</aside>\n\t\t\t\t\t\t\t\t<aside class=\"widget pbmit-service-ad\">\n\t\t\t\t\t\t\t\t\t<div class=\"textwidget\">\n\t\t\t\t\t\t\t\t\t\t<div class=\"pbmit-service-ads\">\n\t\t\t\t\t\t\t\t\t\t\t<h5 class=\"pbmit-ads-subheding\">Our Best Offer</h5>\n\t\t\t\t\t\t\t\t\t\t\t<h4 class=\"pbmit-ads-subtitle\">Book your</h4>\n\t\t\t\t\t\t\t\t\t\t\t<h3 class=\"pbmit-ads-title\">Session</h3>\n\t\t\t\t\t\t\t\t\t\t\t<div class=\"pbmit-ads-desc\">\n\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"pbmit-base-icon-phone-call-1\"></i>(808) 662-3784\n\t\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t\t\t<a class=\"pbmit-btn pbmit-btn-hover-white\" href=\"https://marymcnutt.com/contact/\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"pbmit-button-content-wrapper\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<span class=\"pbmit-button-text\">Register now</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t<svg class=\"pbmit-svg-arrow\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" width=\"10\" height=\"19\" viewBox=\"0 0 19 19\" xml:space=\"preserve\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<line x1=\"1\" y1=\"18\" x2=\"17.8\" y2=\"1.2\"></line>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<line x1=\"1.2\" y1=\"1\" x2=\"18\" y2=\"1\"></line>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<line x1=\"18\" y1=\"17.8\" x2=\"18\" y2=\"1\"></line>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</svg>\n\t\t\t\t\t\t\t\t\t\t\t\t</span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t</aside>\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t</aside>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n            </section>\n            <!-- Service Details End -->\n\n        </div>\n        <!-- Page Content End -->\n\n<!-- footer -->\n        <footer class=\"site-footer\">\n\t\t\t<div class=\"pbmit-footer-widget-area\">\n\t\t\t\t<div class=\"container\">\n\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t<div class=\"pbmit-footer-widget-col-1 col-md-4\">\n\t\t\t\t\t\t\t<div class=\"widget\">\n\t\t\t\t\t\t\t\t<h2 class=\"widget-title\">Useful Links</h2>\n\t\t\t\t\t\t\t\t<div class=\"textwidget\">\n\t\t\t\t\t\t\t\t\t<ul>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"https://marymcnutt.com\">Homepage</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"https://marymcnutt.com/about-mary\">About Mary</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"https://marymcnutt.com/why-choose-mary\">My Methodology</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"https://goldilockswisdom.com/\">Goldilocks</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"https://marymcnutt.com/service\">Services</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"https://marymcnutt.com/rates-insurance\">Rates &amp; Insurance</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"https://marymcnutt.com/marys-blog\">Mary’s Blog</a></li>\n\t\t\t\t\t\t\t\t\t\t<li><a href=\"https://marymcnutt.com/addition-related-links\">Addiction and Related Links</a></li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"pbmit-footer-widget-col-2 col-md-4\">\n\t\t\t\t\t\t\t<aside class=\"widget widget_text\">\n\t\t\t\t\t\t\t\t<div class=\"textwidget\">\n\t\t\t\t\t\t\t\t\t<div class=\"pbmit-footer-logo\">\n\t\t\t\t\t\t\t\t\t    <a href=\"https://marymcnutt.com\">\n\t\t\t\t\t\t\t\t\t        <img class=\"logo-img\" src=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/images/homepage-1/logo/MaryMcNutt-logo.png\" alt=\"Spaville\">\n\t\t\t\t\t\t\t\t        </a>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<div class=\"pbmit-footer-text\">\n\t\t\t\t\t\t\t\t\t\t<p>\n\t\t\t\t\t\t\t\t\t\t  <span class=\"pbmit-footer-desc\">\n\t\t\t\t\t\t\t\t\t\t\tHelping individuals find hope, healing, and lasting recovery with care and guidance.\n\t\t\t\t\t\t\t\t\t\t  </span>\n\t\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t\t<ul class=\"pbmit-social-links\">\n\t\t\t\t\t\t\t\t\t\t<li class=\"pbmit-social-li pbmit-social-facebook\">\n\t\t\t\t\t\t\t\t\t\t\t<a title=\"Facebook\" href=\"https://www.facebook.com/\" target=\"_blank\" rel=\"noopener\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span><i class=\"pbmit-base-icon-facebook-f\"></i></span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"pbmit-social-li pbmit-social-twitter\">\n\t\t\t\t\t\t\t\t\t\t\t<a title=\"Twitter\" href=\"https://www.twitter.com/\" target=\"_blank\" rel=\"noopener\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span><i class=\"pbmit-base-icon-twitter-2\"></i></span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"pbmit-social-li pbmit-social-linkedin\">\n\t\t\t\t\t\t\t\t\t\t\t<a title=\"LinkedIn\" href=\"https://www.linkedin.com/\" target=\"_blank\" rel=\"noopener\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span><i class=\"pbmit-base-icon-linkedin-in\"></i></span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"pbmit-social-li pbmit-social-instagram\">\n\t\t\t\t\t\t\t\t\t\t\t<a title=\"Instagram\" href=\"https://www.instagram.com/\" target=\"_blank\" rel=\"noopener\">\n\t\t\t\t\t\t\t\t\t\t\t\t<span><i class=\"pbmit-base-icon-instagram\"></i></span>\n\t\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</aside>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<div class=\"pbmit-footer-widget-col-3 col-md-4\">\n                        \t<div class=\"widget widget_text\">\n                        \t    <div class=\"upper_part\">\n                        \t      <h2 class=\"widget-title\">Working Time</h2>\n                        \t\t<div class=\"pbmit-timelist-wrapper\">\n                        \t\t\t<ul class=\"pbmit-timelist-list\">\n                        \t\t\t\t<li>\n                        \t\t\t\t\t<span class=\"pbmit-timelist-li-title\">Monday to Friday</span>\n                        \t\t\t\t\t<span class=\"pbmit-timelist-time\">10AM - 4PM</span>\n                        \t\t\t\t</li>\n                        \t\t\t</ul>\n                        \t\t</div>  \n                        \t    </div>\n                        \t\t\n                        \n                        \t\t<!-- Download link starts -->\n                        \t\t<div class=\"pbmit-download-link\" style=\"margin-top: 50px;\">\n                        \t\t\t<a href=\"https://marymcnutt.scriptzee.com/wp-content/uploads/2025/10/dea-drug_of_abuse.pdf\" download=\"\" target=\"_blank\">\n                        \t\t\t<h2 class=\"widget-title download_heading\">\tDownload the US Department of Justice Drug and Abuse Guide </h2>\n                        \t\t\t</a>\n                        \t\t</div>\n                        \t\t<!-- Download link ends -->\n                        \t</div>\n                        </div>\n\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"pbmit-footer-text-area\">\n\t\t\t\t<div class=\"container\">\n\t\t\t\t\t<div class=\"pbmit-footer-text-inner\">\n\t\t\t\t\t\t<div class=\"row\">\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<div class=\"pbmit-footer-copyright-text-area\"> © Copyright  2025<a href=\"#\"> Mary McNutt.</a> All Rights Reserved.</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"col-md-6\">\n\t\t\t\t\t\t\t\t<div class=\"pbmit-footer-menu-area\">\n\t\t\t\t\t\t\t\t\t<ul class=\"pbmit-footer-menu\">\n\t\t\t\t\t\t\t\t\t\t<li class=\"menu-item\">\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://marymcnutt.com/disclaimer\">Disclaimer</a>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t\t<li class=\"menu-item\">\n\t\t\t\t\t\t\t\t\t\t\t<a href=\"https://marymcnutt.com/privacy-policy\">Privacy policy</a>\n\t\t\t\t\t\t\t\t\t\t</li>\n\t\t\t\t\t\t\t\t\t</ul>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n        </footer>\n\t\t<!-- footer End -->\n\n\t</div>\n\t<!-- page wrapper End -->\n\n\t<!-- Search Box Start Here -->\n\t<div class=\"pbmit-search-overlay\">\n\t\t<div class=\"pbmit-icon-close\">\n\t\t\t<svg class=\"qodef-svg--close qodef-m\" xmlns=\"http://www.w3.org/2000/svg\" width=\"28.163\" height=\"28.163\" viewBox=\"0 0 26.163 26.163\">\n\t\t\t\t<rect width=\"36\" height=\"1\" transform=\"translate(0.707) rotate(45)\"></rect>\n\t\t\t\t<rect width=\"36\" height=\"1\" transform=\"translate(0 25.456) rotate(-45)\"></rect>\n\t\t\t</svg>\n\t\t</div>\n\t\t<div class=\"pbmit-search-outer\"> \n\t\t\t<form class=\"pbmit-site-searchform\">\n\t\t\t\t<input type=\"search\" class=\"form-control field searchform-s\" name=\"s\" placeholder=\"Search …\">\n\t\t\t\t<button type=\"submit\"></button>\n\t\t\t</form>\n\t\t</div>\n\t</div>\n\t<!-- Search Box End Here -->\n\n\t<!-- Scroll To Top -->\n\t<div class=\"pbmit-progress-wrap\">\n\t\t<svg class=\"pbmit-progress-circle svg-content\" width=\"100%\" height=\"100%\" viewBox=\"-1 -1 102 102\">\n\t\t\t<path d=\"M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98\" style=\"transition: stroke-dashoffset 10ms linear; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;\"></path>\n\t\t</svg>\t\n\t</div>\n\t<!-- Scroll To Top End -->\n\t\n\t<!-- JS\n\t\t============================================ -->\n\t<!-- jQuery JS -->\n\t\n\t<script src=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/js/jquery.min.js\"></script>\n\t<!-- Popper JS -->\n\t<script src=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/js/popper.min.js\"></script>\n\t<!-- Bootstrap JS -->\n\t<script src=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/js/bootstrap.min.js\"></script>\n\t<!-- jquery Waypoints JS -->\n\t<script src=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/js/jquery.waypoints.min.js\"></script>\n\t<!-- jquery Appear JS -->\n\t<script src=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/js/jquery.appear.js\"></script>\n\t<!-- Numinate JS -->\n\t<script src=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/js/numinate.min.js\"></script>\n\t<!-- Slick JS -->\n\t<script src=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/js/swiper.min.js\"></script>\n\t<!-- Magnific JS -->\n\t<script src=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/js/jquery.magnific-popup.min.js\"></script>\n\t<!-- Circle Progress JS -->\n\t<script src=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/js/circle-progress.js\"></script> \n\t<!-- countdown JS -->\n\t<script src=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/js/jquery.countdown.min.js\"></script> \n\t<!-- AOS -->\n\t<script src=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/js/aos.js\"></script>\n\t<!-- GSAP -->\n\t<script src=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/js/gsap.js\"></script>\n\t<!-- Scroll Trigger -->\n\t<script src=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/js/ScrollTrigger.js\"></script>\n\t<!-- Split Text -->\n\t<script src=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/js/SplitText.js\"></script>\n\t<!-- Magnetic -->\n\t<script src=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/js/magnetic.js\"></script>\n\t<!-- GSAP Animation -->\n\t<script src=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/js/gsap-animation.js\"></script>\n\t<!-- Scripts JS -->\n\t<script src=\"https://marymcnutt.com/wp-content/themes/merrymcnutt/js/scripts.js\"></script>\n\t<script>\nwindow.addEventListener(\"scroll\", function() {\n    const header = document.querySelector(\".main-container\");\n    if (window.scrollY > 50) { // after 50px scroll\n        header.style.position = \"fixed\";\n        header.style.top = \"0\";\n        header.style.zIndex = \"9999999999\";\n        header.style.background = \"white\";\n        header.style.width = \"100%\";\n    } else {\n        header.style.position = \"static\"; // back to normal\n        header.style.background = \"transparent\"; // optional\n    }\n});\n</script>\n\n\t<script>\n(function(){\n  function c(){\n    var b=a.contentDocument||a.contentWindow.document;\n    if(b){\n      var d=b.createElement('script');\n      d.innerHTML=\"window.__CF$cv$params={r:'97d6a37abe54178e',t:'MTc1NzU4ODE4OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../cdn-cgi/challenge-platform/h/g/scripts/jsd/f78657f80e4b/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);\";\n      b.getElementsByTagName('head')[0].appendChild(d);\n    }\n  }\n  if(document.body){\n    var a=document.createElement('iframe');\n    a.height=1;\n    a.width=1;\n    a.style.position='absolute';\n    a.style.top=0;\n    a.style.left=0;\n    a.style.border='none';\n    a.style.visibility='hidden';\n    document.body.appendChild(a);\n    if('loading'!==document.readyState)c();\n    else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);\n    else{\n      var e=document.onreadystatechange||function(){};\n      document.onreadystatechange=function(b){\n        e(b);\n        'loading'!==document.readyState&&(document.onreadystatechange=e,c());\n      };\n    }\n  }\n})();\n</script><iframe height=\"1\" width=\"1\" style=\"position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;\"></iframe>\n\n<!-- ✅ Correct Cloudflare beacon script -->\n<script defer=\"\" src=\"https://static.cloudflareinsights.com/beacon.min.js\" integrity=\"sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==\" data-cf-beacon=\"{&quot;rayId&quot;:&quot;97d6a37abe54178e&quot;,&quot;version&quot;:&quot;2025.8.0&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfEdge&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}},&quot;token&quot;:&quot;125856bf84ab44059737e93b01aa0fef&quot;,&quot;b&quot;:1}\" crossorigin=\"anonymous\">\n</script>\n\n\n<!-- <script>\n$(document).ready(function(){\n\t\n    \n\t$(\"#menu-main-menu\").find(\"#menu-item-203\").find(\"ul\").addClass(\"dropdown_style\");\n\t$(\"#menu-main-menu\").find(\".menu-item-has-children\").addClass(\"dropdown\");\n\t\n\t\n});\ndocument.addEventListener(\"DOMContentLoaded\", function() {\n  const dropdownLinks = document.querySelectorAll('.navigation li.menu-item-has-children > a');\n\n  dropdownLinks.forEach(link => {\n    link.addEventListener('click', function(e) {\n      if(window.innerWidth < 992){ // only on mobile/tablet\n        e.preventDefault();\n        this.parentElement.classList.toggle('open');\n      }\n    });\n  });\n});\n\n</script> -->\n\n<script>\n$(document).ready(function(){\n    // For Desktop View\n\t\t$(\"#menu-main-menu\").find(\"#menu-item-203\").find(\"ul\").addClass(\"dropdown_style\");\n\t$(\"#menu-main-menu\").find(\".menu-item-has-children\").addClass(\"dropdown\");\n\t\n\t\n});\n</script>\n<script>\njQuery(document).ready(function($){\n    // Add dropdown toggle icon for each menu item that has children\n    $(\"#menu-main-menu .menu-item-has-children\").each(function(){\n        if($(this).find(\".righticon\").length === 0){\n            $(this).append('<span class=\"righticon\"><i class=\"pbmit-base-icon-angle-right\"></i></span>');\n        }\n    });\n\n    // Toggle submenu on icon click\n    $(\"#menu-main-menu\").on(\"click\", \".righticon\", function(e){\n        e.preventDefault();\n        $(this).siblings(\"ul.sub-menu\").slideToggle(); \n        $(this).toggleClass(\"open\");\n    });\n});\n</script>\n\n\n\n\n\n</body><div id=\"codex-browser-sidebar-comments-root\" style=\"position: fixed; inset: 0px; pointer-events: none; z-index: 2147483647;\"></div></html>",
+  "images": [
+    {
+      "alt": "Spaville",
+      "src": "https://marymcnutt.com/wp-content/themes/merrymcnutt/images/homepage-1/logo/MaryMcNutt-logo.png"
+    },
+    {
+      "alt": "Spaville",
+      "src": "https://marymcnutt.com/wp-content/themes/merrymcnutt/images/homepage-1/logo/MaryMcNutt-logo.png"
+    }
+  ],
+  "links": [
+    {
+      "text": "Mary@MaryMcNutt.com",
+      "url": "https://marymcnutt.com/family-counseling/Mary@MaryMcNutt.com"
+    },
+    {
+      "text": "",
+      "url": "https://marymcnutt.com/family-counseling/#"
+    },
+    {
+      "text": "",
+      "url": "https://marymcnutt.com/family-counseling/#"
+    },
+    {
+      "text": "",
+      "url": "https://marymcnutt.com/family-counseling/#"
+    },
+    {
+      "text": "",
+      "url": "https://marymcnutt.com/family-counseling/#"
+    },
+    {
+      "text": "",
+      "url": "https://marymcnutt.com/"
+    },
+    {
+      "text": "Home",
+      "url": "https://marymcnutt.com/"
+    },
+    {
+      "text": "Meet Mary",
+      "url": "https://marymcnutt.com/family-counseling/#"
+    },
+    {
+      "text": "About Mary",
+      "url": "https://marymcnutt.com/about-mary/"
+    },
+    {
+      "text": "My Methodology",
+      "url": "https://marymcnutt.com/why-choose-mary/"
+    },
+    {
+      "text": "Mary’s Credentials",
+      "url": "https://marymcnutt.com/marys-credentials/"
+    },
+    {
+      "text": "Goldilocks",
+      "url": "https://marymcnutt.com/goldilocks/"
+    },
+    {
+      "text": "Services",
+      "url": "https://marymcnutt.com/family-counseling/#"
+    },
+    {
+      "text": "Problem and Compulsive Gambling",
+      "url": "https://marymcnutt.com/problem-and-compulsive-gambling/"
+    },
+    {
+      "text": "Process Addictions",
+      "url": "https://marymcnutt.com/process-addictions/"
+    },
+    {
+      "text": "Financial Disorder",
+      "url": "https://marymcnutt.com/financial-disorder/"
+    },
+    {
+      "text": "Trauma Resolution",
+      "url": "https://marymcnutt.com/trauma-resolution/"
+    },
+    {
+      "text": "Women’s Issue",
+      "url": "https://marymcnutt.com/womens-issue/"
+    },
+    {
+      "text": "Shopping",
+      "url": "https://marymcnutt.com/shopping/"
+    },
+    {
+      "text": "Eating Disorders",
+      "url": "https://marymcnutt.com/eating-disorders/"
+    },
+    {
+      "text": "Couple’s Intensive Coaching",
+      "url": "https://marymcnutt.com/couples-intensive/"
+    },
+    {
+      "text": "Family Coaching",
+      "url": "https://marymcnutt.com/family-counseling/"
+    },
+    {
+      "text": "Parenting Support",
+      "url": "https://marymcnutt.com/parenting-support/"
+    },
+    {
+      "text": "Relationship, Grief, Trauma Issues",
+      "url": "https://marymcnutt.com/relationship-grief-trauma-issues/"
+    },
+    {
+      "text": "Healthy Management of Grief and Loss",
+      "url": "https://marymcnutt.com/healthy-management-of-grief-and-loss/"
+    },
+    {
+      "text": "Conflict Resolution",
+      "url": "https://marymcnutt.com/conflict-resolution/"
+    },
+    {
+      "text": "Family of Origin Issues",
+      "url": "https://marymcnutt.com/family-of-origin-issues/"
+    },
+    {
+      "text": "Drug Prevention Classes",
+      "url": "https://marymcnutt.com/drug-prevention-classes/"
+    },
+    {
+      "text": "Sober Companion Services",
+      "url": "https://marymcnutt.com/sober-companion-services/"
+    },
+    {
+      "text": "Relapse Prevention",
+      "url": "https://marymcnutt.com/relapse-prevention/"
+    },
+    {
+      "text": "Interventions",
+      "url": "https://marymcnutt.com/interventions/"
+    },
+    {
+      "text": "Personal Development and Business Growth",
+      "url": "https://marymcnutt.com/personal-development-and-business-growth/"
+    },
+    {
+      "text": "Rates & Insurance",
+      "url": "https://marymcnutt.com/rates-insurance/"
+    },
+    {
+      "text": "Mary’s Blog",
+      "url": "https://marymcnutt.com/marys-blog/"
+    },
+    {
+      "text": "Resources",
+      "url": "https://marymcnutt.com/family-counseling/#"
+    },
+    {
+      "text": "Addiction",
+      "url": "https://marymcnutt.com/addiction/"
+    },
+    {
+      "text": "Addition & Related Links",
+      "url": "https://marymcnutt.com/addition-related-links/"
+    },
+    {
+      "text": "Serenity Prayer",
+      "url": "https://marymcnutt.com/serenity-prayer/"
+    },
+    {
+      "text": "The 12 Steps",
+      "url": "https://marymcnutt.com/the-12-steps/"
+    },
+    {
+      "text": "Disclaimer",
+      "url": "https://marymcnutt.com/disclaimer/"
+    },
+    {
+      "text": "The Twelve Traditions of AA",
+      "url": "https://marymcnutt.com/the-twelve-traditions-of-aa/"
+    },
+    {
+      "text": "Privacy Policy",
+      "url": "https://marymcnutt.com/privacy-policy/"
+    },
+    {
+      "text": "Download the US Department of Justice Drug and Abuse Guide",
+      "url": "https://marymcnutt.com/wp-content/uploads/2025/10/dea-drug_of_abuse.pdf"
+    },
+    {
+      "text": "Contact Us",
+      "url": "https://marymcnutt.com/contact"
+    },
+    {
+      "text": "Home",
+      "url": "https://marymcnutt.com/"
+    },
+    {
+      "text": "Personal Development and Business Growth",
+      "url": "https://marymcnutt.com/personal-development-and-business-growth/"
+    },
+    {
+      "text": "Sober Companion Services",
+      "url": "https://marymcnutt.com/sober-companion-services/"
+    },
+    {
+      "text": "Family of Origin Issues",
+      "url": "https://marymcnutt.com/family-of-origin-issues/"
+    },
+    {
+      "text": "Relapse Prevention",
+      "url": "https://marymcnutt.com/relapse-prevention/"
+    },
+    {
+      "text": "Drug Prevention Classes",
+      "url": "https://marymcnutt.com/drug-prevention-classes/"
+    },
+    {
+      "text": "Register now",
+      "url": "https://marymcnutt.com/contact/"
+    },
+    {
+      "text": "Homepage",
+      "url": "https://marymcnutt.com/"
+    },
+    {
+      "text": "About Mary",
+      "url": "https://marymcnutt.com/about-mary"
+    },
+    {
+      "text": "My Methodology",
+      "url": "https://marymcnutt.com/why-choose-mary"
+    },
+    {
+      "text": "Goldilocks",
+      "url": "https://goldilockswisdom.com/"
+    },
+    {
+      "text": "Services",
+      "url": "https://marymcnutt.com/service"
+    },
+    {
+      "text": "Rates & Insurance",
+      "url": "https://marymcnutt.com/rates-insurance"
+    },
+    {
+      "text": "Mary’s Blog",
+      "url": "https://marymcnutt.com/marys-blog"
+    },
+    {
+      "text": "Addiction and Related Links",
+      "url": "https://marymcnutt.com/addition-related-links"
+    },
+    {
+      "text": "",
+      "url": "https://marymcnutt.com/"
+    },
+    {
+      "text": "",
+      "url": "https://www.facebook.com/"
+    },
+    {
+      "text": "",
+      "url": "https://www.twitter.com/"
+    },
+    {
+      "text": "",
+      "url": "https://www.linkedin.com/"
+    },
+    {
+      "text": "",
+      "url": "https://www.instagram.com/"
+    },
+    {
+      "text": "Download the US Department of Justice Drug and Abuse Guide",
+      "url": "https://marymcnutt.scriptzee.com/wp-content/uploads/2025/10/dea-drug_of_abuse.pdf"
+    },
+    {
+      "text": "Mary McNutt.",
+      "url": "https://marymcnutt.com/family-counseling/#"
+    },
+    {
+      "text": "Disclaimer",
+      "url": "https://marymcnutt.com/disclaimer"
+    },
+    {
+      "text": "Privacy policy",
+      "url": "https://marymcnutt.com/privacy-policy"
+    }
+  ],
+  "text": "(808) 662-3784  Mary@MaryMcNutt.com\nHOME\nMEET MARY\nGOLDILOCKS\nSERVICES\nRATES & INSURANCE\nMARY’S BLOG\nRESOURCES\nContact Us \nFamily Coaching\nHOME  FAMILY COACHING\nFamily Coaching\n\nFamily Coaching is a form of therapy that focuses on improving communication, resolving conflicts, and strengthening the emotional bonds within a family system. Every family faces challenges at some point, whether due to stress, financial struggles, behavioral issues, loss, or major life changes. When these difficulties begin to create tension, misunderstandings, or emotional distance, family coaching provides a safe and supportive environment where members can express their feelings, listen to one another, and work toward healthier relationships.\n\nIn family coaching, the therapist helps identify patterns of behavior and communication that may be contributing to conflict or disconnection. By guiding conversations and encouraging empathy, coaching allows each member to better understand the perspectives and needs of others. Families often learn practical skills such as conflict resolution, boundary setting, and problem-solving strategies that can help them manage challenges more effectively.\n\nThis type of coaching can be especially helpful in situations involving parent-child conflicts, marital stress, blended family adjustments, or when a family is coping with trauma, addiction, or mental health concerns. It emphasizes collaboration, showing that every member plays a role in both the problem and the solution. Rather than focusing on one individual, family coaching treats the family as a unit, helping it function more harmoniously.\n\nOur Services\nPERSONAL DEVELOPMENT AND BUSINESS GROWTH\nSOBER COMPANION SERVICES\nFAMILY OF ORIGIN ISSUES\nRELAPSE PREVENTION\nDRUG PREVENTION CLASSES\nOUR BEST OFFER\nBook your\nSession\n(808) 662-3784\nRegister Now \nUseful Links\nHomepage\nAbout Mary\nMy Methodology\nGoldilocks\nServices\nRates & Insurance\nMary’s Blog\nAddiction and Related Links\n\nHelping individuals find hope, healing, and lasting recovery with care and guidance.\n\n   \nWorking Time\nMonday to Friday\n10AM - 4PM\nDownload The US Department Of Justice Drug And Abuse Guide\n© Copyright 2025 Mary McNutt. All Rights Reserved.\nDisclaimer\nPrivacy policy",
+  "title": "Goldilocks Wisdom",
+  "url": "https://marymcnutt.com/family-counseling/"
+}

@@ -1,0 +1,160 @@
+{
+  "backgrounds": [
+    "url(\"https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/bgn-slider-01.jpg\")",
+    "url(\"https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/bgn-slider-02.jpg\")",
+    "url(\"https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2016/05/product-12.jpg\")",
+    "url(\"https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/bgn-slider-02.jpg\")",
+    "initial",
+    "initial",
+    "url(\"https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/bgn-quote.jpg\")",
+    "url(\"https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/bgn-slider-02-1.jpg\")",
+    "url(\"https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/bgn-coaching-principles.jpg\")",
+    "url(\"https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/bgn-courses.jpg\")",
+    "url(\"https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/bgn-get-started.jpg\")",
+    "initial"
+  ],
+  "bodyFont": "\"Nunito Sans\", Arial, sans-serif",
+  "headingFont": "Roboto",
+  "images": [
+    {
+      "alt": "Main Demo",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/Celeste-logo.png"
+    },
+    {
+      "alt": "Main Demo",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/Celeste-logo.png"
+    },
+    {
+      "alt": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/life-coach-excerpt-01-640x427.jpg",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/life-coach-excerpt-01-1280x854.jpg"
+    },
+    {
+      "alt": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/life-coach-excerpt-02-640x427.jpg",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/life-coach-excerpt-02-1280x854.jpg"
+    },
+    {
+      "alt": "happy family having fun outdoors",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/life-coach-excerpt-03-1280x854.jpg"
+    },
+    {
+      "alt": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/life-coach-excerpt-04-640x427.jpg",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/life-coach-excerpt-04-1280x854.jpg"
+    },
+    {
+      "alt": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/life-coach-excerpt-01-640x427.jpg",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/life-coach-excerpt-01-1280x854.jpg"
+    },
+    {
+      "alt": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/life-coach-excerpt-02-640x427.jpg",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/life-coach-excerpt-02-1280x854.jpg"
+    },
+    {
+      "alt": "happy family having fun outdoors",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/life-coach-excerpt-03-1280x854.jpg"
+    },
+    {
+      "alt": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/life-coach-excerpt-04-640x427.jpg",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/life-coach-excerpt-04-1280x854.jpg"
+    },
+    {
+      "alt": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/quote.png",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/quote.png"
+    },
+    {
+      "alt": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/signature.png",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/signature.png"
+    },
+    {
+      "alt": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/quote.png",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/quote.png"
+    },
+    {
+      "alt": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/signature.png",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/signature.png"
+    },
+    {
+      "alt": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-quote-01-640x427.jpg",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-quote-01-1280x854.jpg"
+    },
+    {
+      "alt": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-quote-02-640x427.jpg",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-quote-02-1280x854.jpg"
+    },
+    {
+      "alt": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-quote-03-640x427.jpg",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-quote-03-1280x854.jpg"
+    },
+    {
+      "alt": "Thoughts on Procrastination",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2017/10/img-blog-post-01-640x427.jpg"
+    },
+    {
+      "alt": "People who made inspiring life changes",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2017/10/img-blog-post-02-640x427.jpg"
+    },
+    {
+      "alt": "The incredible power of small changes",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2017/10/img-blog-post-03-640x427.jpg"
+    },
+    {
+      "alt": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-box-01-640x640.jpg",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-box-01.jpg"
+    },
+    {
+      "alt": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-box-02-640x640.jpg",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-box-02.jpg"
+    },
+    {
+      "alt": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-box-03-640x640.jpg",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-box-03.jpg"
+    },
+    {
+      "alt": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-box-04-640x640.jpg",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/img-box-04.jpg"
+    },
+    {
+      "alt": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/Celeste-logo-white.png",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/Celeste-logo-white.png"
+    },
+    {
+      "alt": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/Celeste-logo-white.png",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2018/01/Celeste-logo-white.png"
+    },
+    {
+      "alt": "Thoughts on Procrastination",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2017/10/img-blog-post-01-640x427.jpg"
+    },
+    {
+      "alt": "People who made inspiring life changes",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2017/10/img-blog-post-02-640x427.jpg"
+    },
+    {
+      "alt": "The incredible power of small changes",
+      "src": "https://celeste.bold-themes.com/main-demo/wp-content/uploads/sites/3/2017/10/img-blog-post-03-640x427.jpg"
+    },
+    {
+      "alt": "Newsletter subscription",
+      "src": "https://bold-themes.com/gtm/assets/img_newsletter_opt.avif"
+    },
+    {
+      "alt": "Intuit Mailchimp",
+      "src": "https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg"
+    },
+    {
+      "alt": "Newsletter subscription",
+      "src": "https://bold-themes.com/gtm/assets/btn_cmnt_subscribe_opt.avif"
+    }
+  ],
+  "styles": [
+    "https://celeste.bold-themes.com/main-demo/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-10.8.1",
+    "https://celeste.bold-themes.com/main-demo/wp-content/plugins/bold-page-builder/css/front_end/content_elements.crush.css?ver=5.9.1",
+    "https://celeste.bold-themes.com/main-demo/wp-content/plugins/bold-page-builder/slick/slick.css?ver=5.9.1",
+    "https://celeste.bold-themes.com/main-demo/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.6",
+    "https://celeste.bold-themes.com/main-demo/wp-content/themes/celeste/style.css?ver=7.1",
+    "https://celeste.bold-themes.com/main-demo/wp-content/themes/celeste/print.css?ver=7.1",
+    "https://fonts.googleapis.com/css?family=Nunito+Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2C400italic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CRoboto%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2C400italic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CRoboto%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2C400italic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CNunito+Sans%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2C400italic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic%7CRoboto+Condensed%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100italic%2C200italic%2C300italic%2C400italic%2C500italic%2C600italic%2C700italic%2C800italic%2C900italic&subset=latin%2Clatin-ext&ver=1.0.0",
+    "https://celeste.bold-themes.com/main-demo/wp-content/themes/celeste/framework/css/style.css?ver=7.1",
+    "https://celeste.bold-themes.com/main-demo/wp-content/themes/celeste/bold-page-builder/content_elements_misc/css/bt_bb_working_hours.css?ver=7.1",
+    "https://cdn-images.mailchimp.com/embedcode/classic-061523.css"
+  ]
+}
