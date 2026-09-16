@@ -36,4 +36,4 @@ The static package now includes the full public route system: core pages, journa
 
 The private Sites preview is separate from MaryMcNutt.com. Canonical URLs and crawler files are prepared for that final domain. Search engines cannot index an authenticated private preview.
 
-Client-provided content was condensed for the reference layout without copying the demo's names, invented metrics, claims, or contact details. Reference stock photography needs reuse rights confirmed before public launch; generated Mary portraits are separately documented. The map is a local OpenStreetMap capture linked to the interactive map, with visible attribution.
+Client-provided content was condensed for the reference layout without copying the demo's names, invented metrics, claims, or contact details. Old stock and original reference portraits are retained only in the local research archive; the served site uses documented AI coaching scenes. The map is a local OpenStreetMap capture linked to the interactive map, with visible attribution.
