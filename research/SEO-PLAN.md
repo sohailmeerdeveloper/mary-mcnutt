@@ -53,6 +53,30 @@ Next measurement step: validate the remaining service clusters and related queri
 - `robots.txt` allows ordinary search crawlers and the named AI crawlers, including OAI-SearchBot and GPTBot, consistent with the request to allow AI access. OAI-SearchBot and GPTBot serve different purposes; allowing one does not replace configuring the other. [OpenAI crawler documentation](https://developers.openai.com/api/docs/bots).
 - `llms.txt` provides a small, optional factual discovery aid. It is not a standard ranking requirement.
 
+## About page implementation
+
+- Primary intent: branded biography queries, “Mary McNutt coach,” coaching philosophy, background, and experience.
+- Title: **About Mary McNutt, M.A. | Transformational Coach**.
+- Description: **Meet Mary McNutt, M.A., a transformational life and business coach with 25+ years of experience, dual master's degrees, and deep recovery expertise.**
+- Canonical: `https://marymcnutt.com/about/`.
+- JSON-LD: AboutPage, BreadcrumbList, and Person with only source-supported education and areas of expertise.
+- Natural internal links connect Mary's method and experience to the coaching plan and its four focus areas.
+
+## Coaching page implementation
+
+- Primary intent: life coaching, business coaching, personal development coaching, transformational coaching, recovery aftercare, and program/process queries.
+- Title: **Life & Business Coaching Programs | Mary McNutt**.
+- Description: **Explore Mary McNutt's transformational life, business, personal development, and recovery coaching. See the coaching process and start with a free consultation.**
+- Canonical: `https://marymcnutt.com/coaching/`.
+- JSON-LD: WebPage, BreadcrumbList, Person, ProfessionalService, OfferCatalog, and four Service nodes expressed through Offers. No prices, ratings, reviews, guarantees, or address data are asserted.
+- Program names are factual, but inconsistent published prices are deliberately excluded. A free consultation is the conversion action.
+
+## Three-page technical update
+
+- The sitemap now lists `/`, `/about/`, and `/coaching/` with principal Mary images.
+- All three pages include unique titles, descriptions, canonical URLs, Open Graph metadata, X/Twitter metadata, and one descriptive H1.
+- Homepage navigation and contextual calls to action now resolve to the new local routes. Legacy article and policy links remain pointed at their live equivalents.
+
 Google says AI-search visibility follows ordinary SEO fundamentals: crawl access, useful text, internal links, accurate structured data, and good page experience. No special AI schema or new machine-readable file is required. [Google's AI features guidance](https://developers.google.com/search/docs/appearance/ai-features).
 
 Use keywords naturally in titles, headings, introductory text, and descriptive link text. Avoid stuffing image alt text with search terms. Prioritize original, accurate, people-first information and recognizable expertise. [Google Search Essentials](https://developers.google.com/search/docs/essentials), [helpful-content guidance](https://developers.google.com/search/docs/fundamentals/creating-helpful-content).
@@ -66,3 +90,22 @@ Use keywords naturally in titles, headings, introductory text, and descriptive l
 5. Preserve existing paths or create individual 301 redirects from old to genuinely equivalent new pages. Do not redirect every missing service/article to the homepage.
 6. Confirm there is no host-level `X-Robots-Tag: noindex`, password gate, or crawler block in production. Confirm the XML sitemap is served at the canonical domain.
 7. Verify Search Console ownership, submit the sitemap, inspect representative URLs and structured data, and measure real mobile performance. Search inclusion is not guaranteed by metadata or static HTML alone.
+
+## Remaining page keyword map — 15 September 2026
+
+| Page | Primary search intent | Supporting terms |
+|---|---|---|
+| Pricing | coaching pricing and coaching options for Mary McNutt | personalized coaching plan, life coaching cost, business coaching options |
+| Blog | Mary McNutt articles and practical coaching guidance | personal transformation, addiction recovery education, family support |
+| Beautiful Transformation | personal transformation and lasting change | resilience, authentic growth, small steps |
+| What Is an Intervention? | addiction intervention information | family intervention, professional interventionist, treatment support |
+| Stages of Addiction | stages and warning signs of addiction | progressive addiction, family awareness, treatment |
+| Aloha from Mumbai | Mary McNutt background and recovery mission | Mary McNutt Maui, addiction speaker, recovery purpose |
+| Understanding Addiction | addiction education and relapse | chronic disease, cravings, whole-person treatment, recovery support |
+| Contact | contact Mary McNutt and free coaching consultation | life coach consultation, recovery aftercare consultation, business coaching inquiry |
+
+Every route has a unique title, description, canonical, Open Graph/X metadata, one H1, crawlable internal links, and valid page-specific JSON-LD. Article pages use BlogPosting plus BreadcrumbList without invented publication dates. Pricing schema follows the client-approved $99 introductory hour and $249/$399/$499/$549 fixed plans.
+
+## Full service migration — 15 September 2026
+
+The site now has dedicated, indexable destinations for 19 archived service topics, including personal and business development, sober companion support, family-of-origin healing, relapse prevention, family coaching, grief, trauma, process addictions, gambling, and interventions. Titles pair each specific search intent with Mary McNutt’s name; descriptions and body copy remain grounded in the saved original-site material. `/services/` and `/resources/` provide crawlable hubs, and all new routes are included in the sitemap.

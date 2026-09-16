@@ -1,0 +1,55 @@
+/* September 2026: Mary-specific photography, readable search titles, restrained motion. */
+.interior-hero {height:auto; min-height:610px; display:grid; align-items:end}
+.interior-hero-copy {height:auto; padding-block:185px 74px}
+.interior-hero-copy h1, .article-hero h1, .legacy-hero h1, .center-hero h1 {
+  font-size:clamp(2.75rem,4.7vw,4.75rem); line-height:1.08; letter-spacing:-.035em;
+  max-width:850px; text-wrap:balance; overflow-wrap:break-word;
+}
+.interior-hero>img, .legacy-hero>img, .article-hero>img {object-position:68% 0%}
+.credentials-photo img {object-position:76% center}
+.mosaic-image, .programs-photo, .pricing-closing>img, .contact-closing>img, .sidebar-portrait img {object-position:70% 35%}
+.article-hero {height:auto; min-height:610px}
+.article-hero>.wrap {padding-top:190px}
+.legacy-hero .wrap {padding-top:190px}
+.legacy-hero h1 {max-width:800px}
+.center-hero h1 {font-size:clamp(2.65rem,4.3vw,4.4rem)}
+.numbers, .pricing-fact-grid {align-items:start; column-gap:22px}
+.numbers>div>strong.stat-ring, .pricing-fact-grid strong.stat-ring,
+.stat-ring {position:relative; display:grid; place-items:center; width:clamp(94px,8vw,126px); aspect-ratio:1;
+  margin:0 auto 20px; line-height:1; font-size:clamp(29px,3vw,43px); font-weight:300;
+  letter-spacing:-.03em; color:var(--green); --ring-progress:100; isolation:isolate}
+.stat-ring-art {position:absolute; inset:0; width:100%; height:100%; fill:none; stroke-width:2.5; transform:rotate(-90deg)}
+.stat-ring-track {stroke:#dce9df}
+.stat-ring-fill {stroke:var(--green); stroke-dasharray:100; stroke-dashoffset:calc(100 - var(--ring-progress)); stroke-linecap:round}
+.stat-ring .stat-number {display:block; margin:0; font:inherit; line-height:1}
+.stat-ring .visually-hidden {margin:0; font-size:1px}
+.stat-ring[data-stat="Free"] {font-size:30px}
+.timeline-marker {transition:background-color 550ms ease, box-shadow 550ms ease}
+.timeline-marker.is-reached {background:var(--green); box-shadow:0 0 0 2px var(--emerald)}
+.author-card.author-card-text {display:block; padding-block:30px}
+.article-sidebar .sidebar-block>a {display:block; padding-block:16px; border-bottom:1px solid #d8e2db}
+.article-sidebar .sidebar-block>a span {display:block}
+.email-fallback {margin-top:18px}
+.email-fallback[hidden] {display:none}
+.email-fallback textarea {display:block; width:100%; margin-block:10px 14px; padding:14px; border:1px solid #b7cbbf; background:#fff; color:var(--text); font:inherit}
+.image-note {font-size:13px; line-height:1.5; color:var(--muted); margin-top:16px}
+.footer .image-note {color:inherit; opacity:.85; max-width:68ch; padding-bottom:22px}
+@media(max-width:800px) {
+  .interior-hero, .article-hero {min-height:465px}
+  .interior-hero-copy {padding-block:94px 46px}
+  .interior-hero-copy h1, .article-hero h1, .legacy-hero h1 {font-size:clamp(2.25rem,8.7vw,3.2rem); max-width:650px; line-height:1.1}
+  .interior-hero-copy>p:last-child {font-size:16px}
+  .article-hero>.wrap {padding-top:95px; padding-bottom:45px}
+  .legacy-hero .wrap {padding-top:95px; padding-bottom:50px}
+  .legacy-hero {min-height:460px}
+  .center-hero h1 {font-size:clamp(2.2rem,8.7vw,3.2rem)}
+  .interior-hero>img, .legacy-hero>img, .article-hero>img {object-position:70% 28%}
+  .numbers, .pricing-fact-grid {grid-template-columns:repeat(2,minmax(0,1fr)); gap:38px 20px}
+  .numbers>div>strong.stat-ring, .pricing-fact-grid strong.stat-ring, .stat-ring {width:108px; font-size:36px}
+  .stat-ring[data-stat="Free"] {font-size:29px!important}
+  .center-hero img {object-position:68% 24%}
+}
+@media(prefers-reduced-motion:reduce) {
+  *, *::before, *::after {scroll-behavior:auto!important; animation-duration:.01ms!important; animation-iteration-count:1!important; transition-duration:.01ms!important}
+}
+@media print {.stat-ring-fill {stroke-dashoffset:0}}

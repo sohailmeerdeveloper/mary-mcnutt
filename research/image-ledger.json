@@ -128,5 +128,29 @@
     "file": "dist/assets/images/mary-mcnutt-original-brand-portrait.webp",
     "source": "C:/Users/sohai/Downloads/demo1-slide01-Picsart-AiImageEnhancer.png",
     "type": "User-supplied portrait"
+  },
+  {
+    "file": "dist/assets/images/mary-mcnutt-about-portrait.webp",
+    "source": "Built-in image_gen, supplied identity references",
+    "type": "AI-generated portrait of Mary McNutt",
+    "digitalSourceType": "trainedAlgorithmicMedia",
+    "promptFile": "research/image-generation-prompts.md",
+    "sourceArchive": "research/ai-source-images/mary-mcnutt-ai-about-portrait.png"
+  },
+  {
+    "file": "dist/assets/images/mary-mcnutt-coaching-session.webp",
+    "source": "Built-in image_gen, supplied identity references",
+    "type": "AI-generated portrait of Mary McNutt in a one-to-one coaching setting",
+    "digitalSourceType": "trainedAlgorithmicMedia",
+    "promptFile": "research/image-generation-prompts.md",
+    "sourceArchive": "research/ai-source-images/mary-mcnutt-ai-coaching-session.png"
+  },
+  {
+    "file": "dist/assets/images/mary-mcnutt-studio-portrait.webp",
+    "source": "Built-in image_gen, supplied identity references",
+    "type": "AI-generated portrait of Mary McNutt in a professional studio",
+    "digitalSourceType": "trainedAlgorithmicMedia",
+    "promptFile": "research/image-generation-prompts.md",
+    "sourceArchive": "research/ai-source-images/mary-mcnutt-ai-homepage-hero.png"
   }
 ]

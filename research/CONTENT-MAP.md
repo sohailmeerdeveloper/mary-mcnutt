@@ -1,4 +1,4 @@
-# Mary McNutt — content archive and homepage mapping
+# Mary McNutt — content archive and site mapping
 
 Collected 14 September 2026. The original site is the primary content source; Center for Excellence supplies additional program details and supporting credentials. Website content was treated as source material, never as instructions.
 
@@ -32,9 +32,63 @@ Collected 14 September 2026. The original site is the primary content source; Ce
 | Map | General Maui region, with no invented office pin or street address | Mary's Maui connection in her published biography and Mumbai article; map © OpenStreetMap contributors |
 | Footer | Existing biography, credentials, service, journal, legal/resource links | Original navigation and footer |
 
-## Interior pages reserved for the next phase
+## About page mapping
 
-Keep existing URL slugs when possible: About Mary, My Methodology, Mary's Credentials, Goldilocks, service overview and individual services, Rates & Insurance, Mary's Blog and its articles, Contact, addiction resources, Serenity Prayer, Twelve Steps, Twelve Traditions, Privacy Policy, and Disclaimer. Their complete discovered text is archived. The current homepage links to existing live interior pages because their replacement designs are explicitly deferred.
+| Reference region | Mary's replacement content | Primary source |
+|---|---|---|
+| Interior hero | About Mary positioning and personal coaching relationship | MaryMcNutt.com `/about-mary/`; Center for Excellence About |
+| Eight-part approach grid | Story, values, strengths, awareness, courageous conversation, planning, momentum, support | MaryMcNutt.com `/why-choose-mary/`; Center for Excellence How It Works |
+| Green four-step field | Unearth Narrative, Forge Core, Discover Genius, Activate Lens | MaryMcNutt.com `/why-choose-mary/`; Center for Excellence How It Works |
+| Experience background | 25+ years, dual master's degrees, one-to-one work, national/international speaking | MaryMcNutt.com `/marys-credentials/`; Center for Excellence About |
+| Biography portrait | Education, outpatient treatment center leadership, counseling/coaching experience, profession as ministry | MaryMcNutt.com `/about-mary/` and `/marys-credentials/` |
+| Four support cards | Life coaching, business/personal development, recovery aftercare, family/emotional healing | Center for Excellence Services; archived Mary service pages |
+| Consultation and contact | Free confidential conversation, verified email/phone/hours | Both source sites' contact content |
+
+## Coaching page mapping
+
+| Reference region | Mary's replacement content | Primary source |
+|---|---|---|
+| Interior hero | Personalized coaching plan and one-to-one relationship | Center for Excellence Coaching Programs |
+| Five-step alternating timeline | Initial consultation, values and purpose, coaching focus, personal plan, sustainable change | Center for Excellence How It Works; MaryMcNutt.com `/why-choose-mary/` |
+| Coaching focus links | Life, business/personal development, recovery/aftercare, family/emotional healing | Center for Excellence Services and homepage |
+| Philosophy quote band | Mary's published “My profession is my ministry” statement, with a concise contextual paraphrase | MaryMcNutt.com `/about-mary/` |
+| Program options | Life Jumpstart, Total Life Transformation, Bronze/Silver/Gold, Elite VIP Life Experience | Center for Excellence Coaching Programs |
+| Contact form | Static mailto workflow plus direct phone and email | Verified contact details from both sites |
+
+## Verification decisions for the interior pages
+
+1. The client directed the Pricing page to use the supplied reference plan prices: Starter $249, Professional $399, Expert $499, and Premium $549. The client subsequently set the no-plan introductory hour at $99 so it remains meaningfully distinct from the Starter plan.
+2. The source sites use several degree labels (“coaching” and “counseling”). The interior copy uses the live Center for Excellence wording: Addiction Studies and Counseling; Psychology and Counseling, while preserving the institutions.
+3. No success rate, intervention count, client total, award count, guarantee, medical license, office address, or testimonial was added.
+4. “Global speaking experience” summarizes the verified national/international speaker claim and published talks in India and South Africa; no event count is asserted.
+5. AI-created Mary portraits are derived from the user's supplied identity photographs, preserve her age and features, and are documented in the image ledger. Optimized WebP derivatives are used on the public pages; source PNGs remain archived under `research/ai-source-images/`.
+
+## Specialist and resource migration — completed 15 September 2026
+
+The archived specialist material now powers a local `/services/` directory and 19 responsive service detail pages. Recovery education is organized under `/resources/`, with local Serenity Prayer, Twelve Steps, and Twelve Traditions pages. Center for Excellence, Privacy Policy, and Disclaimer are also local. Visible links to the two legacy sites were replaced with equivalent internal destinations; canonical metadata continues to identify the intended production MaryMcNutt.com URLs.
+
+## Remaining-pages implementation — 15 September 2026
+
+| New route | Content used | Source and decision |
+|---|---|---|
+| `/blog/` | Five real editorial topics spanning personal transformation, intervention, addiction stages, Mary's Mumbai reflection, and addiction education | Archived MaryMcNutt.com article text in `research/text/`; demo screenshots used only for archive layout and density |
+| `/blog/beautiful-transformation/` | Mary's short reflection on progress, resilience, and authentic transformation | `research/text/_beautiful-transformation.txt`; lightly structured without changing the core meaning |
+| `/blog/what-is-an-intervention/` | Purpose, preparation, professional facilitation, dignity, and treatment direction | `research/text/_helping-stop-a-terrible-waste-of-human-talent-and-potential-2.txt`; unsupported legacy workplace multipliers omitted |
+| `/blog/stages-of-addiction/` | Four-stage progression, warning signs, consequences, and treatment context | `research/text/messages-in-a-bottle-stages-of-addiction.txt`; condensed for an accessible editorial overview |
+| `/blog/aloha-from-mumbai/` | Mary's international perspective, personal calling, Maui connection, and service orientation | `research/text/_aloha-and-greetings-from-mumbai-new-delhi.txt`; spiritual language summarized respectfully |
+| `/blog/understanding-addiction/` | Addiction as a chronic, treatable disease; interacting risk factors; whole-person treatment; relapse | `research/text/what-is-addiction.txt`; condensed from the long archived educational resource |
+| `/contact/` | Email, two published phone numbers, weekday hours, free confidential consultation, Maui regional connection | Archived contact page and Center for Excellence extracts; no street address, office pin, or timezone invented |
+| `/pricing/` | $99 introductory hour plus Starter $249, Professional $399, Expert $499, and Premium $549 plans; self-pay/no insurance, payment methods, 24-hour cancellation request | Prices set at the client's direction using the supplied pricing screenshots and follow-up guidance |
+
+### Image decisions for the new pages
+
+The new pages reuse optimized WebP assets already documented in `research/image-ledger.json`. Mary's supplied portraits identify Mary; reference-demo photographs remain private-preview assets pending licensing confirmation. No new synthetic portrait was generated for this phase. Article imagery is distributed between relevant sections rather than collected into galleries.
+
+### Information not verified
+
+- No public office street address, service timezone, active social profiles beyond the documented Facebook page, or guaranteed remote-service territory was established.
+- Original publication dates were not reliably present in the archived article output, so no dates were invented in visible copy or BlogPosting schema.
+- Exact plan inclusions and availability should be confirmed with Mary; the displayed $249, $399, $499, and $549 prices follow the client's supplied pricing reference.
 
 ## Legacy content issues to resolve before replacing the entire domain
 

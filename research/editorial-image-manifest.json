@@ -1,0 +1,172 @@
+[
+  {
+    "key": "blog",
+    "route": "/blog/",
+    "generated_path": "C:\\Users\\sohai\\.codex\\generated_images\\01a0a9f2-5c43-7b51-a458-d3de43dc6d41\\exec-4d4d3155-b3f7-46ec-a94a-ff2cf79febd5.png",
+    "path": "C:\\Users\\sohai\\AppData\\Local\\Temp\\Mary-McNutt-Editorial-Images\\mary-blog.png",
+    "prompt": "Use case: photorealistic-natural, identity-preserve. Create ONE new professional editorial lifestyle photograph for Mary McNutt's coaching website, landscape 1536x1024. Input images 1 and 2 are identity reference photos of the SAME real woman, Mary: preserve her recognizable exact facial identity, age, facial proportions, grey-green eyes, long blonde hair, natural mature skin texture and smile. Do not rejuvenate, redesign, genericize, or change her face. Reference 1 is primary likeness; reference 2 confirms identity. Place Mary clearly on the RIGHT half of the wide frame; leave calm uncluttered natural negative space in the LEFT third for webpage titles. Depict a fictional illustrative coaching scene, not an actual documented event. High-quality natural candid photography, realistic anatomy and hands, tasteful warm daylight, lifelike textures. Mary is the only person. No lettering, readable text, logos, watermarks, borders, collage, duplicate person, or in-image captions. \nScene: Mary drafting a journal article at an airy light-wood desk beside a large window. She wears an ivory cardigan over a neutral blouse and writes with a pen in an open notebook; a closed neutral laptop and plain mug are subtle props. Three-quarter seated view with her face visible as she thoughtfully pauses and looks toward the notebook.",
+    "scene": "Mary drafting a journal article at an airy light-wood desk beside a large window. She wears an ivory cardigan over a neutral blouse and writes with a pen in an open notebook; a closed neutral laptop and plain mug are subtle props. Three-quarter seated view with her face visible as she thoughtfully pauses and looks toward the notebook.",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen.imagegen",
+    "references": [
+      "C:/Users/sohai/Downloads/IMG_1872.jpg",
+      "C:/Users/sohai/OneDrive/Desktop/Mary McNutt/dist/assets/images/mary-mcnutt-original-brand-portrait.webp"
+    ],
+    "review": "Visually inspected for consistent identity, age, blonde hair, distinct clothing/action/location, right-side composition, and absence of readable titles/logos/watermarks.",
+    "editorial_note": "AI-created illustrative coaching scene."
+  },
+  {
+    "key": "beautiful-transformation",
+    "route": "/blog/beautiful-transformation/",
+    "generated_path": "C:\\Users\\sohai\\.codex\\generated_images\\01a0a9f2-5c43-7b51-a458-d3de43dc6d41\\exec-24b1a47e-e424-407a-9a1c-b74d50656038.png",
+    "path": "C:\\Users\\sohai\\AppData\\Local\\Temp\\Mary-McNutt-Editorial-Images\\mary-beautiful-transformation.png",
+    "prompt": "Use case: photorealistic-natural, identity-preserve. Create ONE new professional editorial lifestyle photograph for Mary McNutt's coaching website, landscape 1536x1024. Input images 1 and 2 are identity reference photos of the SAME real woman, Mary: preserve her recognizable exact facial identity, age, facial proportions, grey-green eyes, long blonde hair, natural mature skin texture and smile. Do not rejuvenate, redesign, genericize, or change her face. Reference 1 is primary likeness; reference 2 confirms identity. Place Mary clearly on the RIGHT half of the wide frame; leave calm uncluttered natural negative space in the LEFT third for webpage titles. Depict a fictional illustrative coaching scene, not an actual documented event. High-quality natural candid photography, realistic anatomy and hands, tasteful warm daylight, lifelike textures. Mary is the only person. No lettering, readable text, logos, watermarks, borders, collage, duplicate person, or in-image captions. \nScene: Mary tending small young green plants in terracotta pots on a sunny garden potting table. She wears a soft blue denim shirt with rolled sleeves, holding a small watering can toward a seedling, and smiles gently while looking toward the growing plants. Verdant garden and warm stone, natural shallow depth of field.",
+    "scene": "Mary tending small young green plants in terracotta pots on a sunny garden potting table. She wears a soft blue denim shirt with rolled sleeves, holding a small watering can toward a seedling, and smiles gently while looking toward the growing plants. Verdant garden and warm stone, natural shallow depth of field.",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen.imagegen",
+    "references": [
+      "C:/Users/sohai/Downloads/IMG_1872.jpg",
+      "C:/Users/sohai/OneDrive/Desktop/Mary McNutt/dist/assets/images/mary-mcnutt-original-brand-portrait.webp"
+    ],
+    "review": "Visually inspected for consistent identity, age, blonde hair, distinct clothing/action/location, right-side composition, and absence of readable titles/logos/watermarks.",
+    "editorial_note": "AI-created illustrative coaching scene."
+  },
+  {
+    "key": "stages-of-addiction",
+    "route": "/blog/stages-of-addiction/",
+    "generated_path": "C:\\Users\\sohai\\.codex\\generated_images\\01a0a9f2-5c43-7b51-a458-d3de43dc6d41\\exec-78123d8c-0dfc-4a10-b8da-cc7dfc472cc9.png",
+    "path": "C:\\Users\\sohai\\AppData\\Local\\Temp\\Mary-McNutt-Editorial-Images\\mary-stages-of-addiction.png",
+    "prompt": "Use case: photorealistic-natural, identity-preserve. Create ONE new professional editorial lifestyle photograph for Mary McNutt's coaching website, landscape 1536x1024. Input images 1 and 2 are identity reference photos of the SAME real woman, Mary: preserve her recognizable exact facial identity, age, facial proportions, grey-green eyes, long blonde hair, natural mature skin texture and smile. Do not rejuvenate, redesign, genericize, or change her face. Reference 1 is primary likeness; reference 2 confirms identity. Place Mary clearly on the RIGHT half of the wide frame; leave calm uncluttered natural negative space in the LEFT third for webpage titles. Depict a fictional illustrative coaching scene, not an actual documented event. High-quality natural candid photography, realistic anatomy and hands, tasteful warm daylight, lifelike textures. Mary is the only person. No lettering, readable text, logos, watermarks, borders, collage, duplicate person, or in-image captions. \nScene: Mary explaining a simple sequence of five completely BLANK cream cards arranged neatly on an oak coaching table. She wears a teal blazer over a white blouse; her hand gestures gently over the cards and her expression is attentive and reassuring. Bright quiet coaching studio, a subtle unmarked closed notebook, no symbols or writing on cards.",
+    "scene": "Mary explaining a simple sequence of five completely BLANK cream cards arranged neatly on an oak coaching table. She wears a teal blazer over a white blouse; her hand gestures gently over the cards and her expression is attentive and reassuring. Bright quiet coaching studio, a subtle unmarked closed notebook, no symbols or writing on cards.",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen.imagegen",
+    "references": [
+      "C:/Users/sohai/Downloads/IMG_1872.jpg",
+      "C:/Users/sohai/OneDrive/Desktop/Mary McNutt/dist/assets/images/mary-mcnutt-original-brand-portrait.webp"
+    ],
+    "review": "Visually inspected for consistent identity, age, blonde hair, distinct clothing/action/location, right-side composition, and absence of readable titles/logos/watermarks.",
+    "editorial_note": "AI-created illustrative coaching scene."
+  },
+  {
+    "key": "understanding-addiction",
+    "route": "/blog/understanding-addiction/",
+    "generated_path": "C:\\Users\\sohai\\.codex\\generated_images\\01a0a9f2-5c43-7b51-a458-d3de43dc6d41\\exec-9cb8cd0a-57aa-422c-a23b-315d6234ed67.png",
+    "path": "C:\\Users\\sohai\\AppData\\Local\\Temp\\Mary-McNutt-Editorial-Images\\mary-understanding-addiction.png",
+    "prompt": "Use case: photorealistic-natural, identity-preserve. Create ONE new professional editorial lifestyle photograph for Mary McNutt's coaching website, landscape 1536x1024. Input images 1 and 2 are identity reference photos of the SAME real woman, Mary: preserve her recognizable exact facial identity, age, facial proportions, grey-green eyes, long blonde hair, natural mature skin texture and smile. Do not rejuvenate, redesign, genericize, or change her face. Reference 1 is primary likeness; reference 2 confirms identity. Place Mary clearly on the RIGHT half of the wide frame; leave calm uncluttered natural negative space in the LEFT third for webpage titles. Depict a fictional illustrative coaching scene, not an actual documented event. High-quality natural candid photography, realistic anatomy and hands, tasteful warm daylight, lifelike textures. Mary is the only person. No lettering, readable text, logos, watermarks, borders, collage, duplicate person, or in-image captions. \nScene: Mary reading reference books with a pen in a quiet warm library. She wears a navy blouse, seated on the right side of a timber reading desk; an open book and two closed books with plain unmarked covers sit nearby. She gently rests her pen on the page and looks thoughtfully across the open book, face visible in three-quarter view. Soft shelves and window light, no legible writing on spines or pages.",
+    "scene": "Mary reading reference books with a pen in a quiet warm library. She wears a navy blouse, seated on the right side of a timber reading desk; an open book and two closed books with plain unmarked covers sit nearby. She gently rests her pen on the page and looks thoughtfully across the open book, face visible in three-quarter view. Soft shelves and window light, no legible writing on spines or pages.",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen.imagegen",
+    "references": [
+      "C:/Users/sohai/Downloads/IMG_1872.jpg",
+      "C:/Users/sohai/OneDrive/Desktop/Mary McNutt/dist/assets/images/mary-mcnutt-original-brand-portrait.webp"
+    ],
+    "review": "Visually inspected for consistent identity, age, blonde hair, distinct clothing/action/location, right-side composition, and absence of readable titles/logos/watermarks.",
+    "editorial_note": "AI-created illustrative coaching scene."
+  },
+  {
+    "key": "what-is-an-intervention",
+    "route": "/blog/what-is-an-intervention/",
+    "generated_path": "C:\\Users\\sohai\\.codex\\generated_images\\01a0a9f2-5c43-7b51-a458-d3de43dc6d41\\exec-3130e88a-e2a1-4f1a-b0f4-c4eaf0e547f0.png",
+    "path": "C:\\Users\\sohai\\AppData\\Local\\Temp\\Mary-McNutt-Editorial-Images\\mary-what-is-an-intervention.png",
+    "prompt": "Use case: photorealistic-natural, identity-preserve. Create ONE new professional editorial lifestyle photograph for Mary McNutt's coaching website, landscape 1536x1024. Input images 1 and 2 are identity reference photos of the SAME real woman, Mary: preserve her recognizable exact facial identity, age, facial proportions, grey-green eyes, long blonde hair, natural mature skin texture and smile. Do not rejuvenate, redesign, genericize, or change her face. Reference 1 is primary likeness; reference 2 confirms identity. Place Mary clearly on the RIGHT half of the wide frame; leave calm uncluttered natural negative space in the LEFT third for webpage titles. Depict a fictional illustrative coaching scene, not an actual documented event. High-quality natural candid photography, realistic anatomy and hands, tasteful warm daylight, lifelike textures. Mary is the only person. No lettering, readable text, logos, watermarks, borders, collage, duplicate person, or in-image captions. \nScene: Mary preparing a welcoming room for a supportive family meeting. She wears a muted rose jacket over a cream top, stands on the right of the frame, and thoughtfully places a closed plain notebook on one chair in a loose circle of four comfortable chairs. Bright calm community room with soft curtains and plants, spacious framing, her face clearly visible in three-quarter view. No other people.",
+    "scene": "Mary preparing a welcoming room for a supportive family meeting. She wears a muted rose jacket over a cream top, stands on the right of the frame, and thoughtfully places a closed plain notebook on one chair in a loose circle of four comfortable chairs. Bright calm community room with soft curtains and plants, spacious framing, her face clearly visible in three-quarter view. No other people.",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen.imagegen",
+    "references": [
+      "C:/Users/sohai/Downloads/IMG_1872.jpg",
+      "C:/Users/sohai/OneDrive/Desktop/Mary McNutt/dist/assets/images/mary-mcnutt-original-brand-portrait.webp"
+    ],
+    "review": "Visually inspected for consistent identity, age, blonde hair, distinct clothing/action/location, right-side composition, and absence of readable titles/logos/watermarks.",
+    "editorial_note": "AI-created illustrative coaching scene."
+  },
+  {
+    "key": "aloha-from-mumbai",
+    "route": "/blog/aloha-from-mumbai/",
+    "generated_path": "C:\\Users\\sohai\\.codex\\generated_images\\01a0a9f2-5c43-7b51-a458-d3de43dc6d41\\exec-163b062e-4c5f-48d5-a830-488c5c1176c1.png",
+    "path": "C:\\Users\\sohai\\AppData\\Local\\Temp\\Mary-McNutt-Editorial-Images\\mary-aloha-from-mumbai.png",
+    "prompt": "Use case: photorealistic-natural, identity-preserve. Create ONE new professional editorial lifestyle photograph for Mary McNutt's coaching website, landscape 1536x1024. Input images 1 and 2 are identity reference photos of the SAME real woman, Mary: preserve her recognizable exact facial identity, age, facial proportions, grey-green eyes, long blonde hair, natural mature skin texture and smile. Do not rejuvenate, redesign, genericize, or change her face. Reference 1 is primary likeness; reference 2 confirms identity. Place Mary clearly on the RIGHT half of the wide frame; leave calm uncluttered natural negative space in the LEFT third for webpage titles. Depict a fictional illustrative coaching scene, not an actual documented event. High-quality natural candid photography, realistic anatomy and hands, tasteful warm daylight, lifelike textures. Mary is the only person. No lettering, readable text, logos, watermarks, borders, collage, duplicate person, or in-image captions. \nScene: Mary reflecting with an open travel notebook on a quiet Indian garden veranda. She wears modest cream linen long sleeves and sits at a small wood table on the right, pausing with a pen while looking peacefully toward a lush tropical garden. A subtle warm sandstone arch and carved veranda railing suggest the setting without a specific landmark. This must be an AI-created editorial illustration inspired by travel and reflection, NOT historical reportage or evidence of a real trip. Photorealistic image, face clearly visible, no stereotyped props, no readable text.",
+    "scene": "Mary reflecting with an open travel notebook on a quiet Indian garden veranda. She wears modest cream linen long sleeves and sits at a small wood table on the right, pausing with a pen while looking peacefully toward a lush tropical garden. A subtle warm sandstone arch and carved veranda railing suggest the setting without a specific landmark. This must be an AI-created editorial illustration inspired by travel and reflection, NOT historical reportage or evidence of a real trip. Photorealistic image, face clearly visible, no stereotyped props, no readable text.",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen.imagegen",
+    "references": [
+      "C:/Users/sohai/Downloads/IMG_1872.jpg",
+      "C:/Users/sohai/OneDrive/Desktop/Mary McNutt/dist/assets/images/mary-mcnutt-original-brand-portrait.webp"
+    ],
+    "review": "Visually inspected for consistent identity, age, blonde hair, distinct clothing/action/location, right-side composition, and absence of readable titles/logos/watermarks.",
+    "editorial_note": "AI-created travel-inspired illustration; not a historical photograph or evidence of the trip."
+  },
+  {
+    "key": "resources",
+    "route": "/resources/",
+    "generated_path": "C:\\Users\\sohai\\.codex\\generated_images\\01a0a9f2-5c43-7b51-a458-d3de43dc6d41\\exec-fda32cad-ec9b-4cfd-bf46-5c4bec759e8f.png",
+    "path": "C:\\Users\\sohai\\AppData\\Local\\Temp\\Mary-McNutt-Editorial-Images\\mary-resources.png",
+    "prompt": "Use case: photorealistic-natural, identity-preserve. Create ONE new professional editorial lifestyle photograph for Mary McNutt's coaching website, landscape 1536x1024. Input images 1 and 2 are identity reference photos of the SAME real woman, Mary: preserve her recognizable exact facial identity, age, facial proportions, grey-green eyes, long blonde hair, natural mature skin texture and smile. Do not rejuvenate, redesign, genericize, or change her face. Reference 1 is primary likeness; reference 2 confirms identity. Place Mary clearly on the RIGHT half of the wide frame; leave calm uncluttered natural negative space in the LEFT third for webpage titles. Depict a fictional illustrative coaching scene, not an actual documented event. High-quality natural candid photography, realistic anatomy and hands, tasteful warm daylight, lifelike textures. Mary is the only person. No lettering, readable text, logos, watermarks, borders, collage, duplicate person, or in-image captions. \nScene: Mary organizing plain coaching workbooks on a light wood bookshelf in a welcoming resource room. She wears a blue cardigan over a white top and stands on the right, gently sliding one unmarked notebook into a shelf while holding two more. Her face is clearly visible in three-quarter view, friendly focused expression. Warm natural window light, uncluttered wall and a small reading chair on the left. No readable text or symbols on book covers or spines.",
+    "scene": "Mary organizing plain coaching workbooks on a light wood bookshelf in a welcoming resource room. She wears a blue cardigan over a white top and stands on the right, gently sliding one unmarked notebook into a shelf while holding two more. Her face is clearly visible in three-quarter view, friendly focused expression. Warm natural window light, uncluttered wall and a small reading chair on the left. No readable text or symbols on book covers or spines.",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen.imagegen",
+    "references": [
+      "C:/Users/sohai/Downloads/IMG_1872.jpg",
+      "C:/Users/sohai/OneDrive/Desktop/Mary McNutt/dist/assets/images/mary-mcnutt-original-brand-portrait.webp"
+    ],
+    "review": "Visually inspected for consistent identity, age, blonde hair, distinct clothing/action/location, right-side composition, and absence of readable titles/logos/watermarks.",
+    "editorial_note": "AI-created illustrative coaching scene."
+  },
+  {
+    "key": "serenity-prayer",
+    "route": "/resources/serenity-prayer/",
+    "generated_path": "C:\\Users\\sohai\\.codex\\generated_images\\01a0a9f2-5c43-7b51-a458-d3de43dc6d41\\exec-a5018e13-5b46-4e3d-aaab-0f04e4432828.png",
+    "path": "C:\\Users\\sohai\\AppData\\Local\\Temp\\Mary-McNutt-Editorial-Images\\mary-serenity-prayer.png",
+    "prompt": "Use case: photorealistic-natural, identity-preserve. Create ONE new professional editorial lifestyle photograph for Mary McNutt's coaching website, landscape 1536x1024. Input images 1 and 2 are identity reference photos of the SAME real woman, Mary: preserve her recognizable exact facial identity, age, facial proportions, grey-green eyes, long blonde hair, natural mature skin texture and smile. Do not rejuvenate, redesign, genericize, or change her face. Reference 1 is primary likeness; reference 2 confirms identity. Place Mary clearly on the RIGHT half of the wide frame; leave calm uncluttered natural negative space in the LEFT third for webpage titles. Depict a fictional illustrative coaching scene, not an actual documented event. High-quality natural candid photography, realistic anatomy and hands, tasteful warm daylight, lifelike textures. Mary is the only person. No lettering, readable text, logos, watermarks, borders, collage, duplicate person, or in-image captions. \nScene: Mary peacefully reflecting in a quiet coastal garden overlooking a soft distant blue ocean. She wears a soft green blouse and sits on the right end of a natural wooden bench, relaxed hands resting gently on her lap and her face turned slightly toward the light, eyes softly open. Coastal grasses, a few pale flowers and a calm horizon form the left-side negative space. Gentle natural morning daylight, contemplative and hopeful, no religious props or other people.",
+    "scene": "Mary peacefully reflecting in a quiet coastal garden overlooking a soft distant blue ocean. She wears a soft green blouse and sits on the right end of a natural wooden bench, relaxed hands resting gently on her lap and her face turned slightly toward the light, eyes softly open. Coastal grasses, a few pale flowers and a calm horizon form the left-side negative space. Gentle natural morning daylight, contemplative and hopeful, no religious props or other people.",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen.imagegen",
+    "references": [
+      "C:/Users/sohai/Downloads/IMG_1872.jpg",
+      "C:/Users/sohai/OneDrive/Desktop/Mary McNutt/dist/assets/images/mary-mcnutt-original-brand-portrait.webp"
+    ],
+    "review": "Visually inspected for consistent identity, age, blonde hair, distinct clothing/action/location, right-side composition, and absence of readable titles/logos/watermarks.",
+    "editorial_note": "AI-created illustrative coaching scene."
+  },
+  {
+    "key": "the-12-steps",
+    "route": "/resources/the-12-steps/",
+    "generated_path": "C:\\Users\\sohai\\.codex\\generated_images\\01a0a9f2-5c43-7b51-a458-d3de43dc6d41\\exec-7695a237-a8b3-40f6-bafd-556268a21345.png",
+    "path": "C:\\Users\\sohai\\AppData\\Local\\Temp\\Mary-McNutt-Editorial-Images\\mary-the-12-steps.png",
+    "prompt": "Use case: photorealistic-natural, identity-preserve. Create ONE new professional editorial lifestyle photograph for Mary McNutt's coaching website, landscape 1536x1024. Input images 1 and 2 are identity reference photos of the SAME real woman, Mary: preserve her recognizable exact facial identity, age, facial proportions, grey-green eyes, long blonde hair, natural mature skin texture and smile. Do not rejuvenate, redesign, genericize, or change her face. Reference 1 is primary likeness; reference 2 confirms identity. Place Mary clearly on the RIGHT half of the wide frame; leave calm uncluttered natural negative space in the LEFT third for webpage titles. Depict a fictional illustrative coaching scene, not an actual documented event. High-quality natural candid photography, realistic anatomy and hands, tasteful warm daylight, lifelike textures. Mary is the only person. No lettering, readable text, logos, watermarks, borders, collage, duplicate person, or in-image captions. \nScene: Mary writing in a recovery reflection journal on a rustic timber table in a peaceful bright garden room. She wears a lavender blouse and sits on the right, pen in one hand, the other gently holding the open notebook flat. Her face is clearly visible in three-quarter view as she pauses thoughtfully, looking toward the journal. One simple ceramic cup, a smooth pebble and soft morning light. Keep all notebook pages unmarked or indistinct with no readable words. This is a reflective writing scene, not a treatment claim.",
+    "scene": "Mary writing in a recovery reflection journal on a rustic timber table in a peaceful bright garden room. She wears a lavender blouse and sits on the right, pen in one hand, the other gently holding the open notebook flat. Her face is clearly visible in three-quarter view as she pauses thoughtfully, looking toward the journal. One simple ceramic cup, a smooth pebble and soft morning light. Keep all notebook pages unmarked or indistinct with no readable words. This is a reflective writing scene, not a treatment claim.",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen.imagegen",
+    "references": [
+      "C:/Users/sohai/Downloads/IMG_1872.jpg",
+      "C:/Users/sohai/OneDrive/Desktop/Mary McNutt/dist/assets/images/mary-mcnutt-original-brand-portrait.webp"
+    ],
+    "review": "Visually inspected for consistent identity, age, blonde hair, distinct clothing/action/location, right-side composition, and absence of readable titles/logos/watermarks.",
+    "editorial_note": "AI-created illustrative coaching scene."
+  },
+  {
+    "key": "the-twelve-traditions",
+    "route": "/resources/the-twelve-traditions/",
+    "generated_path": "C:\\Users\\sohai\\.codex\\generated_images\\01a0a9f2-5c43-7b51-a458-d3de43dc6d41\\exec-dabd3951-d131-4cc2-8faf-f2cd54d673aa.png",
+    "path": "C:\\Users\\sohai\\AppData\\Local\\Temp\\Mary-McNutt-Editorial-Images\\mary-the-twelve-traditions.png",
+    "prompt": "Use case: photorealistic-natural, identity-preserve. Create ONE new professional editorial lifestyle photograph for Mary McNutt's coaching website, landscape 1536x1024. Input images 1 and 2 are identity reference photos of the SAME real woman, Mary: preserve her recognizable exact facial identity, age, facial proportions, grey-green eyes, long blonde hair, natural mature skin texture and smile. Do not rejuvenate, redesign, genericize, or change her face. Reference 1 is primary likeness; reference 2 confirms identity. Place Mary clearly on the RIGHT half of the wide frame; leave calm uncluttered natural negative space in the LEFT third for webpage titles. Depict a fictional illustrative coaching scene, not an actual documented event. High-quality natural candid photography, realistic anatomy and hands, tasteful warm daylight, lifelike textures. Mary is the only person. No lettering, readable text, logos, watermarks, borders, collage, duplicate person, or in-image captions. \nScene: Mary preparing a welcoming community meeting room, arranging natural wooden chairs and placing plain closed notebooks on their seats. She wears an olive jacket over a soft neutral blouse and stands on the right side of the wide scene with one hand lightly on the back of a chair and a small stack of notebooks in the other, her face fully visible in three-quarter view. A spacious quiet room, timber floor, a loose circle of simple chairs, linen curtains, window light, no other people, no posters or signs, no readable text.",
+    "scene": "Mary preparing a welcoming community meeting room, arranging natural wooden chairs and placing plain closed notebooks on their seats. She wears an olive jacket over a soft neutral blouse and stands on the right side of the wide scene with one hand lightly on the back of a chair and a small stack of notebooks in the other, her face fully visible in three-quarter view. A spacious quiet room, timber floor, a loose circle of simple chairs, linen curtains, window light, no other people, no posters or signs, no readable text.",
+    "width": 1536,
+    "height": 1024,
+    "tool": "built-in image_gen.imagegen",
+    "references": [
+      "C:/Users/sohai/Downloads/IMG_1872.jpg",
+      "C:/Users/sohai/OneDrive/Desktop/Mary McNutt/dist/assets/images/mary-mcnutt-original-brand-portrait.webp"
+    ],
+    "review": "Visually inspected for consistent identity, age, blonde hair, distinct clothing/action/location, right-side composition, and absence of readable titles/logos/watermarks.",
+    "editorial_note": "AI-created illustrative coaching scene."
+  }
+]

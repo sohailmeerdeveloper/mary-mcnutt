@@ -1,0 +1,35 @@
+{
+  "checked_at": "2026-09-16",
+  "scope": "Visible or potentially visible static anchor hrefs in 39 dist HTML files; excluded metadata, image URLs, schema, and non-http protocols from external HTTP check.",
+  "summary": {
+    "html_pages": 39,
+    "unique_external_urls": 3,
+    "internal_fragment_links": 126,
+    "missing_internal_links": 0,
+    "broken_internal_fragments": 0,
+    "confirmed_broken_external_urls": 0,
+    "externals_verified": 2,
+    "externals_unverified": 1
+  },
+  "external_results": [
+    {
+      "url": "https://www.openstreetmap.org/#map=10/20.85/-156.43",
+      "status": "verified_reachable",
+      "evidence": "web.open returned OpenStreetMap page content. JavaScript map position was not inspected."
+    },
+    {
+      "url": "https://www.openstreetmap.org/copyright",
+      "status": "verified_reachable",
+      "evidence": "web.open returned Copyright and License page."
+    },
+    {
+      "url": "https://www.facebook.com/goldilockswisdom",
+      "status": "unverified",
+      "evidence": "web.open with and without trailing slash returned cache miss; exact-domain search found no results. Direct HTTP was prevented by environment socket permissions (WinError 10013). No evidence to label broken, login-gated or bot-restricted.",
+      "occurrences": 38
+    }
+  ],
+  "login_or_bot_restriction": "None confirmed.",
+  "mutations": "None; no forms sent and Site checkout untouched.",
+  "inventory_path": "C:/Users/sohai/AppData/Local/Temp/mary-link-inventory.json"
+}

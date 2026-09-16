@@ -1,0 +1,650 @@
+[
+  {
+    "route": "/about/",
+    "images": [
+      {
+        "key": "about",
+        "src": "/assets/images/mary-ai-about-1536.webp"
+      },
+      {
+        "key": "life-reflection",
+        "src": "/assets/images/mary-ai-life-reflection-1536.webp"
+      },
+      {
+        "key": "center-for-excellence",
+        "src": "/assets/images/mary-ai-center-for-excellence-1536.webp"
+      },
+      {
+        "key": "beautiful-transformation",
+        "src": "/assets/images/mary-ai-beautiful-transformation-1536.webp"
+      },
+      {
+        "key": "personal-development-business-growth",
+        "src": "/assets/images/mary-ai-personal-development-business-growth-1536.webp"
+      },
+      {
+        "key": "sober-companion-services",
+        "src": "/assets/images/mary-ai-sober-companion-services-1536.webp"
+      },
+      {
+        "key": "family-coaching",
+        "src": "/assets/images/mary-ai-family-coaching-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/blog/aloha-from-mumbai/",
+    "images": [
+      {
+        "key": "aloha-from-mumbai",
+        "src": "/assets/images/mary-ai-aloha-from-mumbai-1536.webp"
+      },
+      {
+        "key": "life-reflection",
+        "src": "/assets/images/mary-ai-life-reflection-1536.webp"
+      },
+      {
+        "key": "beautiful-transformation",
+        "src": "/assets/images/mary-ai-beautiful-transformation-1536.webp"
+      },
+      {
+        "key": "what-is-an-intervention",
+        "src": "/assets/images/mary-ai-what-is-an-intervention-1536.webp"
+      },
+      {
+        "key": "stages-of-addiction",
+        "src": "/assets/images/mary-ai-stages-of-addiction-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/blog/beautiful-transformation/",
+    "images": [
+      {
+        "key": "beautiful-transformation",
+        "src": "/assets/images/mary-ai-beautiful-transformation-1536.webp"
+      },
+      {
+        "key": "life-reflection",
+        "src": "/assets/images/mary-ai-life-reflection-1536.webp"
+      },
+      {
+        "key": "what-is-an-intervention",
+        "src": "/assets/images/mary-ai-what-is-an-intervention-1536.webp"
+      },
+      {
+        "key": "stages-of-addiction",
+        "src": "/assets/images/mary-ai-stages-of-addiction-1536.webp"
+      },
+      {
+        "key": "aloha-from-mumbai",
+        "src": "/assets/images/mary-ai-aloha-from-mumbai-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/blog/",
+    "images": [
+      {
+        "key": "blog",
+        "src": "/assets/images/mary-ai-blog-1536.webp"
+      },
+      {
+        "key": "beautiful-transformation",
+        "src": "/assets/images/mary-ai-beautiful-transformation-1536.webp"
+      },
+      {
+        "key": "what-is-an-intervention",
+        "src": "/assets/images/mary-ai-what-is-an-intervention-1536.webp"
+      },
+      {
+        "key": "stages-of-addiction",
+        "src": "/assets/images/mary-ai-stages-of-addiction-1536.webp"
+      },
+      {
+        "key": "aloha-from-mumbai",
+        "src": "/assets/images/mary-ai-aloha-from-mumbai-1536.webp"
+      },
+      {
+        "key": "understanding-addiction",
+        "src": "/assets/images/mary-ai-understanding-addiction-1536.webp"
+      },
+      {
+        "key": "about",
+        "src": "/assets/images/mary-ai-about-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/blog/stages-of-addiction/",
+    "images": [
+      {
+        "key": "stages-of-addiction",
+        "src": "/assets/images/mary-ai-stages-of-addiction-1536.webp"
+      },
+      {
+        "key": "relapse-prevention",
+        "src": "/assets/images/mary-ai-relapse-prevention-1536.webp"
+      },
+      {
+        "key": "process-addictions",
+        "src": "/assets/images/mary-ai-process-addictions-1536.webp"
+      },
+      {
+        "key": "beautiful-transformation",
+        "src": "/assets/images/mary-ai-beautiful-transformation-1536.webp"
+      },
+      {
+        "key": "what-is-an-intervention",
+        "src": "/assets/images/mary-ai-what-is-an-intervention-1536.webp"
+      },
+      {
+        "key": "aloha-from-mumbai",
+        "src": "/assets/images/mary-ai-aloha-from-mumbai-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/blog/understanding-addiction/",
+    "images": [
+      {
+        "key": "understanding-addiction",
+        "src": "/assets/images/mary-ai-understanding-addiction-1536.webp"
+      },
+      {
+        "key": "drug-prevention-classes",
+        "src": "/assets/images/mary-ai-drug-prevention-classes-1536.webp"
+      },
+      {
+        "key": "sober-companion-services",
+        "src": "/assets/images/mary-ai-sober-companion-services-1536.webp"
+      },
+      {
+        "key": "beautiful-transformation",
+        "src": "/assets/images/mary-ai-beautiful-transformation-1536.webp"
+      },
+      {
+        "key": "what-is-an-intervention",
+        "src": "/assets/images/mary-ai-what-is-an-intervention-1536.webp"
+      },
+      {
+        "key": "stages-of-addiction",
+        "src": "/assets/images/mary-ai-stages-of-addiction-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/blog/what-is-an-intervention/",
+    "images": [
+      {
+        "key": "what-is-an-intervention",
+        "src": "/assets/images/mary-ai-what-is-an-intervention-1536.webp"
+      },
+      {
+        "key": "interventions",
+        "src": "/assets/images/mary-ai-interventions-1536.webp"
+      },
+      {
+        "key": "beautiful-transformation",
+        "src": "/assets/images/mary-ai-beautiful-transformation-1536.webp"
+      },
+      {
+        "key": "stages-of-addiction",
+        "src": "/assets/images/mary-ai-stages-of-addiction-1536.webp"
+      },
+      {
+        "key": "aloha-from-mumbai",
+        "src": "/assets/images/mary-ai-aloha-from-mumbai-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/center-for-excellence/",
+    "images": [
+      {
+        "key": "center-for-excellence",
+        "src": "/assets/images/mary-ai-center-for-excellence-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/coaching/",
+    "images": [
+      {
+        "key": "coaching",
+        "src": "/assets/images/mary-ai-coaching-1536.webp"
+      },
+      {
+        "key": "contact",
+        "src": "/assets/images/mary-ai-contact-1536.webp"
+      },
+      {
+        "key": "life-reflection",
+        "src": "/assets/images/mary-ai-life-reflection-1536.webp"
+      },
+      {
+        "key": "personal-development-business-growth",
+        "src": "/assets/images/mary-ai-personal-development-business-growth-1536.webp"
+      },
+      {
+        "key": "resources",
+        "src": "/assets/images/mary-ai-resources-1536.webp"
+      },
+      {
+        "key": "relapse-prevention",
+        "src": "/assets/images/mary-ai-relapse-prevention-1536.webp"
+      },
+      {
+        "key": "womens-issues",
+        "src": "/assets/images/mary-ai-womens-issues-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/contact/",
+    "images": [
+      {
+        "key": "contact",
+        "src": "/assets/images/mary-ai-contact-1536.webp"
+      },
+      {
+        "key": "about",
+        "src": "/assets/images/mary-ai-about-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/disclaimer/",
+    "images": []
+  },
+  {
+    "route": "/",
+    "images": [
+      {
+        "key": "life-reflection",
+        "src": "/assets/images/mary-ai-life-reflection-1536.webp"
+      },
+      {
+        "key": "personal-development-business-growth",
+        "src": "/assets/images/mary-ai-personal-development-business-growth-1536.webp"
+      },
+      {
+        "key": "family-coaching",
+        "src": "/assets/images/mary-ai-family-coaching-1536.webp"
+      },
+      {
+        "key": "relapse-prevention",
+        "src": "/assets/images/mary-ai-relapse-prevention-1536.webp"
+      },
+      {
+        "key": "about",
+        "src": "/assets/images/mary-ai-about-1536.webp"
+      },
+      {
+        "key": "womens-issues",
+        "src": "/assets/images/mary-ai-womens-issues-1536.webp"
+      },
+      {
+        "key": "beautiful-transformation",
+        "src": "/assets/images/mary-ai-beautiful-transformation-1536.webp"
+      },
+      {
+        "key": "what-is-an-intervention",
+        "src": "/assets/images/mary-ai-what-is-an-intervention-1536.webp"
+      },
+      {
+        "key": "stages-of-addiction",
+        "src": "/assets/images/mary-ai-stages-of-addiction-1536.webp"
+      },
+      {
+        "key": "center-for-excellence",
+        "src": "/assets/images/mary-ai-center-for-excellence-1536.webp"
+      },
+      {
+        "key": "relationship-grief-trauma",
+        "src": "/assets/images/mary-ai-relationship-grief-trauma-1536.webp"
+      },
+      {
+        "key": "resources",
+        "src": "/assets/images/mary-ai-resources-1536.webp"
+      },
+      {
+        "key": "financial-disorder",
+        "src": "/assets/images/mary-ai-financial-disorder-1536.webp"
+      },
+      {
+        "key": "conflict-resolution",
+        "src": "/assets/images/mary-ai-conflict-resolution-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/pricing/",
+    "images": [
+      {
+        "key": "pricing",
+        "src": "/assets/images/mary-ai-pricing-1536.webp"
+      },
+      {
+        "key": "beautiful-transformation",
+        "src": "/assets/images/mary-ai-beautiful-transformation-1536.webp"
+      },
+      {
+        "key": "personal-development-business-growth",
+        "src": "/assets/images/mary-ai-personal-development-business-growth-1536.webp"
+      },
+      {
+        "key": "sober-companion-services",
+        "src": "/assets/images/mary-ai-sober-companion-services-1536.webp"
+      },
+      {
+        "key": "family-coaching",
+        "src": "/assets/images/mary-ai-family-coaching-1536.webp"
+      },
+      {
+        "key": "center-for-excellence",
+        "src": "/assets/images/mary-ai-center-for-excellence-1536.webp"
+      },
+      {
+        "key": "about",
+        "src": "/assets/images/mary-ai-about-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/privacy-policy/",
+    "images": []
+  },
+  {
+    "route": "/resources/",
+    "images": [
+      {
+        "key": "resources",
+        "src": "/assets/images/mary-ai-resources-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/resources/serenity-prayer/",
+    "images": [
+      {
+        "key": "serenity-prayer",
+        "src": "/assets/images/mary-ai-serenity-prayer-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/resources/the-12-steps/",
+    "images": [
+      {
+        "key": "the-12-steps",
+        "src": "/assets/images/mary-ai-the-12-steps-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/resources/the-twelve-traditions/",
+    "images": [
+      {
+        "key": "the-twelve-traditions",
+        "src": "/assets/images/mary-ai-the-twelve-traditions-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/services/compulsive-shopping/",
+    "images": [
+      {
+        "key": "compulsive-shopping",
+        "src": "/assets/images/mary-ai-compulsive-shopping-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/services/conflict-resolution/",
+    "images": [
+      {
+        "key": "conflict-resolution",
+        "src": "/assets/images/mary-ai-conflict-resolution-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/services/couples-intensive-coaching/",
+    "images": [
+      {
+        "key": "couples-intensive-coaching",
+        "src": "/assets/images/mary-ai-couples-intensive-coaching-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/services/drug-prevention-classes/",
+    "images": [
+      {
+        "key": "drug-prevention-classes",
+        "src": "/assets/images/mary-ai-drug-prevention-classes-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/services/eating-disorders/",
+    "images": [
+      {
+        "key": "eating-disorders",
+        "src": "/assets/images/mary-ai-eating-disorders-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/services/family-coaching/",
+    "images": [
+      {
+        "key": "family-coaching",
+        "src": "/assets/images/mary-ai-family-coaching-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/services/family-of-origin-healing/",
+    "images": [
+      {
+        "key": "family-of-origin-healing",
+        "src": "/assets/images/mary-ai-family-of-origin-healing-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/services/financial-disorder/",
+    "images": [
+      {
+        "key": "financial-disorder",
+        "src": "/assets/images/mary-ai-financial-disorder-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/services/grief-and-loss/",
+    "images": [
+      {
+        "key": "grief-and-loss",
+        "src": "/assets/images/mary-ai-grief-and-loss-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/services/",
+    "images": [
+      {
+        "key": "services",
+        "src": "/assets/images/mary-ai-services-1536.webp"
+      },
+      {
+        "key": "personal-development-business-growth",
+        "src": "/assets/images/mary-ai-personal-development-business-growth-1536.webp"
+      },
+      {
+        "key": "sober-companion-services",
+        "src": "/assets/images/mary-ai-sober-companion-services-1536.webp"
+      },
+      {
+        "key": "family-of-origin-healing",
+        "src": "/assets/images/mary-ai-family-of-origin-healing-1536.webp"
+      },
+      {
+        "key": "relapse-prevention",
+        "src": "/assets/images/mary-ai-relapse-prevention-1536.webp"
+      },
+      {
+        "key": "drug-prevention-classes",
+        "src": "/assets/images/mary-ai-drug-prevention-classes-1536.webp"
+      },
+      {
+        "key": "conflict-resolution",
+        "src": "/assets/images/mary-ai-conflict-resolution-1536.webp"
+      },
+      {
+        "key": "grief-and-loss",
+        "src": "/assets/images/mary-ai-grief-and-loss-1536.webp"
+      },
+      {
+        "key": "relationship-grief-trauma",
+        "src": "/assets/images/mary-ai-relationship-grief-trauma-1536.webp"
+      },
+      {
+        "key": "parenting-support",
+        "src": "/assets/images/mary-ai-parenting-support-1536.webp"
+      },
+      {
+        "key": "family-coaching",
+        "src": "/assets/images/mary-ai-family-coaching-1536.webp"
+      },
+      {
+        "key": "couples-intensive-coaching",
+        "src": "/assets/images/mary-ai-couples-intensive-coaching-1536.webp"
+      },
+      {
+        "key": "eating-disorders",
+        "src": "/assets/images/mary-ai-eating-disorders-1536.webp"
+      },
+      {
+        "key": "compulsive-shopping",
+        "src": "/assets/images/mary-ai-compulsive-shopping-1536.webp"
+      },
+      {
+        "key": "trauma-resolution",
+        "src": "/assets/images/mary-ai-trauma-resolution-1536.webp"
+      },
+      {
+        "key": "financial-disorder",
+        "src": "/assets/images/mary-ai-financial-disorder-1536.webp"
+      },
+      {
+        "key": "process-addictions",
+        "src": "/assets/images/mary-ai-process-addictions-1536.webp"
+      },
+      {
+        "key": "problem-compulsive-gambling",
+        "src": "/assets/images/mary-ai-problem-compulsive-gambling-1536.webp"
+      },
+      {
+        "key": "womens-issues",
+        "src": "/assets/images/mary-ai-womens-issues-1536.webp"
+      },
+      {
+        "key": "interventions",
+        "src": "/assets/images/mary-ai-interventions-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/services/interventions/",
+    "images": [
+      {
+        "key": "interventions",
+        "src": "/assets/images/mary-ai-interventions-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/services/parenting-support/",
+    "images": [
+      {
+        "key": "parenting-support",
+        "src": "/assets/images/mary-ai-parenting-support-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/services/personal-development-business-growth/",
+    "images": [
+      {
+        "key": "personal-development-business-growth",
+        "src": "/assets/images/mary-ai-personal-development-business-growth-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/services/problem-compulsive-gambling/",
+    "images": [
+      {
+        "key": "problem-compulsive-gambling",
+        "src": "/assets/images/mary-ai-problem-compulsive-gambling-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/services/process-addictions/",
+    "images": [
+      {
+        "key": "process-addictions",
+        "src": "/assets/images/mary-ai-process-addictions-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/services/relapse-prevention/",
+    "images": [
+      {
+        "key": "relapse-prevention",
+        "src": "/assets/images/mary-ai-relapse-prevention-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/services/relationship-grief-trauma/",
+    "images": [
+      {
+        "key": "relationship-grief-trauma",
+        "src": "/assets/images/mary-ai-relationship-grief-trauma-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/services/sober-companion-services/",
+    "images": [
+      {
+        "key": "sober-companion-services",
+        "src": "/assets/images/mary-ai-sober-companion-services-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/services/trauma-resolution/",
+    "images": [
+      {
+        "key": "trauma-resolution",
+        "src": "/assets/images/mary-ai-trauma-resolution-1536.webp"
+      }
+    ]
+  },
+  {
+    "route": "/services/womens-issues/",
+    "images": [
+      {
+        "key": "womens-issues",
+        "src": "/assets/images/mary-ai-womens-issues-1536.webp"
+      }
+    ]
+  }
+]

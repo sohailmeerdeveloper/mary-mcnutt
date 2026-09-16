@@ -1,0 +1,89 @@
+{
+  "mode": "built-in image_gen",
+  "references": [
+    "C:/Users/sohai/Downloads/IMG_1872.jpg",
+    "C:/Users/sohai/OneDrive/Desktop/Mary McNutt/dist/assets/images/mary-mcnutt-original-brand-portrait.webp"
+  ],
+  "assets": [
+    {
+      "key": "interventions",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape editorial photograph for Mary McNutt's coaching website, 1536x1024 landscape 3:2 composition. Create one fictional illustrative coaching scene, not evidence of an actual client encounter. Input images: Image 1 is the PRIMARY identity reference, real Mary McNutt close-up; Image 2 is a supporting older brand portrait reference only. Identity must faithfully match Image 1: same distinctive face, natural mature age and real facial lines, facial proportions, light eyes, pale blonde hair with side part and shoulder-length volume. Do not de-age, beautify or replace with a generic model. Photoreal editorial camera capture, natural skin texture, realistic hands and anatomy, soft real daylight, believable candid interaction, understated professional warmth. Mary is the clear main subject at center-right, head fully inside the frame, enough room for a central portrait crop, left third quieter for optional website text overlay. Keep all text out of the rendered image: no writing, logos, watermarks or graphics. Scene: Mary facilitates a supportive circle of four adults in a quietly elegant sitting room. Mary sits on the right in a navy blazer over a high-neck cream blouse, gently speaking with one open hand and attentive eye contact; other adults listen naturally, seen mainly from back or side. An unoccupied area of warm neutral wall and a softly blurred chair occupy the left. No distress, confrontation or medical equipment.",
+      "path": "C:\\Users\\sohai\\.codex\\generated_images\\01a0a9f3-a4f0-7cd2-af1b-aafa085c2321\\exec-0efb559a-1fa2-4ced-a0ee-cec88580e26a.png",
+      "width": 1536,
+      "height": 1024,
+      "reviewed": true
+    },
+    {
+      "key": "sober-companion-services",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape editorial photograph for Mary McNutt's coaching website, 1536x1024 landscape 3:2 composition. Create one fictional illustrative coaching scene, not evidence of an actual client encounter. Input images: Image 1 is the PRIMARY identity reference, real Mary McNutt close-up; Image 2 is a supporting older brand portrait reference only. Identity must faithfully match Image 1: same distinctive face, natural mature age and real facial lines, facial proportions, light eyes, pale blonde hair with side part and shoulder-length volume. Do not de-age, beautify or replace with a generic model. Photoreal editorial camera capture, natural skin texture, realistic hands and anatomy, soft real daylight, believable candid interaction, understated professional warmth. Mary is the clear main subject at center-right, head fully inside the frame, enough room for a central portrait crop, left third quieter for optional website text overlay. Keep all text out of the rendered image: no writing, logos, watermarks or graphics. Scene: Mary walks alongside one adult woman on a leafy park path, conversing with calm companionship. Mary is at center-right wearing a muted sage long-sleeve jacket and cream trousers, natural mid-stride movement, gaze toward her companion. Soft morning foliage and path receding into distance on the left, realistic walking poses.",
+      "path": "C:\\Users\\sohai\\.codex\\generated_images\\01a0a9f3-a4f0-7cd2-af1b-aafa085c2321\\exec-ffbecef8-d5d5-4d69-924c-3b3d82a91ee9.png",
+      "width": 1536,
+      "height": 1024,
+      "reviewed": true
+    },
+    {
+      "key": "relapse-prevention",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape editorial photograph for Mary McNutt's coaching website, 1536x1024 landscape 3:2 composition. Create one fictional illustrative coaching scene, not evidence of an actual client encounter. Input images: Image 1 is the PRIMARY identity reference, real Mary McNutt close-up; Image 2 is a supporting older brand portrait reference only. Identity must faithfully match Image 1: same distinctive face, natural mature age and real facial lines, facial proportions, light eyes, pale blonde hair with side part and shoulder-length volume. Do not de-age, beautify or replace with a generic model. Photoreal editorial camera capture, natural skin texture, realistic hands and anatomy, soft real daylight, believable candid interaction, understated professional warmth. Mary is the clear main subject at center-right, head fully inside the frame, enough room for a central portrait crop, left third quieter for optional website text overlay. Keep all text out of the rendered image: no writing, logos, watermarks or graphics. Scene: Mary helps an adult man plan a sustainable daily routine at a light oak table in an airy room. Mary at center-right wears a dusty blue buttoned blouse and a charcoal cardigan, looking attentively at her companion as she lightly indicates an open plain planner with a pen. Side view, understated indoor plants, blank wall and daylight space to left. Planner has only indistinct non-readable marks.",
+      "path": "C:\\Users\\sohai\\.codex\\generated_images\\01a0a9f3-a4f0-7cd2-af1b-aafa085c2321\\exec-829fc22a-dddc-4bf1-ae74-b44e6087d764.png",
+      "width": 1536,
+      "height": 1024,
+      "reviewed": true
+    },
+    {
+      "key": "process-addictions",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape editorial photograph for Mary McNutt's coaching website, 1536x1024 landscape 3:2 composition. Create one fictional illustrative coaching scene, not evidence of an actual client encounter. Input images: Image 1 is the PRIMARY identity reference, real Mary McNutt close-up; Image 2 is a supporting older brand portrait reference only. Identity must faithfully match Image 1: same distinctive face, natural mature age and real facial lines, facial proportions, light eyes, pale blonde hair with side part and shoulder-length volume. Do not de-age, beautify or replace with a generic model. Photoreal editorial camera capture, natural skin texture, realistic hands and anatomy, soft real daylight, believable candid interaction, understated professional warmth. Mary is the clear main subject at center-right, head fully inside the frame, enough room for a central portrait crop, left third quieter for optional website text overlay. Keep all text out of the rendered image: no writing, logos, watermarks or graphics. Scene: Mary sits at a simple wooden desk discussing habits with an adult woman, one face-down phone and an open habit journal on the table. Mary at center-right wears a muted burgundy long-sleeve blouse with high neckline, her hand resting beside the notebook, thoughtful attentive expression. Soft afternoon light, warm beige room, quiet uncluttered left background. No visible screens or readable writing.",
+      "path": "C:\\Users\\sohai\\.codex\\generated_images\\01a0a9f3-a4f0-7cd2-af1b-aafa085c2321\\exec-ff430fc2-db4a-4ac2-b43e-1db7222a90ef.png",
+      "width": 1536,
+      "height": 1024,
+      "reviewed": true
+    },
+    {
+      "key": "problem-compulsive-gambling",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape editorial photograph for Mary McNutt's coaching website, 1536x1024 landscape 3:2 composition. Create one fictional illustrative coaching scene, not evidence of an actual client encounter. Input images: Image 1 is the PRIMARY identity reference, real Mary McNutt close-up; Image 2 is a supporting older brand portrait reference only. Identity must faithfully match Image 1: same distinctive face, natural mature age and real facial lines, facial proportions, light eyes, pale blonde hair with side part and shoulder-length volume. Do not de-age, beautify or replace with a generic model. Photoreal editorial camera capture, natural skin texture, realistic hands and anatomy, soft real daylight, believable candid interaction, understated professional warmth. Mary is the clear main subject at center-right, head fully inside the frame, enough room for a central portrait crop, left third quieter for optional website text overlay. Keep all text out of the rendered image: no writing, logos, watermarks or graphics. Scene: Mary helps an adult man review a neutral spending worksheet at a table in a bright private coaching office. Mary at center-right in a cream tailored blazer and sage high-neck blouse, supportive focused expression, natural three-quarter view. Simple pages have faint non-readable grid lines, pen and mug. Soft left background, no casino, no betting, no money piles or distress.",
+      "path": "C:\\Users\\sohai\\.codex\\generated_images\\01a0a9f3-a4f0-7cd2-af1b-aafa085c2321\\exec-76804923-45cd-4a16-b7a4-f9845d192e0d.png",
+      "width": 1536,
+      "height": 1024,
+      "reviewed": true
+    },
+    {
+      "key": "compulsive-shopping",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape editorial photograph for Mary McNutt's coaching website, 1536x1024 landscape 3:2 composition. Create one fictional illustrative coaching scene, not evidence of an actual client encounter. Input images: Image 1 is the PRIMARY identity reference, real Mary McNutt close-up; Image 2 is a supporting older brand portrait reference only. Identity must faithfully match Image 1: same distinctive face, natural mature age and real facial lines, facial proportions, light eyes, pale blonde hair with side part and shoulder-length volume. Do not de-age, beautify or replace with a generic model. Photoreal editorial camera capture, natural skin texture, realistic hands and anatomy, soft real daylight, believable candid interaction, understated professional warmth. Mary is the clear main subject at center-right, head fully inside the frame, enough room for a central portrait crop, left third quieter for optional website text overlay. Keep all text out of the rendered image: no writing, logos, watermarks or graphics. Scene: Mary discusses mindful spending with an adult woman over a plain notebook at a round oak table. Mary at center-right in a soft slate-blue long-sleeve knit top, gently listening, one relaxed hand on notebook. Two unbranded plain kraft shopping bags sit discreetly in soft-focus background beside a chair; warm modern sitting room, broad uncluttered left background.",
+      "path": "C:\\Users\\sohai\\.codex\\generated_images\\01a0a9f3-a4f0-7cd2-af1b-aafa085c2321\\exec-ac8b2973-ef34-40c9-ac80-91d1c3244d3f.png",
+      "width": 1536,
+      "height": 1024,
+      "reviewed": true
+    },
+    {
+      "key": "financial-disorder",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape editorial photograph for Mary McNutt's coaching website, 1536x1024 landscape 3:2 composition. Create one fictional illustrative coaching scene, not evidence of an actual client encounter. Input images: Image 1 is the PRIMARY identity reference, real Mary McNutt close-up; Image 2 is a supporting older brand portrait reference only. Identity must faithfully match Image 1: same distinctive face, natural mature age and real facial lines, facial proportions, light eyes, pale blonde hair with side part and shoulder-length volume. Do not de-age, beautify or replace with a generic model. Photoreal editorial camera capture, natural skin texture, realistic hands and anatomy, soft real daylight, believable candid interaction, understated professional warmth. Mary is the clear main subject at center-right, head fully inside the frame, enough room for a central portrait crop, left third quieter for optional website text overlay. Keep all text out of the rendered image: no writing, logos, watermarks or graphics. Scene: Mary at a tidy desk with calculator and plain closed binder, engaged in a calm conversation with an adult companion seen mostly from behind at frame edge. Mary center-right wears a forest green cardigan over a cream high-neck blouse. Natural window light, realistic paper texture, tasteful home office, simple neutral wall on the left. Documents have no readable text, no currency.",
+      "path": "C:\\Users\\sohai\\.codex\\generated_images\\01a0a9f3-a4f0-7cd2-af1b-aafa085c2321\\exec-66cd7928-bcfe-4724-b7d0-e3e6324e8a95.png",
+      "width": 1536,
+      "height": 1024,
+      "reviewed": true
+    },
+    {
+      "key": "eating-disorders",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape editorial photograph for Mary McNutt's coaching website, 1536x1024 landscape 3:2 composition. Create one fictional illustrative coaching scene, not evidence of an actual client encounter. Input images: Image 1 is the PRIMARY identity reference, real Mary McNutt close-up; Image 2 is a supporting older brand portrait reference only. Identity must faithfully match Image 1: same distinctive face, natural mature age and real facial lines, facial proportions, light eyes, pale blonde hair with side part and shoulder-length volume. Do not de-age, beautify or replace with a generic model. Photoreal editorial camera capture, natural skin texture, realistic hands and anatomy, soft real daylight, believable candid interaction, understated professional warmth. Mary is the clear main subject at center-right, head fully inside the frame, enough room for a central portrait crop, left third quieter for optional website text overlay. Keep all text out of the rendered image: no writing, logos, watermarks or graphics. Scene: Mary listening warmly to an adult woman in a quiet comfortable sitting room, sitting in a cream armchair angled toward her companion, hands relaxed together. Mary at center-right wears a modest muted rose blouse with long sleeves and charcoal trousers. Soft daylight, calm empathetic expression, subtle indoor plant, pale uncluttered left background. No food, no scales, no weight or body-size imagery, no medical imagery.",
+      "path": "C:\\Users\\sohai\\.codex\\generated_images\\01a0a9f3-a4f0-7cd2-af1b-aafa085c2321\\exec-06ae8eb2-1e63-4ae4-a5ad-45ddf0fd0937.png",
+      "width": 1536,
+      "height": 1024,
+      "reviewed": true
+    },
+    {
+      "key": "drug-prevention-classes",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape editorial photograph for Mary McNutt's coaching website, 1536x1024 landscape 3:2 composition. Create one fictional illustrative coaching scene, not evidence of an actual client encounter. Input images: Image 1 is the PRIMARY identity reference, real Mary McNutt close-up; Image 2 is a supporting older brand portrait reference only. Identity must faithfully match Image 1: same distinctive face, natural mature age and real facial lines, facial proportions, light eyes, pale blonde hair with side part and shoulder-length volume. Do not de-age, beautify or replace with a generic model. Photoreal editorial camera capture, natural skin texture, realistic hands and anatomy, soft real daylight, believable candid interaction, understated professional warmth. Mary is the clear main subject at center-right, head fully inside the frame, enough room for a central portrait crop, left third quieter for optional website text overlay. Keep all text out of the rendered image: no writing, logos, watermarks or graphics. Scene: Mary teaches a small group of four adults in a welcoming classroom, seen slightly obliquely. Mary stands at center-right in a tailored navy jacket and soft blue high-neck blouse, gesturing lightly as she speaks; adults are seated at tables, predominantly back or partial profile views. Blank whiteboard behind, daylight from large windows and a quiet open wall area toward the left. No readable writing, drugs, substances or paraphernalia.",
+      "path": "C:\\Users\\sohai\\.codex\\generated_images\\01a0a9f3-a4f0-7cd2-af1b-aafa085c2321\\exec-0bc64a5c-db4a-4c99-b35d-d3212a1714f5.png",
+      "width": 1536,
+      "height": 1024,
+      "reviewed": true
+    },
+    {
+      "key": "trauma-resolution",
+      "prompt": "Use case: photorealistic-natural. Asset type: landscape editorial photograph for Mary McNutt's coaching website, 1536x1024 landscape 3:2 composition. Create one fictional illustrative coaching scene, not evidence of an actual client encounter. Input images: Image 1 is the PRIMARY identity reference, real Mary McNutt close-up; Image 2 is a supporting older brand portrait reference only. Identity must faithfully match Image 1: same distinctive face, natural mature age and real facial lines, facial proportions, light eyes, pale blonde hair with side part and shoulder-length volume. Do not de-age, beautify or replace with a generic model. Photoreal editorial camera capture, natural skin texture, realistic hands and anatomy, soft real daylight, believable candid interaction, understated professional warmth. Mary is the clear main subject at center-right, head fully inside the frame, enough room for a central portrait crop, left third quieter for optional website text overlay. Keep all text out of the rendered image: no writing, logos, watermarks or graphics. Scene: Mary guides a calm grounding exercise alongside an adult woman seated in a peaceful room. Mary at center-right wears a warm oatmeal long-sleeve cardigan and muted teal high-neck blouse, both people have feet grounded and hands resting relaxed on their own knees, Mary watching gently with supportive composure. Soft natural light, understated pale wood and linen textures, quiet left background. No touch, no dramatic emotion, no medical imagery.",
+      "path": "C:\\Users\\sohai\\.codex\\generated_images\\01a0a9f3-a4f0-7cd2-af1b-aafa085c2321\\exec-16077741-edfc-4ebd-b32d-bf749c8ed0c6.png",
+      "width": 1536,
+      "height": 1024,
+      "reviewed": true
+    }
+  ]
+}

@@ -1,0 +1,386 @@
+[
+  {
+    "route": "/about/",
+    "title": "About Mary McNutt | Life & Business Coach",
+    "h1": "Meet Mary McNutt, Your Life & Business Coach",
+    "description": "Meet Mary McNutt, M.A., and explore the experience and personal philosophy behind her life, business, family, and recovery coaching.",
+    "keywords": [
+      "Mary McNutt coach",
+      "life and business coach"
+    ]
+  },
+  {
+    "route": "/coaching/",
+    "title": "Life & Business Coaching Programs | Mary McNutt",
+    "h1": "Life & Business Coaching for Meaningful Change",
+    "description": "Explore personalized life, business, personal development, and recovery coaching with Mary McNutt. Learn how a coaching plan supports your next steps.",
+    "keywords": [
+      "life coaching programs",
+      "business coaching",
+      "personal development coaching"
+    ]
+  },
+  {
+    "route": "/services/",
+    "title": "Life, Business & Recovery Coaching | Mary McNutt",
+    "h1": "Life, Business & Recovery Coaching Services",
+    "description": "Find coaching for personal growth, business goals, relationships, family life, and recovery. Explore Mary McNutt's areas of support.",
+    "keywords": [
+      "coaching services",
+      "life coaching",
+      "recovery coaching"
+    ]
+  },
+  {
+    "route": "/center-for-excellence/",
+    "title": "Center for Excellence Life Coaching | Mary McNutt",
+    "h1": "Transformational Life Coaching at the Center for Excellence",
+    "description": "Explore the Center for Excellence approach to personal growth, purposeful change, business development, and recovery support with Mary McNutt.",
+    "keywords": [
+      "transformational life coaching",
+      "Center for Excellence"
+    ]
+  },
+  {
+    "route": "/contact/",
+    "title": "Free Life Coaching Consultation | Mary McNutt",
+    "h1": "Start with a Free Coaching Consultation",
+    "description": "Contact Mary McNutt to discuss life coaching, business goals, recovery support, or family concerns and find a coaching approach that fits your needs.",
+    "keywords": [
+      "coaching consultation",
+      "contact life coach"
+    ]
+  },
+  {
+    "route": "/pricing/",
+    "title": "Life & Business Coaching Rates | Mary McNutt",
+    "h1": "Coaching Rates & Personalized Options",
+    "description": "Explore Mary McNutt's life, business, and recovery coaching rates, payment information, and personalized options. Start with a free consultation.",
+    "keywords": [
+      "life coaching rates",
+      "business coaching cost"
+    ]
+  },
+  {
+    "route": "/blog/",
+    "title": "Life Coaching & Recovery Insights | Mary McNutt Blog",
+    "h1": "Life Coaching, Personal Growth & Recovery Insights",
+    "description": "Read Mary McNutt's reflections on personal growth, addiction recovery, relationships, and purposeful change, with ideas to support your next step.",
+    "keywords": [
+      "life coaching blog",
+      "personal growth",
+      "recovery insights"
+    ]
+  },
+  {
+    "route": "/blog/aloha-from-mumbai/",
+    "title": "Purpose & Recovery: Reflections from Mumbai | Mary McNutt",
+    "h1": "Purpose, Service & Recovery: Reflections from Mumbai",
+    "description": "Read Mary McNutt's reflections from Mumbai on the personal calling behind her work in recovery, healing, and service to others.",
+    "keywords": [
+      "purpose and recovery",
+      "recovery reflections"
+    ]
+  },
+  {
+    "route": "/blog/beautiful-transformation/",
+    "title": "Personal Growth & Transformation | Mary McNutt",
+    "h1": "Personal Growth: A Beautiful Transformation",
+    "description": "Explore Mary McNutt's reflections on transformation, self-awareness, and the gradual changes that support personal growth and a more authentic life.",
+    "keywords": [
+      "personal growth",
+      "personal transformation"
+    ]
+  },
+  {
+    "route": "/blog/stages-of-addiction/",
+    "title": "Stages of Addiction & Recovery Awareness | Mary McNutt",
+    "h1": "Understanding the Stages of Addiction",
+    "description": "Read an introduction to the stages of addiction, patterns that may signal growing concern, and the importance of seeking professional support.",
+    "keywords": [
+      "stages of addiction",
+      "addiction awareness"
+    ]
+  },
+  {
+    "route": "/blog/understanding-addiction/",
+    "title": "Understanding Addiction & Recovery | Mary McNutt",
+    "h1": "Understanding Addiction & the Path to Recovery",
+    "description": "Learn how addiction can affect behavior, relationships, and daily life, and explore the role of professional treatment and ongoing recovery support.",
+    "keywords": [
+      "understanding addiction",
+      "addiction recovery"
+    ]
+  },
+  {
+    "route": "/blog/what-is-an-intervention/",
+    "title": "What Is an Addiction Intervention? | Mary McNutt",
+    "h1": "What Is an Addiction Intervention?",
+    "description": "Learn what an addiction intervention is, how families can prepare for a respectful conversation, and why professional guidance matters.",
+    "keywords": [
+      "what is an intervention",
+      "addiction intervention"
+    ]
+  },
+  {
+    "route": "/resources/",
+    "title": "Recovery Coaching Resources & Support | Mary McNutt",
+    "h1": "Resources for Recovery, Family Support & Personal Growth",
+    "description": "Explore recovery education, the 12 Steps, the Serenity Prayer, family support, and practical resources selected for Mary McNutt's coaching community.",
+    "keywords": [
+      "recovery resources",
+      "recovery coaching resources"
+    ]
+  },
+  {
+    "route": "/resources/serenity-prayer/",
+    "title": "Serenity Prayer for Recovery | Mary McNutt Resources",
+    "h1": "The Serenity Prayer: A Resource for Recovery",
+    "description": "Read the Serenity Prayer and reflect on acceptance, courage, and the next steps within your control as part of a personal recovery practice.",
+    "keywords": [
+      "Serenity Prayer",
+      "recovery reflection"
+    ]
+  },
+  {
+    "route": "/resources/the-12-steps/",
+    "title": "The 12 Steps of AA | Mary McNutt Recovery Resources",
+    "h1": "The 12 Steps of AA: A Recovery Resource",
+    "description": "Read the 12 Steps of Alcoholics Anonymous and explore a recovery resource focused on reflection, accountability, and ongoing personal change.",
+    "keywords": [
+      "12 steps of AA",
+      "recovery resources"
+    ]
+  },
+  {
+    "route": "/resources/the-twelve-traditions/",
+    "title": "The 12 Traditions of AA | Mary McNutt Resources",
+    "h1": "The 12 Traditions of AA: Community & Recovery",
+    "description": "Read the Twelve Traditions of Alcoholics Anonymous, a resource on shared principles, group unity, and the fellowship's approach to recovery.",
+    "keywords": [
+      "12 traditions of AA",
+      "AA recovery resources"
+    ]
+  },
+  {
+    "route": "/services/compulsive-shopping/",
+    "title": "Compulsive Shopping Support & Coaching | Mary McNutt",
+    "h1": "Coaching Support for Compulsive Shopping",
+    "description": "Explore coaching support for compulsive shopping, emotional spending patterns, and everyday accountability with Mary McNutt.",
+    "keywords": [
+      "compulsive shopping support",
+      "emotional spending"
+    ]
+  },
+  {
+    "route": "/services/conflict-resolution/",
+    "title": "Conflict Resolution Coaching | Mary McNutt",
+    "h1": "Conflict Resolution Coaching for Clearer Communication",
+    "description": "Build communication skills and explore constructive ways to handle disagreements in family, personal, and professional life with Mary McNutt.",
+    "keywords": [
+      "conflict resolution coaching",
+      "communication coaching"
+    ]
+  },
+  {
+    "route": "/services/couples-intensive-coaching/",
+    "title": "Couples Coaching & Relationship Intensives | Mary McNutt",
+    "h1": "Couples Coaching for Communication & Connection",
+    "description": "Explore focused couples coaching with Mary McNutt to work on communication, relationship patterns, shared goals, and practical next steps together.",
+    "keywords": [
+      "couples coaching",
+      "relationship coaching",
+      "couples intensive"
+    ]
+  },
+  {
+    "route": "/services/drug-prevention-classes/",
+    "title": "Drug Prevention Education & Classes | Mary McNutt",
+    "h1": "Drug Prevention Education for Informed Choices",
+    "description": "Explore drug prevention education with Mary McNutt, including substance-use awareness, communication, and informed choices for individuals and families.",
+    "keywords": [
+      "drug prevention classes",
+      "substance use education"
+    ]
+  },
+  {
+    "route": "/services/eating-disorders/",
+    "title": "Eating Disorder Recovery Support | Mary McNutt",
+    "h1": "Coaching Support Alongside Eating Disorder Recovery",
+    "description": "Explore supportive coaching conversations around eating disorder recovery, daily challenges, and accountability alongside appropriate professional care.",
+    "keywords": [
+      "eating disorder recovery support",
+      "recovery coaching"
+    ]
+  },
+  {
+    "route": "/services/family-coaching/",
+    "title": "Family Coaching & Communication Support | Mary McNutt",
+    "h1": "Family Coaching for Stronger Communication",
+    "description": "Work with Mary McNutt on family communication, boundaries, changing roles, and shared goals through personalized family coaching and support.",
+    "keywords": [
+      "family coaching",
+      "family communication",
+      "family support"
+    ]
+  },
+  {
+    "route": "/services/family-of-origin-healing/",
+    "title": "Family of Origin Coaching & Support | Mary McNutt",
+    "h1": "Family of Origin Coaching for New Relationship Patterns",
+    "description": "Explore how early family experiences shape present-day patterns and work toward clearer boundaries and more intentional relationships with Mary McNutt.",
+    "keywords": [
+      "family of origin coaching",
+      "relationship patterns",
+      "boundaries"
+    ]
+  },
+  {
+    "route": "/services/financial-disorder/",
+    "title": "Money Habits & Financial Behavior Coaching | Mary McNutt",
+    "h1": "Coaching for Money Habits & Financial Stress",
+    "description": "Explore the emotions and habits behind financial stress, spending, and money-related relationships through supportive coaching with Mary McNutt.",
+    "keywords": [
+      "money habits coaching",
+      "financial behavior",
+      "financial stress"
+    ]
+  },
+  {
+    "route": "/services/grief-and-loss/",
+    "title": "Grief & Loss Coaching | Mary McNutt",
+    "h1": "Grief & Loss Coaching Through Life's Changes",
+    "description": "Find space to reflect on grief, changing roles, and life after loss. Explore personalized coaching support with Mary McNutt at your own pace.",
+    "keywords": [
+      "grief and loss coaching",
+      "life transitions",
+      "grief support"
+    ]
+  },
+  {
+    "route": "/services/interventions/",
+    "title": "Addiction Intervention & Family Support | Mary McNutt",
+    "h1": "Addiction Intervention Guidance for Families",
+    "description": "Explore intervention guidance with Mary McNutt, including family preparation, respectful communication, and connections to appropriate recovery support.",
+    "keywords": [
+      "addiction intervention",
+      "family intervention support"
+    ]
+  },
+  {
+    "route": "/services/parenting-support/",
+    "title": "Parent Coaching & Parenting Support | Mary McNutt",
+    "h1": "Parent Coaching for Everyday Family Challenges",
+    "description": "Explore parenting support with Mary McNutt to work on communication, family routines, boundaries, and the challenges of raising children.",
+    "keywords": [
+      "parent coaching",
+      "parenting support",
+      "family boundaries"
+    ]
+  },
+  {
+    "route": "/services/personal-development-business-growth/",
+    "title": "Personal Development & Business Coaching | Mary McNutt",
+    "h1": "Personal Development & Business Coaching for Your Next Step",
+    "description": "Align your personal goals and business direction with Mary McNutt through coaching focused on self-awareness, practical planning, and follow-through.",
+    "keywords": [
+      "personal development coaching",
+      "business coaching",
+      "business growth"
+    ]
+  },
+  {
+    "route": "/services/problem-compulsive-gambling/",
+    "title": "Problem Gambling Recovery Support | Mary McNutt",
+    "h1": "Coaching Support for Problem Gambling Recovery",
+    "description": "Explore support for gambling-related concerns, relationship strain, and recovery goals with Mary McNutt, alongside appropriate specialist care.",
+    "keywords": [
+      "problem gambling support",
+      "gambling recovery support"
+    ]
+  },
+  {
+    "route": "/services/process-addictions/",
+    "title": "Behavioral Addiction Recovery Support | Mary McNutt",
+    "h1": "Coaching Support for Behavioral & Process Addictions",
+    "description": "Explore coaching support for behavioral and process addiction concerns, everyday patterns, and recovery goals with Mary McNutt.",
+    "keywords": [
+      "behavioral addiction support",
+      "process addiction",
+      "recovery coaching"
+    ]
+  },
+  {
+    "route": "/services/relapse-prevention/",
+    "title": "Relapse Prevention Coaching & Support | Mary McNutt",
+    "h1": "Relapse Prevention Coaching for Everyday Recovery",
+    "description": "Work on recovery routines, recognize personal triggers, and build practical accountability through relapse prevention coaching with Mary McNutt.",
+    "keywords": [
+      "relapse prevention coaching",
+      "recovery routines",
+      "recovery support"
+    ]
+  },
+  {
+    "route": "/services/relationship-grief-trauma/",
+    "title": "Relationship & Life Transition Coaching | Mary McNutt",
+    "h1": "Relationship Coaching Through Grief & Life Changes",
+    "description": "Explore coaching for relationship changes, grief, and the effects of difficult experiences, with support for communication and personal goals.",
+    "keywords": [
+      "relationship coaching",
+      "life transition coaching",
+      "grief support"
+    ]
+  },
+  {
+    "route": "/services/sober-companion-services/",
+    "title": "Sober Companion & Recovery Support | Mary McNutt",
+    "h1": "Sober Companion Support for Daily Recovery",
+    "description": "Explore sober companion support with Mary McNutt for daily structure, accountability, and the transition from treatment into everyday life.",
+    "keywords": [
+      "sober companion services",
+      "sober support",
+      "recovery coaching"
+    ]
+  },
+  {
+    "route": "/services/trauma-resolution/",
+    "title": "Coaching Support After Trauma | Mary McNutt",
+    "h1": "Supportive Coaching After Difficult Experiences",
+    "description": "Explore coaching focused on present-day goals, personal strengths, and everyday support after difficult experiences, alongside appropriate clinical care.",
+    "keywords": [
+      "coaching after trauma",
+      "personal resilience",
+      "trauma support"
+    ]
+  },
+  {
+    "route": "/services/womens-issues/",
+    "title": "Life Coaching for Women | Mary McNutt",
+    "h1": "Life Coaching for Women, Confidence & Change",
+    "description": "Explore life coaching with Mary McNutt for women navigating changing roles, personal goals, boundaries, confidence, and meaningful life decisions.",
+    "keywords": [
+      "life coaching for women",
+      "confidence coaching",
+      "life transitions"
+    ]
+  },
+  {
+    "route": "/privacy-policy/",
+    "title": "Privacy Policy | Mary McNutt Coaching",
+    "h1": "Privacy Policy for Mary McNutt Coaching",
+    "description": "Read how MaryMcNutt.com describes the collection and handling of information submitted through the coaching website.",
+    "keywords": [
+      "Mary McNutt privacy policy"
+    ]
+  },
+  {
+    "route": "/disclaimer/",
+    "title": "Website & Coaching Disclaimer | Mary McNutt",
+    "h1": "Website & Coaching Disclaimer",
+    "description": "Read the disclaimer for MaryMcNutt.com, including information about the purpose and limitations of website content and coaching resources.",
+    "keywords": [
+      "Mary McNutt disclaimer"
+    ]
+  }
+]

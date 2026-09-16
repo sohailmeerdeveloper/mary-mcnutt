@@ -1,8 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://marymcnutt.com/</loc><lastmod>2026-09-14</lastmod>
-    <image:image><image:loc>https://marymcnutt.com/assets/images/mary-mcnutt-life-business-coach-1920.webp</image:loc></image:image>
-    <image:image><image:loc>https://marymcnutt.com/assets/images/mary-mcnutt-coaching-philosophy-1920.webp</image:loc></image:image>
-    <image:image><image:loc>https://marymcnutt.com/assets/images/mary-mcnutt-consultation-1920.webp</image:loc></image:image>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://marymcnutt.com/about/</loc></url>
+  <url><loc>https://marymcnutt.com/blog/aloha-from-mumbai/</loc></url>
+  <url><loc>https://marymcnutt.com/blog/beautiful-transformation/</loc></url>
+  <url><loc>https://marymcnutt.com/blog/</loc></url>
+  <url><loc>https://marymcnutt.com/blog/stages-of-addiction/</loc></url>
+  <url><loc>https://marymcnutt.com/blog/understanding-addiction/</loc></url>
+  <url><loc>https://marymcnutt.com/blog/what-is-an-intervention/</loc></url>
+  <url><loc>https://marymcnutt.com/center-for-excellence/</loc></url>
+  <url><loc>https://marymcnutt.com/coaching/</loc></url>
+  <url><loc>https://marymcnutt.com/contact/</loc></url>
+  <url><loc>https://marymcnutt.com/disclaimer/</loc></url>
+  <url><loc>https://marymcnutt.com/</loc></url>
+  <url><loc>https://marymcnutt.com/pricing/</loc></url>
+  <url><loc>https://marymcnutt.com/privacy-policy/</loc></url>
+  <url><loc>https://marymcnutt.com/resources/</loc></url>
+  <url><loc>https://marymcnutt.com/resources/serenity-prayer/</loc></url>
+  <url><loc>https://marymcnutt.com/resources/the-12-steps/</loc></url>
+  <url><loc>https://marymcnutt.com/resources/the-twelve-traditions/</loc></url>
+  <url><loc>https://marymcnutt.com/services/compulsive-shopping/</loc></url>
+  <url><loc>https://marymcnutt.com/services/conflict-resolution/</loc></url>
+  <url><loc>https://marymcnutt.com/services/couples-intensive-coaching/</loc></url>
+  <url><loc>https://marymcnutt.com/services/drug-prevention-classes/</loc></url>
+  <url><loc>https://marymcnutt.com/services/eating-disorders/</loc></url>
+  <url><loc>https://marymcnutt.com/services/family-coaching/</loc></url>
+  <url><loc>https://marymcnutt.com/services/family-of-origin-healing/</loc></url>
+  <url><loc>https://marymcnutt.com/services/financial-disorder/</loc></url>
+  <url><loc>https://marymcnutt.com/services/grief-and-loss/</loc></url>
+  <url><loc>https://marymcnutt.com/services/</loc></url>
+  <url><loc>https://marymcnutt.com/services/interventions/</loc></url>
+  <url><loc>https://marymcnutt.com/services/parenting-support/</loc></url>
+  <url><loc>https://marymcnutt.com/services/personal-development-business-growth/</loc></url>
+  <url><loc>https://marymcnutt.com/services/problem-compulsive-gambling/</loc></url>
+  <url><loc>https://marymcnutt.com/services/process-addictions/</loc></url>
+  <url><loc>https://marymcnutt.com/services/relapse-prevention/</loc></url>
+  <url><loc>https://marymcnutt.com/services/relationship-grief-trauma/</loc></url>
+  <url><loc>https://marymcnutt.com/services/sober-companion-services/</loc></url>
+  <url><loc>https://marymcnutt.com/services/trauma-resolution/</loc></url>
+  <url><loc>https://marymcnutt.com/services/womens-issues/</loc></url>
 </urlset>
