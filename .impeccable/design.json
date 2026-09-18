@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-14T11:55:23.881Z",
+  "generatedAt": "2026-09-14T16:38:23.923Z",
   "title": "Design System: Mary McNutt",
   "extensions": {
     "colorMeta": {
@@ -120,7 +120,7 @@
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "Hero headline base; mobile has a separate compact size."
+        "purpose": "Homepage and panoramic interior hero titles; mobile uses compact sizes."
       },
       "headline": {
         "displayName": "Headline",
@@ -128,7 +128,7 @@
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Light card and content titles; related sizes adapt by context."
+        "purpose": "Light card, process-step, program, and content titles; related sizes adapt by context."
       },
       "body": {
         "displayName": "Body",
@@ -201,6 +201,10 @@
         "value": "540px"
       },
       {
+        "name": "interior-narrow-phone",
+        "value": "420px"
+      },
+      {
         "name": "narrow-phone",
         "value": "370px"
       }
@@ -255,11 +259,28 @@
       "css": ".ds-button{display:inline-flex;align-items:center;justify-content:center;gap:18px;padding:16px 27px;min-height:48px;line-height:1.2;font-family:var(--body,'Nunito Sans',Arial,sans-serif);font-size:14px;font-weight:900;text-transform:uppercase;text-decoration:none;border:2px solid transparent;border-radius:0;cursor:pointer;transition:background-color .2s ease,color .2s ease,border-color .2s ease}.ds-button:focus-visible{outline:3px solid #1962ad;outline-offset:5px}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}.ds-service{background:var(--panel,#12845a);color:var(--white,#fff);display:flex;flex-direction:column;align-items:flex-start;padding:clamp(30px,3vw,58px);min-height:350px;font-family:var(--body,'Nunito Sans',Arial,sans-serif)}.ds-service h2{margin:0;font-family:var(--heading,Roboto,Arial,sans-serif);font-weight:100;font-size:clamp(25px,2.05vw,39px);letter-spacing:-.025em;line-height:1.2}.ds-service p{font-size:16px;line-height:1.5;margin:26px 0 32px}.ds-service-action{margin-top:auto;background:var(--white,#fff);color:var(--forest,#052e28);font-size:12px;padding:13px 19px;min-height:44px}.ds-service-action:hover{background:var(--mint,#86efac)}"
     },
     {
-      "name": "Inline Action",
+      "name": "Interior Hero",
       "kind": "custom",
-      "description": "Underlined green action with the shipped inline SVG arrow.",
-      "html": "<a class=\"ds-text-link\" href=\"#credentials\">Explore Mary’s credentials <svg class=\"ds-arrow\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15m-6-6 6 6-6 6\"/></svg></a>",
-      "css": ".ds-text-link{display:inline-flex;align-items:center;gap:14px;color:var(--green,#13734f);border-bottom:1px solid currentColor;font-family:var(--body,'Nunito Sans',Arial,sans-serif);font-size:14px;font-weight:700;text-decoration:none;line-height:1.65}.ds-text-link:focus-visible{outline:3px solid #1962ad;outline-offset:5px}.ds-arrow{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none;vertical-align:middle}"
+      "refersTo": "interior-hero",
+      "description": "Panoramic interior-page opening with a forest-protected lower-left breadcrumb, display title, and concise introduction.",
+      "html": "<section class=\"ds-interior-hero\"><div><p class=\"ds-breadcrumb\"><a href=\"#\">Home</a><span aria-hidden=\"true\">/</span> Coaching</p><h1>Coaching Plan</h1><p>Personalized structure, honest conversation, and practical action for meaningful change.</p></div></section>",
+      "css": ".ds-interior-hero{min-height:300px;display:flex;align-items:flex-end;padding:42px clamp(24px,8vw,90px);background:linear-gradient(90deg,rgba(5,46,40,.96),rgba(5,46,40,.64) 55%,rgba(5,46,40,.28)),var(--forest,#052e28);color:var(--white,#fff);font-family:var(--body,'Nunito Sans',Arial,sans-serif)}.ds-interior-hero>div{max-width:710px}.ds-breadcrumb{display:flex;align-items:center;gap:10px;margin:0 0 16px;font-size:13px;line-height:1.2;font-weight:800;text-transform:uppercase}.ds-breadcrumb a{color:inherit;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.5)}.ds-breadcrumb a:hover{border-color:var(--white,#fff)}.ds-breadcrumb a:focus-visible{outline:3px solid #1962ad;outline-offset:5px}.ds-interior-hero h1{margin:0;font-family:var(--heading,Roboto,Arial,sans-serif);font-size:clamp(50px,7vw,78px);font-weight:100;line-height:1.14;letter-spacing:-.035em}.ds-interior-hero h1+p{margin:18px 0 0;font-size:18px;line-height:1.55;color:var(--white,#fff)}"
+    },
+    {
+      "name": "Coaching Process Step",
+      "kind": "card",
+      "refersTo": "pale-card",
+      "description": "One square step from the alternating desktop and stacked mobile coaching sequence.",
+      "html": "<article class=\"ds-process-step\"><header><span>Step 1</span><h3>Start with your story</h3></header><div><p>A confidential consultation begins with your goals, challenges, and vision.</p><ul><li>Clarify what brings you to coaching</li><li>Discuss the change you want to make</li></ul><a href=\"#\">Request a consultation</a></div></article>",
+      "css": ".ds-process-step{background:var(--pale,#f0f3f0);color:var(--text,#303c37);border-radius:0;font-family:var(--body,'Nunito Sans',Arial,sans-serif);max-width:460px}.ds-process-step header{background:var(--panel,#12845a);color:var(--white,#fff);padding:16px 22px 18px}.ds-process-step header span{display:block;color:var(--white,#fff);font-size:11px;font-weight:900;line-height:1.2;text-transform:uppercase}.ds-process-step h3{margin:4px 0 0;font-family:var(--heading,Roboto,Arial,sans-serif);font-size:30px;font-weight:100;line-height:1.15}.ds-process-step>div{padding:24px 25px 28px}.ds-process-step p{margin:0;font-size:15px;line-height:1.6}.ds-process-step ul{margin:19px 0 24px;padding:0;list-style:none}.ds-process-step li{position:relative;margin-top:7px;padding-left:18px;font-size:14px;line-height:1.55}.ds-process-step li:before{content:'';position:absolute;left:0;top:.65em;width:6px;height:6px;background:var(--green,#13734f)}.ds-process-step a{display:inline-flex;padding:13px 19px;background:var(--green,#13734f);color:var(--white,#fff);font-size:11px;font-weight:900;line-height:1.2;text-transform:uppercase;text-decoration:none}.ds-process-step a:hover{background:var(--forest,#052e28)}.ds-process-step a:focus-visible{outline:3px solid #1962ad;outline-offset:5px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "form-field",
+      "description": "Square coaching-contact field with a fine sage border and explicit blue focus outline.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-name\">Your name</label><input id=\"ds-name\" type=\"text\" placeholder=\"Mary Smith\"></div>",
+      "css": ".ds-field{display:flex;flex-direction:column;gap:7px;font-family:var(--body,'Nunito Sans',Arial,sans-serif)}.ds-field label{color:var(--forest,#052e28);font-size:13px;font-weight:800;line-height:1.4}.ds-field input{width:100%;min-height:48px;padding:13px 14px;border:1px solid #ccd8cf;border-radius:0;background:var(--white,#fff);color:var(--text,#303c37);font:inherit}.ds-field input:focus{outline:3px solid #1962ad;outline-offset:2px;border-color:transparent}"
     },
     {
       "name": "Testimonial Selector",
@@ -271,18 +292,24 @@
   ],
   "narrative": {
     "northStar": "The Personal Coaching Editorial",
-    "overview": "Mary's visual world combines personal, welcoming photography with restrained editorial typography. Thin headings leave room for conversation; bold phrases give the reader an immediate point of emphasis. White space, natural imagery, and green panels create a calm but confident public coaching presence.\n\nThe user-supplied Celeste desktop and mobile compositions establish the homepage's visual authority, while Center for Excellence supplies the green identity. Preserve Mary's likeness in any portrait work. The shipped system uses broad photographic areas, square surfaces, and deliberate overlaps; it does not depend on a conventional rounded application-card aesthetic.",
+    "overview": "Mary's visual world combines personal, welcoming photography with restrained editorial typography. Thin headings leave room for conversation; bold phrases give the reader an immediate point of emphasis. White space, natural imagery, and green panels create a calm but confident public coaching presence.\n\nThe user-supplied Celeste desktop and mobile compositions establish the site's visual authority, while Center for Excellence supplies the green identity. The homepage expresses that world through broad portrait compositions and overlap; the About and Coaching pages extend it with panoramic photographic heroes, structured editorial grids, and sequential storytelling. Preserve Mary's likeness in any portrait work. The shipped system uses square surfaces and deliberate spatial relationships; it does not depend on a conventional rounded application-card aesthetic.",
     "keyCharacteristics": [
       "Personal photography with open space for readable copy.",
       "Hairline Roboto headings with bold, colored emphasis.",
       "Nunito Sans paragraphs and compact, decisive action labels.",
       "White editorial space alternating with solid green surfaces.",
-      "Square panels and controlled photographic overlaps."
+      "Square panels and controlled photographic overlaps.",
+      "Panoramic interior heroes and structured grids that become a clear mobile reading sequence."
     ],
     "rules": [
       {
         "name": "The Surface Pairing Rule",
         "body": "Use green emphasis against white or pale backgrounds; use white and mint for hierarchy on green panels. Carry each complete pairing when reusing a component.",
+        "section": "colors"
+      },
+      {
+        "name": "The Readable Reverse Type Rule",
+        "body": "On Panel Green, set body copy, labels, metadata, compact headings, and other small reverse text in White. Reserve Mint for large display hierarchy and decorative accents; never use it where the smaller text would lose WCAG contrast.",
         "section": "colors"
       },
       {
@@ -296,6 +323,11 @@
         "section": "layout"
       },
       {
+        "name": "The Sequential Collapse Rule",
+        "body": "Alternating desktop narratives must become one continuous, source-ordered column on mobile. Keep the line and markers as orientation aids, never as a reason to squeeze content into two narrow columns.",
+        "section": "layout"
+      },
+      {
         "name": "The Flat Resting Surface Rule",
         "body": "Keep ordinary editorial cards flat at rest. Reserve shadows for the existing raised, overlay, and interactive roles.",
         "section": "elevation"
@@ -306,12 +338,16 @@
       "Do carry the complete light-surface or green-surface color pairing when reusing a component.",
       "Do maintain the light-heading and bold-phrase relationship with the locally hosted Roboto font.",
       "Do keep square buttons and panels, generous reading space, and the documented mobile reading order.",
+      "Do keep small reverse text white on Panel Green and use Mint only for large display hierarchy or decorative accents.",
+      "Do preserve the center-rail alternation on desktop and the source-ordered left-rail timeline on mobile.",
       "Do preserve visible keyboard focus, reduced-motion handling, and explicit labels on icon controls."
     ],
     "donts": [
       "Don't replace the established green identity with an unrelated accent system.",
       "Don't apply pill shapes, rounded cards, or hard offset shadows to the editorial surface vocabulary.",
       "Don't carry desktop portrait crops and negative overlaps unchanged onto narrow screens.",
+      "Don't use Mint for small body copy, metadata, compact headings, or labels on Panel Green.",
+      "Don't compress an alternating timeline into two narrow mobile columns or reorder steps for visual symmetry.",
       "Don't turn the existing small promotional eyebrows or text-character icons into reusable house styles; use meaningful headings and inline SVG where the role needs an icon."
     ]
   }
