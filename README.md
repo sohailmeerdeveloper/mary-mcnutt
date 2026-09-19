@@ -2,6 +2,8 @@
 
 Plain HTML, CSS, and a small vanilla JavaScript file. No React, package installation, or compilation is needed.
 
+The September 19, 2026 release adds a private Supabase-backed Website Studio at `/admin/`. Administrators can edit public text, buttons, and pictures directly on each page; append title, subheading, text, image, and button blocks; maintain a media library; and draft or publish articles with live preview. The public site remains a complete static fallback when CMS data is unavailable.
+
 The September 16, 2026 refresh adds 36 page-specific AI scenes, researched titles for every interior page, circular number animations, and accessible scroll entrances. See `research/REFRESH-2026-09-16.md` for scope and verification. `dist/` is the authoritative authored site; the earlier migration/build scripts must not be rerun over it. The inquiry forms open an email draft and include a copyable fallback; they do not send from a server.
 
 ## Files
@@ -19,6 +21,10 @@ The September 16, 2026 refresh adds 36 page-specific AI scenes, researched title
 - `dist/privacy-policy/`, `dist/disclaimer/` — locally hosted legal pages.
 - `dist/assets/styles.css` — green theme and desktop/mobile layout.
 - `dist/assets/site.js` — mobile navigation and testimonial controls.
+- `dist/admin/` — authenticated Pages, Media, and Blog dashboard.
+- `dist/assets/cms.js` — public content hydration and inline visual editor.
+- `dist/blog/post/` — reusable route for newly published CMS articles.
+- `supabase/migrations/20260919000000_cms.sql` — idempotent CMS schema, RLS policies, and page seed.
 - `dist/assets/images/` — optimized local photos and map.
 - `dist/assets/fonts/` — self-hosted Roboto and Nunito Sans.
 - `dist/robots.txt`, `dist/sitemap.xml`, `dist/llms.txt` — discovery files for the intended canonical domain.
@@ -29,6 +35,8 @@ The September 16, 2026 refresh adds 36 page-specific AI scenes, researched title
 ## Local preview
 
 From this directory, run `node scripts/serve.mjs`, then open `http://127.0.0.1:4173`. All published files are inside `dist/`. Run `node --check dist/assets/site.js` and the Python `scripts/validate.py` script to check the static deliverable.
+
+Before first use of Website Studio, run the SQL migration in the supplied Supabase project's SQL Editor. The publishable key is safe to ship and lives in `dist/assets/cms-config.js`; the secret key is never committed or sent to the browser.
 
 ## Scope and launch
 

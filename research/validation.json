@@ -1,9 +1,9 @@
 {
   "checks": "All indexable pages, local links and anchors, image decoding and dimensions, fonts, one H1 per page, JSON-LD, canonicals, robots, and sitemap",
-  "pages": 38,
+  "pages": 40,
   "issues": [],
-  "local_references": 122,
-  "images": 196,
+  "local_references": 128,
+  "images": 202,
   "schema_nodes": 87,
-  "public_bytes": 7321357
+  "public_bytes": 7397987
 }

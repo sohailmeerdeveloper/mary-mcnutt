@@ -10,9 +10,11 @@ root = Path(__file__).resolve().parents[1]
 dist = root / 'dist'
 page_files = sorted(dist.glob('**/index.html'))
 expected_canonicals = {}
+non_indexable_routes = {'admin', 'blog/post'}
 for page_file in page_files:
     route = page_file.parent.relative_to(dist).as_posix()
-    expected_canonicals[page_file] = 'https://marymcnutt.com/' if route == '.' else f'https://marymcnutt.com/{route}/'
+    if route not in non_indexable_routes:
+        expected_canonicals[page_file] = 'https://marymcnutt.com/' if route == '.' else f'https://marymcnutt.com/{route}/'
 
 
 class Page(HTMLParser):
@@ -61,16 +63,15 @@ for page_file in page_files:
     ids = {attrs['id'] for _, attrs in page.elements if 'id' in attrs}
     page_name = page_file.relative_to(dist).as_posix()
 
-    if sum(tag == 'h1' for tag, _ in page.elements) != 1:
-        issues.append(f'{page_name}: expected exactly one H1')
-
-    canonical = [attrs.get('href') for tag, attrs in page.elements if tag == 'link' and attrs.get('rel') == 'canonical']
-    if canonical != [expected_canonicals[page_file]]:
-        issues.append(f'{page_name}: wrong canonical {canonical}')
-
-    robots = [attrs.get('content', '') for tag, attrs in page.elements if tag == 'meta' and attrs.get('name') == 'robots']
-    if not robots or 'noindex' in robots[0]:
-        issues.append(f'{page_name}: page is not indexable')
+    if page_file in expected_canonicals:
+        if sum(tag == 'h1' for tag, _ in page.elements) != 1:
+            issues.append(f'{page_name}: expected exactly one H1')
+        canonical = [attrs.get('href') for tag, attrs in page.elements if tag == 'link' and attrs.get('rel') == 'canonical']
+        if canonical != [expected_canonicals[page_file]]:
+            issues.append(f'{page_name}: wrong canonical {canonical}')
+        robots = [attrs.get('content', '') for tag, attrs in page.elements if tag == 'meta' and attrs.get('name') == 'robots']
+        if not robots or 'noindex' in robots[0]:
+            issues.append(f'{page_name}: page is not indexable')
 
     for script in page.json_scripts:
         data = json.loads(script)

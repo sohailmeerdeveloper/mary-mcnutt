@@ -6,5 +6,6 @@ research/raw/
 research/assets/
 research/*screenshot*.png
 research/qa/
+research/qa-cms/
 *.tar.gz
 *.zip

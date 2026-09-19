@@ -1,0 +1,49 @@
+.cms-editing body { padding-top: 76px; }
+.cms-editing [data-cms-key] { cursor: pointer !important; transition: outline-color .16s ease, box-shadow .16s ease; }
+.cms-editing [data-cms-key]:hover { outline: 2px solid #19a974; outline-offset: 4px; box-shadow: 0 8px 24px rgba(5,46,40,.15); }
+.cms-editing [data-cms-key].cms-selected { outline: 3px solid #13734f; outline-offset: 5px; box-shadow: 0 10px 30px rgba(5,46,40,.2); }
+.cms-editor-ui { font-family: "Nunito Sans", Arial, sans-serif; color: #17241f; box-sizing: border-box; }
+.cms-toolbar { position: fixed; inset: 0 0 auto; min-height: 76px; z-index: 10000; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 12px clamp(18px, 3vw, 44px); background: #052e28; color: #fff; box-shadow: 0 8px 22px rgba(5,46,40,.24); }
+.cms-toolbar strong { display: block; font: 600 18px/1.2 Roboto, Arial, sans-serif; }
+.cms-toolbar span { display: block; margin-top: 4px; color: #c5e9d3; font-size: 13px; }
+.cms-toolbar-actions { display: flex; gap: 10px; }
+.cms-toolbar button { min-height: 42px; padding: 10px 16px; border: 1px solid rgba(255,255,255,.6); border-radius: 0; background: transparent; color: #fff; font: 800 12px/1 "Nunito Sans", Arial, sans-serif; text-transform: uppercase; letter-spacing: .04em; cursor: pointer; }
+.cms-toolbar button:first-child { border-color: #86efac; background: #86efac; color: #052e28; }
+.cms-toolbar button:hover { background: #fff; color: #052e28; }
+.cms-image-trigger { position: absolute; z-index: 9997; min-height: 34px; padding: 8px 11px; border: 1px solid #052e28; border-radius: 0; background: #86efac; color: #052e28; font: 900 11px/1 "Nunito Sans",Arial,sans-serif; text-transform: uppercase; box-shadow: 0 5px 15px rgba(5,46,40,.2); cursor: pointer; }
+.cms-image-trigger:hover { background: #fff; }
+.cms-inspector { position: fixed; right: 24px; bottom: 24px; z-index: 10001; width: min(420px, calc(100vw - 32px)); max-height: calc(100vh - 124px); overflow: auto; padding: 22px; background: #fff; border: 1px solid #c9d7cf; box-shadow: 0 18px 54px rgba(5,46,40,.26); }
+.cms-inspector[hidden] { display: none; }
+.cms-inspector-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 18px; }
+.cms-inspector-head strong { font: 500 24px/1.15 Roboto, Arial, sans-serif; color: #052e28; text-transform: capitalize; }
+.cms-inspector-head button { width: 36px; height: 36px; border: 0; background: #f0f3f0; color: #052e28; font-size: 24px; cursor: pointer; }
+.cms-inspector label { display: grid; gap: 7px; margin-top: 14px; color: #28473c; font-size: 13px; font-weight: 800; }
+.cms-inspector textarea, .cms-inspector input, .cms-inspector select { width: 100%; box-sizing: border-box; border: 1px solid #9db3a8; border-radius: 0; background: #fff; color: #263a32; padding: 11px 12px; font: 400 15px/1.45 "Nunito Sans", Arial, sans-serif; }
+.cms-inspector textarea { resize: vertical; }
+.cms-inspector textarea:focus, .cms-inspector input:focus, .cms-inspector select:focus, .cms-inspector button:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; }
+.cms-file-control { min-height: 46px; place-items: center; padding: 12px; border: 1px dashed #13734f; background: #f0f7f3; color: #07563e !important; cursor: pointer; }
+.cms-file-control input { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.cms-delete-image { width: 100%; margin-top: 10px; padding: 10px; border: 1px solid #b42318; background: transparent; color: #8f1c13; font-weight: 800; cursor: pointer; }
+.cms-save-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 20px; }
+.cms-save-row button { min-height: 46px; border: 0; border-radius: 0; color: #fff; font-weight: 900; cursor: pointer; }
+.cms-save-row .cms-cancel { background: #b42318; }
+.cms-save-row .cms-save { background: #13734f; }
+.cms-save-row .cms-save:disabled { background: #b8c2bd; color: #f6f7f6; cursor: not-allowed; }
+.cms-inspector [data-cms-status] { min-height: 20px; margin: 10px 0 0; color: #8f1c13; font-size: 13px; }
+.cms-added-block { padding-block: clamp(38px, 6vw, 76px); }
+.cms-added-block + .cms-added-block { padding-top: 0; }
+.cms-added-block h2 { color: #13734f; font: 200 clamp(36px, 4vw, 60px)/1.1 Roboto, Arial, sans-serif; }
+.cms-added-block h3 { color: #052e28; font: 300 clamp(28px, 3vw, 42px)/1.2 Roboto, Arial, sans-serif; }
+.cms-added-block p { max-width: 72ch; font-size: 18px; line-height: 1.7; }
+.cms-added-block figure { margin: 0; }
+.cms-added-block img { display: block; width: 100%; max-height: 720px; object-fit: cover; }
+.cms-added-block figcaption { margin-top: 10px; color: #59655e; font-size: 14px; }
+[data-provisional="true"] { outline: 2px dashed #13734f; outline-offset: -2px; background: rgba(134,239,172,.12); }
+@media (max-width: 700px) {
+  .cms-editing body { padding-top: 108px; }
+  .cms-toolbar { min-height: 108px; align-items: flex-start; padding: 12px 16px; }
+  .cms-toolbar span { max-width: 42vw; }
+  .cms-toolbar-actions { flex-direction: column; }
+  .cms-toolbar button { min-height: 36px; padding: 8px 12px; }
+  .cms-inspector { right: 16px; bottom: 16px; max-height: calc(100vh - 140px); }
+}

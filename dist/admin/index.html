@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Website Studio | Mary McNutt</title>
+  <link rel="icon" href="/assets/images/mary-mcnutt-dragonfly-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <link rel="stylesheet" href="/admin/admin.css">
+</head>
+<body>
+  <!--
+  THESIS: A calm page atlas makes the website itself the editing surface; it refuses a dense developer console.
+  OWN-WORLD: Forest navigation, white editorial work fields, pale sage rows, square controls, Roboto headings, and Nunito Sans utility copy.
+  STORY: Sign in, choose Pages, Media, or Blog, then edit and publish without learning a CMS abstraction.
+  FIRST VIEWPORT: A narrow forest rail anchors a broad page index, with setup state and the primary edit action visible immediately.
+  FORM: The third grounded Operate structure, a page atlas with direct route actions; seed 03a12bff.
+  FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+  -->
+  <div id="login-view" class="login-shell">
+    <section class="login-story" aria-labelledby="login-title">
+      <a class="studio-brand" href="/"><img src="/assets/images/mary-mcnutt-dragonfly-logo.svg" width="64" height="64" alt=""><span>Mary <strong>McNutt</strong></span></a>
+      <div>
+        <h1 id="login-title">Your website,<br><strong>ready to shape.</strong></h1>
+        <p>Edit pages in place, keep your image library organized, and publish new articles from one private studio.</p>
+      </div>
+      <a class="back-to-site" href="/">View public website <span aria-hidden="true">→</span></a>
+    </section>
+    <section class="login-panel" aria-label="Administrator sign in">
+      <form id="login-form" class="login-form">
+        <h2>Sign in to Website Studio</h2>
+        <p>Use the administrator email and password supplied at launch.</p>
+        <label>Email address<input type="email" name="email" autocomplete="username" required value="Mary@MaryMcNutt.com"></label>
+        <label>Password<input type="password" name="password" autocomplete="current-password" required></label>
+        <button class="admin-primary" type="submit">Sign in</button>
+        <p id="login-status" class="form-status" role="status"></p>
+      </form>
+    </section>
+  </div>
+
+  <div id="studio-view" class="studio-shell" hidden>
+    <aside class="studio-rail">
+      <a class="studio-brand" href="/"><img src="/assets/images/mary-mcnutt-dragonfly-logo.svg" width="52" height="52" alt=""><span>Mary <strong>McNutt</strong></span></a>
+      <nav aria-label="Website Studio">
+        <button type="button" class="is-active" data-view="pages"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h10l4 4v14H5zM15 3v5h4M8 12h8M8 16h8"/></svg><span>Pages</span></button>
+        <button type="button" data-view="media"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="0"/><circle cx="9" cy="10" r="2"/><path d="m3 17 5-4 4 3 3-2 6 4"/></svg><span>Media</span></button>
+        <button type="button" data-view="blog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h14v18H5zM8 7h8M8 11h8M8 15h5"/></svg><span>Blog</span></button>
+      </nav>
+      <div class="rail-bottom">
+        <span id="admin-email"></span>
+        <button type="button" id="sign-out">Sign out</button>
+      </div>
+    </aside>
+
+    <main class="studio-main">
+      <header class="studio-header">
+        <div><h1 id="view-title">Pages</h1><p id="view-description">Choose a page, then edit it exactly as visitors see it.</p></div>
+        <a href="/" target="_blank" rel="noopener">Open live website <span aria-hidden="true">↗</span></a>
+      </header>
+
+      <section id="setup-notice" class="setup-notice" hidden>
+        <div><strong>One-time database setup is still required.</strong><p>The editor is installed, but its Supabase tables have not been created yet. Run the included migration in the Supabase SQL Editor, then refresh this page.</p></div>
+        <button type="button" id="retry-setup">Check again</button>
+      </section>
+
+      <section id="pages-view" class="studio-view-panel">
+        <div class="page-tools"><label class="page-search">Search pages<input type="search" id="page-search" placeholder="Type a page name…"></label><span id="page-count"></span></div>
+        <div id="page-list" class="page-list"></div>
+      </section>
+
+      <section id="media-view" class="studio-view-panel" hidden>
+        <div class="media-intro"><div><h2>Your picture library</h2><p>Upload once, add accurate alternative text, and reuse the image while editing any page.</p></div><label class="upload-control">Upload pictures<input id="media-upload" type="file" accept="image/*" multiple></label></div>
+        <p id="media-status" class="form-status" role="status"></p>
+        <div id="media-grid" class="media-grid"></div>
+      </section>
+
+      <section id="blog-view" class="studio-view-panel" hidden>
+        <div class="blog-workspace">
+          <form id="post-form" class="post-form">
+            <div class="post-form-head"><div><h2 id="post-form-title">Write a new article</h2><p>Every published article appears first on the Blog page.</p></div><button type="button" id="clear-post">New article</button></div>
+            <input type="hidden" name="id">
+            <label>Title<input name="title" required placeholder="Article title"></label>
+            <label>Subheading<input name="subheading" placeholder="A short supporting line"></label>
+            <label>Summary<textarea name="excerpt" rows="3" required placeholder="A brief preview for the Blog page"></textarea></label>
+            <div class="post-image-row"><label class="upload-control">Choose article picture<input name="image" type="file" accept="image/*"></label><span id="post-image-name">No picture selected</span></div>
+            <label>Picture description<input name="image_alt" placeholder="Describe the picture for screen readers"></label>
+            <div class="writing-field">
+              <label for="post-body">Article text</label>
+              <div class="link-builder"><input id="link-label" placeholder="Link label"><input id="link-url" type="url" placeholder="https://example.com"><button type="button" id="insert-link">Add link</button></div>
+              <textarea id="post-body" name="body" rows="14" required placeholder="Write the article here. Separate paragraphs with a blank line."></textarea>
+              <p>Links use the format [read more](https://example.com).</p>
+            </div>
+            <div class="publish-row"><label>Status<select name="status"><option value="draft">Draft</option><option value="published">Published</option></select></label><button class="admin-primary" type="submit" disabled>Save article</button></div>
+            <p id="post-status" class="form-status" role="status"></p>
+          </form>
+          <aside class="post-preview" aria-label="Live article preview">
+            <span>Live preview</span><img id="preview-image" src="/assets/images/mary-ai-about-768.webp" width="1600" height="1067" hidden alt=""><h2 id="preview-title">Your article title</h2><h3 id="preview-subheading"></h3><p id="preview-excerpt">Your summary will appear here.</p><div id="preview-body"></div>
+          </aside>
+        </div>
+        <div class="post-library"><div><h2>Articles</h2><p>Open a draft or update a published article.</p></div><div id="post-list"></div></div>
+      </section>
+    </main>
+  </div>
+  <script src="/assets/cms-config.js"></script>
+  <script src="/admin/admin.js"></script>
+</body>
+</html>
