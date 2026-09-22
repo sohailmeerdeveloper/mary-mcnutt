@@ -6,7 +6,9 @@
 
   const pagePath = normalizePath(location.pathname);
   const editMode = new URLSearchParams(location.search).get('cms-edit') === '1';
-  const session = readSession();
+  const client = window.MaryCmsClient;
+  let session = client.readSession();
+  const { request, friendlyError, compressImage } = client;
   const editableSelector = [
     'main h1', 'main h2', 'main h3', 'main h4', 'main p', 'main blockquote',
     'main li', 'main a.button', 'main a.text-link', 'main button', 'main img',
@@ -16,31 +18,6 @@
   function normalizePath(path) {
     if (!path || path === '/index.html') return '/';
     return `/${path.replace(/^\/+|\/+$/g, '')}/`.replace('/index.html/', '/');
-  }
-
-  function readSession() {
-    try { return JSON.parse(localStorage.getItem('mary_cms_session') || 'null'); }
-    catch { return null; }
-  }
-
-  function headers(authenticated = false) {
-    const output = { apikey: config.key, 'Content-Type': 'application/json' };
-    if (authenticated && session?.access_token) output.Authorization = `Bearer ${session.access_token}`;
-    return output;
-  }
-
-  async function request(table, query = '', options = {}) {
-    const response = await fetch(`${config.url}/rest/v1/${table}${query}`, {
-      ...options,
-      headers: { ...headers(Boolean(options.authenticated)), ...(options.headers || {}) }
-    });
-    if (!response.ok) {
-      const detail = await response.text();
-      throw new Error(detail || `${response.status} ${response.statusText}`);
-    }
-    if (response.status === 204) return null;
-    const text = await response.text();
-    return text ? JSON.parse(text) : null;
   }
 
   function editableElements() {
@@ -90,7 +67,7 @@
         element.textContent = value.text;
       }
     }
-    if (type === 'button' && element.matches('a') && value.href) element.href = value.href;
+    if (type === 'button' && element.matches('a') && value.href) element.href = safeUrl(value.href);
   }
 
   function renderAddedBlock(block, provisional = false) {
@@ -138,7 +115,7 @@
       console.info('CMS content is not initialized yet.', error.message);
     }
     if (pagePath === '/blog/') await loadPublishedPosts();
-    if (editMode) setupEditor();
+    if (editMode) await setupEditor();
   }
 
   async function loadPublishedPosts() {
@@ -156,9 +133,23 @@
     } catch { /* The static archive remains complete without CMS data. */ }
   }
 
-  function setupEditor() {
+  async function setupEditor() {
     if (!session?.access_token) {
       top.location.href = '/admin/';
+      return;
+    }
+    try {
+      session = await client.getSession();
+      const admins = await request('cms_admins', '?select=user_id&limit=1', { authenticated: true });
+      if (!admins?.length) throw Object.assign(new Error('CMS access required'), { status: 403 });
+    } catch (error) {
+      const notice = document.createElement('p');
+      notice.className = 'cms-editor-ui';
+      notice.setAttribute('role', 'alert');
+      notice.textContent = friendlyError(error);
+      const link = document.createElement('a');
+      link.href = '/admin/'; link.textContent = ' Open Website Studio';
+      notice.append(link); document.querySelector('main').prepend(notice);
       return;
     }
     document.documentElement.classList.add('cms-editing');
@@ -180,15 +171,19 @@
     let selected = null;
     let original = null;
     let dirty = false;
+    let saving = false;
+    let revision = 0;
+    let imageLoading = false;
 
     const setDirty = value => {
       dirty = value;
-      inspector.querySelector('[data-cms-save]')?.toggleAttribute('disabled', !value);
+      if (value) revision += 1;
+      inspector.querySelector('[data-cms-save]')?.toggleAttribute('disabled', !value || saving || imageLoading);
     };
 
     const serialize = element => {
       const type = element.dataset.cmsType;
-      if (type === 'image') return { src: element.currentSrc || element.src, alt: element.alt || '', deleted: element.hidden };
+      if (type === 'image') return { src: element.getAttribute('src') || element.src, alt: element.alt || '', deleted: element.hidden };
       const data = { text: element.innerText.trim() };
       if (type === 'button' && element.matches('a')) data.href = element.getAttribute('href') || '';
       return data;
@@ -204,7 +199,12 @@
     };
 
     const saveCurrent = async () => {
+      if (saving || imageLoading) throw new Error('Wait for the current operation to finish.');
       if (!selected || !dirty) return;
+      saving = true;
+      const savedRevision = revision;
+      const savedElement = selected;
+      inspector.querySelector('[data-cms-status]').textContent = '';
       const saveButton = inspector.querySelector('[data-cms-save]');
       saveButton.disabled = true;
       saveButton.textContent = 'Saving…';
@@ -217,27 +217,34 @@
         updated_by: session.user?.id || null
       };
       try {
-        await request('cms_content', '?on_conflict=page_path,element_key', {
+        const rows = await request('cms_content', '?on_conflict=page_path,element_key', {
           method: 'POST', authenticated: true, body: JSON.stringify(payload),
-          headers: { Prefer: 'resolution=merge-duplicates,return=minimal' }
+          headers: { Prefer: 'resolution=merge-duplicates,return=representation' }
         });
-        setDirty(false);
-        saveButton.textContent = 'Saved';
+        if (!rows?.length) throw new Error('The database did not confirm this save. Check CMS access and try again.');
+        original = payload.value;
+        if (revision === savedRevision && selected === savedElement) setDirty(false);
+        saveButton.textContent = dirty ? 'Save changes' : 'Saved';
         setTimeout(() => { if (saveButton.isConnected) saveButton.textContent = 'Save changes'; }, 900);
       } catch (error) {
         saveButton.disabled = false;
         saveButton.textContent = 'Try saving again';
         inspector.querySelector('[data-cms-status]').textContent = friendlyError(error);
         throw error;
+      } finally {
+        saving = false;
+        saveButton.disabled = !dirty || imageLoading;
       }
     };
 
     const cancelCurrent = () => {
+      if (saving || imageLoading) return;
       if (selected && original) applyValue(selected, selected.dataset.cmsType, original);
       closeInspector();
     };
 
     const openInspector = element => {
+      if (saving || imageLoading) return;
       if (selected && dirty) cancelCurrent();
       selected?.classList.remove('cms-selected');
       selected = element;
@@ -256,9 +263,16 @@
       inspector.querySelector('[data-cms-file]')?.addEventListener('change', async event => {
         const file = event.target.files?.[0];
         if (!file) return;
-        const data = await compressImage(file);
-        applyValue(selected, 'image', { src: data.dataUrl, alt: selected.alt });
-        setDirty(true);
+        imageLoading = true;
+        const save = inspector.querySelector('[data-cms-save]');
+        const status = inspector.querySelector('[data-cms-status]');
+        save.disabled = true; status.textContent = 'Preparing picture…';
+        try {
+          const data = await compressImage(file);
+          applyValue(selected, 'image', { src: data.dataUrl, alt: selected.alt });
+          setDirty(true); status.textContent = '';
+        } catch (error) { status.textContent = friendlyError(error); }
+        finally { imageLoading = false; save.disabled = !dirty || saving; }
       });
       inspector.querySelector('[data-cms-delete]')?.addEventListener('click', () => { selected.hidden = true; setDirty(true); });
       inspector.querySelector('[data-cms-save]').addEventListener('click', () => saveCurrent().catch(() => {}));
@@ -296,17 +310,15 @@
     addEventListener('resize', positionImageTriggers);
     positionImageTriggers();
 
-    toolbar.querySelector('[data-cms-add]').addEventListener('click', () => openBlockComposer(inspector, session, request, pagePath, renderAddedBlock));
+    toolbar.querySelector('[data-cms-add]').addEventListener('click', async () => {
+      try { await saveCurrent(); } catch { return; }
+      closeInspector();
+      openBlockComposer(inspector, session, request, pagePath, renderAddedBlock);
+    });
     toolbar.querySelector('[data-cms-exit]').addEventListener('click', async () => {
       try { if (dirty) await saveCurrent(); } catch { return; }
       top.location.href = '/admin/';
     });
-  }
-
-  function friendlyError(error) {
-    if (/relation .* does not exist/i.test(error.message) || /schema cache/i.test(error.message)) return 'The CMS database still needs its one-time setup migration.';
-    if (/JWT|token|authorized|permission/i.test(error.message)) return 'Your login expired. Return to the dashboard and sign in again.';
-    return 'This change could not be saved. Check your connection and try again.';
   }
 
   function openBlockComposer(inspector, sessionValue, requestFn, path, renderFn) {
@@ -345,7 +357,10 @@
     alt.addEventListener('input', updatePreview);
     inspector.querySelector('[data-block-file]').addEventListener('change', async event => {
       const file = event.target.files?.[0];
-      if (file) { imageData = (await compressImage(file)).dataUrl; updatePreview(); }
+      if (!file) return;
+      save.disabled = true;
+      try { imageData = (await compressImage(file)).dataUrl; updatePreview(); }
+      catch (error) { inspector.querySelector('[data-cms-status]').textContent = friendlyError(error); }
     });
     inspector.querySelectorAll('[data-cms-close]').forEach(button => button.addEventListener('click', () => { preview?.remove(); inspector.hidden = true; }));
     save.addEventListener('click', async () => {
@@ -353,12 +368,14 @@
       save.disabled = true;
       save.textContent = 'Adding…';
       try {
-        await requestFn('cms_blocks', '', {
+        const rows = await requestFn('cms_blocks', '', {
           method: 'POST', authenticated: true,
-          body: JSON.stringify({ page_path: path, position: Date.now(), kind: block.kind, content: block.content, published: true, updated_by: sessionValue.user?.id || null }),
+          body: JSON.stringify({ page_path: path, position: Math.floor(Date.now() / 1000), kind: block.kind, content: block.content, published: true, updated_by: sessionValue.user?.id || null }),
           headers: { Prefer: 'return=representation' }
         });
-        preview?.removeAttribute('data-provisional');
+        if (!rows?.length) throw new Error('The database did not confirm this block. Try again.');
+        preview.dataset.cmsAddedBlock = rows[0].id;
+        preview.removeAttribute('data-provisional');
         inspector.hidden = true;
       } catch (error) {
         save.disabled = false;
@@ -368,30 +385,6 @@
     });
     updateFields();
     text.focus();
-  }
-
-  async function compressImage(file) {
-    const source = await new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onload = () => resolve(reader.result);
-      reader.onerror = reject;
-      reader.readAsDataURL(file);
-    });
-    const image = await new Promise((resolve, reject) => {
-      const output = new Image();
-      output.onload = () => resolve(output);
-      output.onerror = reject;
-      output.src = source;
-    });
-    const limit = 1600;
-    const scale = Math.min(1, limit / Math.max(image.naturalWidth, image.naturalHeight));
-    const width = Math.round(image.naturalWidth * scale);
-    const height = Math.round(image.naturalHeight * scale);
-    const canvas = document.createElement('canvas');
-    canvas.width = width;
-    canvas.height = height;
-    canvas.getContext('2d').drawImage(image, 0, 0, width, height);
-    return { dataUrl: canvas.toDataURL('image/webp', .82), width, height };
   }
 
   loadCms();

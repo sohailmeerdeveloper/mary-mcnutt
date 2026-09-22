@@ -26,7 +26,7 @@ for (const file of await walk(rootPath)) {
     html = html.replace('</head>', '  <link rel="stylesheet" href="/assets/cms-public.css">\n</head>');
   }
   if (!html.includes('/assets/cms-config.js')) {
-    html = html.replace('</body>', '  <script src="/assets/cms-config.js"></script>\n  <script src="/assets/cms.js"></script>\n</body>');
+    html = html.replace('</body>', '  <script src="/assets/cms-config.js?v=20260922"></script>\n  <script src="/assets/cms-client.js?v=20260922"></script>\n  <script src="/assets/cms.js?v=20260922"></script>\n</body>');
   }
   await writeFile(file, html);
   changed += 1;

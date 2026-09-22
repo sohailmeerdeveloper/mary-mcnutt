@@ -83,7 +83,7 @@
             <label>Title<input name="title" required placeholder="Article title"></label>
             <label>Subheading<input name="subheading" placeholder="A short supporting line"></label>
             <label>Summary<textarea name="excerpt" rows="3" required placeholder="A brief preview for the Blog page"></textarea></label>
-            <div class="post-image-row"><label class="upload-control">Choose article picture<input name="image" type="file" accept="image/*"></label><span id="post-image-name">No picture selected</span></div>
+            <div class="post-image-row"><label class="upload-control">Choose article picture<input name="image" type="file" accept="image/*"></label><button type="button" id="remove-post-image">Remove picture</button><span id="post-image-name">No picture selected</span></div>
             <label>Picture description<input name="image_alt" placeholder="Describe the picture for screen readers"></label>
             <div class="writing-field">
               <label for="post-body">Article text</label>
@@ -102,7 +102,8 @@
       </section>
     </main>
   </div>
-  <script src="/assets/cms-config.js"></script>
-  <script src="/admin/admin.js"></script>
+  <script src="/assets/cms-config.js?v=20260922"></script>
+  <script src="/assets/cms-client.js?v=20260922"></script>
+  <script src="/admin/admin.js?v=20260922"></script>
 </body>
 </html>
