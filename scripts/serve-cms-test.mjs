@@ -10,6 +10,10 @@ http.createServer(async (req, res) => {
   const url = new URL(req.url, 'http://127.0.0.1:4174');
   const json = (body, status = 200) => { res.writeHead(status, { 'Content-Type': 'application/json', 'Cache-Control': 'no-store' }); res.end(JSON.stringify(body)); };
   let body = ''; for await (const chunk of req) body += chunk;
+  if (url.pathname === '/__richtext-tests__/') {
+    res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' });
+    return res.end(fs.readFileSync(new URL('./test-richtext.html', import.meta.url)));
+  }
   if (url.pathname.startsWith('/auth/')) return json(fresh);
   if (url.pathname.startsWith('/rest/v1/')) {
     const table = url.pathname.split('/').at(-1);

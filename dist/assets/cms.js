@@ -7,6 +7,7 @@
   const pagePath = normalizePath(location.pathname);
   const editMode = new URLSearchParams(location.search).get('cms-edit') === '1';
   const client = window.MaryCmsClient;
+  const rich = window.MaryRichText;
   let session = client.readSession();
   const { request, friendlyError, compressImage } = client;
   const editableSelector = [
@@ -40,6 +41,7 @@
       const type = elementType(element);
       element.dataset.cmsKey = `${type}-${String(index + 1).padStart(3, '0')}`;
       element.dataset.cmsType = type;
+      if (type !== 'image') rich.capture(element);
     });
   }
 
@@ -59,15 +61,8 @@
       if (typeof value.alt === 'string') element.alt = value.alt;
       return;
     }
-    if (typeof value.text === 'string') {
-      if (type === 'button') {
-        [...element.childNodes].filter(node => node.nodeType === Node.TEXT_NODE).forEach(node => node.remove());
-        element.insertBefore(document.createTextNode(`${value.text} `), element.firstChild);
-      } else {
-        element.textContent = value.text;
-      }
-    }
-    if (type === 'button' && element.matches('a') && value.href) element.href = safeUrl(value.href);
+    if (typeof value.text === 'string' || typeof value.html === 'string') rich.apply(element, value);
+    if (type === 'button' && element.matches('a') && typeof value.href === 'string') element.setAttribute('href', safeUrl(value.href));
   }
 
   function renderAddedBlock(block, provisional = false) {
@@ -155,7 +150,7 @@
     document.documentElement.classList.add('cms-editing');
     const style = document.createElement('link');
     style.rel = 'stylesheet';
-    style.href = '/assets/cms-editor.css';
+    style.href = '/assets/cms-editor.css?v=20260922-richtext';
     document.head.append(style);
 
     const toolbar = document.createElement('div');
@@ -174,6 +169,7 @@
     let saving = false;
     let revision = 0;
     let imageLoading = false;
+    let textEditor = null;
 
     const setDirty = value => {
       dirty = value;
@@ -184,12 +180,13 @@
     const serialize = element => {
       const type = element.dataset.cmsType;
       if (type === 'image') return { src: element.getAttribute('src') || element.src, alt: element.alt || '', deleted: element.hidden };
-      const data = { text: element.innerText.trim() };
+      const data = rich.read(element);
       if (type === 'button' && element.matches('a')) data.href = element.getAttribute('href') || '';
       return data;
     };
 
     const closeInspector = () => {
+      textEditor?.destroy(); textEditor = null;
       selected?.classList.remove('cms-selected');
       selected = null;
       original = null;
@@ -239,13 +236,14 @@
 
     const cancelCurrent = () => {
       if (saving || imageLoading) return;
-      if (selected && original) applyValue(selected, selected.dataset.cmsType, original);
+      if (selected && original && dirty) applyValue(selected, selected.dataset.cmsType, original);
       closeInspector();
     };
 
     const openInspector = element => {
       if (saving || imageLoading) return;
       if (selected && dirty) cancelCurrent();
+      textEditor?.destroy(); textEditor = null;
       selected?.classList.remove('cms-selected');
       selected = element;
       selected.classList.add('cms-selected');
@@ -255,9 +253,11 @@
       if (type === 'image') {
         inspector.innerHTML = `<div class="cms-inspector-head"><strong>Edit image</strong><button type="button" aria-label="Close" data-cms-close>×</button></div><label>Alternative text<input data-cms-alt value="${escapeAttr(original.alt)}"></label><label class="cms-file-control">Choose a new picture<input type="file" accept="image/*" data-cms-file></label><button type="button" class="cms-delete-image" data-cms-delete>Delete picture</button><div class="cms-save-row"><button type="button" class="cms-cancel" data-cms-cancel>Cancel</button><button type="button" class="cms-save" data-cms-save disabled>Save changes</button></div><p data-cms-status role="status"></p>`;
       } else {
-        inspector.innerHTML = `<div class="cms-inspector-head"><strong>Edit ${type}</strong><button type="button" aria-label="Close" data-cms-close>×</button></div><label>${type === 'button' ? 'Button text' : 'Text'}<textarea rows="5" data-cms-text>${escapeHtml(original.text)}</textarea></label>${type === 'button' && selected.matches('a') ? `<label>Link<input data-cms-href value="${escapeAttr(original.href || '')}"></label>` : ''}<div class="cms-save-row"><button type="button" class="cms-cancel" data-cms-cancel>Cancel</button><button type="button" class="cms-save" data-cms-save disabled>Save changes</button></div><p data-cms-status role="status"></p>`;
+        inspector.innerHTML = `<div class="cms-inspector-head"><strong>Edit ${type}</strong><button type="button" aria-label="Close" data-cms-close>×</button></div>${rich.markup(type === 'button' ? 'Button text' : 'Text')}${type === 'button' && selected.matches('a') ? `<label>Link<input data-cms-href value="${escapeAttr(original.href || '')}"></label>` : ''}<div class="cms-save-row"><button type="button" class="cms-cancel" data-cms-cancel>Cancel</button><button type="button" class="cms-save" data-cms-save disabled>Save changes</button></div><p data-cms-status role="status"></p>`;
+        textEditor = rich.mount(inspector.querySelector('.cms-rich-field'), original, value => {
+          applyValue(selected, type, value); setDirty(true);
+        }, rich.capture(selected).slots);
       }
-      inspector.querySelector('[data-cms-text]')?.addEventListener('input', event => { applyValue(selected, type, { text: event.target.value }); setDirty(true); });
       inspector.querySelector('[data-cms-href]')?.addEventListener('input', event => { selected.setAttribute('href', event.target.value); setDirty(true); });
       inspector.querySelector('[data-cms-alt]')?.addEventListener('input', event => { selected.alt = event.target.value; setDirty(true); });
       inspector.querySelector('[data-cms-file]')?.addEventListener('change', async event => {
@@ -278,7 +278,7 @@
       inspector.querySelector('[data-cms-save]').addEventListener('click', () => saveCurrent().catch(() => {}));
       inspector.querySelector('[data-cms-cancel]').addEventListener('click', cancelCurrent);
       inspector.querySelector('[data-cms-close]').addEventListener('click', cancelCurrent);
-      inspector.querySelector('textarea,input')?.focus();
+      if (textEditor) textEditor.focus(); else inspector.querySelector('input')?.focus();
     };
 
     editableElements().forEach(element => element.addEventListener('click', event => {

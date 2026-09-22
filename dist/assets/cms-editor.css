@@ -20,6 +20,22 @@
 .cms-inspector label { display: grid; gap: 7px; margin-top: 14px; color: #28473c; font-size: 13px; font-weight: 800; }
 .cms-inspector textarea, .cms-inspector input, .cms-inspector select { width: 100%; box-sizing: border-box; border: 1px solid #9db3a8; border-radius: 0; background: #fff; color: #263a32; padding: 11px 12px; font: 400 15px/1.45 "Nunito Sans", Arial, sans-serif; }
 .cms-inspector textarea { resize: vertical; }
+.cms-rich-label { margin-top: 14px; color: #28473c; font-size: 13px; font-weight: 800; }
+.cms-format-toolbar { display: flex; flex-wrap: wrap; gap: 6px; margin-block: 8px; }
+.cms-format-toolbar button { min-height: 44px; padding: 9px 13px; border: 1px solid #9db3a8; background: #fff; color: #052e28; font: 600 14px/1.3 "Nunito Sans", Arial, sans-serif; cursor: pointer; }
+.cms-format-toolbar button[data-format="bold"] { font-weight: 900; }
+.cms-format-toolbar button[data-format="italic"] { font-style: italic; }
+.cms-format-toolbar button[data-format="underline"] { text-decoration: underline; }
+.cms-format-toolbar button:hover { background: #f0f7f3; }
+.cms-format-toolbar button[aria-pressed="true"] { border-color: #052e28; background: #052e28; color: #fff; }
+.cms-rich-input { min-height: 140px; max-height: 35vh; overflow-y: auto; overflow-wrap: anywhere; padding: 12px; border: 1px solid #9db3a8; background: #fff; color: #263a32; font: 400 16px/1.5 "Nunito Sans", Arial, sans-serif; white-space: pre-wrap; }
+.cms-rich-input:focus { outline: 3px solid #2563eb; outline-offset: 2px; }
+.cms-rich-input strong, .cms-rich-input b { font-weight: 700; }
+.cms-rich-input em, .cms-rich-input i { font-style: italic; }
+.cms-rich-input u { text-decoration: underline; }
+.cms-rich-hint { margin: 8px 0 0; color: #43584e; font-size: 13px; line-height: 1.5; }
+.cms-rich-slot { display: inline-block; vertical-align: middle; }
+.cms-rich-slot svg, .cms-rich-slot img { width: 1.2em; height: 1.2em; }
 .cms-inspector textarea:focus, .cms-inspector input:focus, .cms-inspector select:focus, .cms-inspector button:focus-visible { outline: 3px solid #2563eb; outline-offset: 2px; }
 .cms-file-control { min-height: 46px; place-items: center; padding: 12px; border: 1px dashed #13734f; background: #f0f7f3; color: #07563e !important; cursor: pointer; }
 .cms-file-control input { position: absolute; width: 1px; height: 1px; opacity: 0; }

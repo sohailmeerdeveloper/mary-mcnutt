@@ -1,0 +1,77 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>CMS rich-text regression checks</title>
+<style>body{font:16px/1.5 system-ui;max-width:850px;margin:40px auto}button{padding:12px}li{margin:10px 0}.fixture{position:fixed;left:0;top:0;background:white;z-index:-1}</style>
+<h1>CMS rich-text regression checks</h1><button id="run">Run formatting checks</button><ol id="results"></ol>
+<script src="/assets/cms-richtext.js"></script>
+<script>
+const rich = MaryRichText;
+const check = (condition, message) => { if (!condition) throw new Error(message); };
+document.querySelector('#run').onclick = () => {
+  const results = document.querySelector('#results'); results.replaceChildren();
+  const test = (name, run) => {
+    const result = document.createElement('li');
+    try { run(); result.textContent = 'PASS: ' + name; } catch (error) { result.textContent = 'FAIL: ' + name + ': ' + error.message; }
+    results.append(result);
+  };
+  const element = html => { const node = document.createElement('h1'); node.innerHTML = html; rich.capture(node); return node; };
+  test('Legacy heading restores original bold phrase without changing words', () => {
+    const node = element('Mary McNutt’s coaching <strong>transforms lives</strong>');
+    rich.apply(node, { text: 'Mary McNutt’s coaching transforms lives' });
+    check(node.querySelector('strong')?.textContent === 'transforms lives', node.innerHTML);
+  });
+  test('Legacy first-line insertion keeps the second phrase bold', () => {
+    const node = element('Mary McNutt’s coaching <strong>transforms lives</strong>');
+    rich.apply(node, { text: 'Mary McNutt’s personal coaching transforms lives' });
+    check(node.textContent === 'Mary McNutt’s personal coaching transforms lives', node.textContent);
+    check(node.querySelector('strong')?.textContent === 'transforms lives', node.innerHTML);
+  });
+  test('Links, spans, line breaks and emphasis survive a rich save', () => {
+    const node = element('Hello <span class="accent"><em>Mary</em></span><br>Read <a href="/about/">more</a>');
+    const value = rich.read(node); rich.apply(node, value);
+    check(node.querySelector('span.accent em')?.textContent === 'Mary', node.innerHTML);
+    check(node.querySelector('br') && node.querySelector('a').getAttribute('href') === '/about/', node.innerHTML);
+  });
+  test('Button icons remain intact and are never duplicated', () => {
+    const node = element('Call <svg aria-hidden="true"><use href="#phone"></use></svg>');
+    for (let i = 0; i < 3; i++) rich.apply(node, rich.read(node));
+    check(node.querySelectorAll('svg').length === 1 && node.querySelector('use').getAttribute('href') === '#phone', node.innerHTML);
+  });
+  test('Plain-text changes preserve inline links outside the edited words', () => {
+    const node = element('Read <a href="/about/">about Mary</a> today.');
+    rich.apply(node, { text: 'Please read about Mary today.' });
+    check(node.querySelector('a').textContent === 'about Mary', node.innerHTML);
+  });
+  test('Sanitizer removes executable HTML, event handlers and unsafe links', () => {
+    const html = rich.sanitize('<img src=x onerror=alert(1)><script>alert(1)<\/script><b onclick=alert(1)>Bold</b><a href="javascript:alert(1)">Link</a><span style="position:fixed;background-image:url(https://example.test)">Text</span>');
+    check(!/script|onerror|onclick|position|background-image|<img/i.test(html), html);
+    check(html.includes('<b>Bold</b>') && html.includes('href="#"'), html);
+  });
+  test('Browser line containers become safe inline line breaks', () => {
+    const html = rich.sanitize('First<div>Second</div><div>Third</div>');
+    check(rich.plain(html) === 'First\nSecond\nThird', html);
+  });
+  for (const command of ['bold', 'italic', 'underline']) test(command + ' applies only to the selected word and survives serialization', () => {
+    const field = document.createElement('div'); field.className = 'fixture'; field.innerHTML = rich.markup(); document.body.append(field);
+    const mounted = rich.mount(field, { html:'Mary coaching <strong>transforms lives</strong>' }, () => {});
+    try {
+      const editor = field.querySelector('[contenteditable=true]'); editor.focus();
+      const range = document.createRange(); range.setStart(editor.firstChild, 0); range.setEnd(editor.firstChild, 4);
+      getSelection().removeAllRanges(); getSelection().addRange(range);
+      // selectionchange can be asynchronous; key commands use the current selection.
+      field.querySelector('[data-format=' + command + ']').dispatchEvent(new MouseEvent('mousedown', { bubbles: true, cancelable: true }));
+      field.querySelector('[data-format=' + command + ']').click();
+      const value = mounted.value();
+      const node = element(''); rich.apply(node, value);
+      const selector = { bold:'b', italic:'i', underline:'u' }[command];
+      check(node.querySelector(selector)?.textContent === 'Mary', value.html);
+      check(node.querySelector('strong')?.textContent === 'transforms lives', value.html);
+    } finally { mounted.destroy(); field.remove(); }
+  });
+  test('Cancel snapshot restores original rich content', () => {
+    const node = element('First <strong>second</strong><br><em>third</em>'); const before = node.innerHTML, snapshot = rich.read(node);
+    rich.apply(node, { html:'Changed <u>word</u>' }); rich.apply(node, snapshot);
+    check(node.innerHTML === before, node.innerHTML);
+  });
+  const failed = [...results.children].filter(node => node.textContent.startsWith('FAIL')).length;
+  document.title = failed ? failed + ' checks failed' : 'All ' + results.children.length + ' rich-text checks passed';
+};
+</script></html>

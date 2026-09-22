@@ -1,4 +1,7 @@
 .cms-added-block { width: min(80%,1500px); margin-inline: auto; padding-block: clamp(38px,6vw,76px); }
+[data-cms-key] b { font-weight: 700; }
+[data-cms-key] i { font-style: italic; }
+[data-cms-key] u { text-decoration: underline; }
 .cms-added-block + .cms-added-block { padding-top: 0; }
 .cms-added-block h2 { margin: 0 0 18px; color: #13734f; font: 200 clamp(36px,4vw,60px)/1.1 Roboto,Arial,sans-serif; letter-spacing: -.025em; }
 .cms-added-block h3 { margin: 0 0 16px; color: #052e28; font: 300 clamp(28px,3vw,42px)/1.2 Roboto,Arial,sans-serif; }
@@ -16,4 +19,3 @@
 .cms-dynamic-article .article-content figure img { width: 100%; max-height: 680px; object-fit: cover; }
 .cms-dynamic-article .cms-post-error { color: #8f1c13; font-weight: 800; }
 @media (max-width:800px) { .cms-added-block { width: calc(100% - 40px); } }
-
