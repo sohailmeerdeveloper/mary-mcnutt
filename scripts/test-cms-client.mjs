@@ -3,6 +3,13 @@ import vm from 'node:vm';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 const source = await readFile(new URL('../dist/assets/cms-client.js', import.meta.url), 'utf8');
+const editorSource = await readFile(new URL('../dist/assets/cms.js', import.meta.url), 'utf8');
+const normalizePath = vm.runInNewContext(`(${editorSource.match(/function normalizePath\(path\) \{[\s\S]*?\n  \}/)[0]})`);
+test('homepage and index aliases match the seeded database page keys', () => {
+  for (const input of ['/', '', '/index.html', '///']) assert.equal(normalizePath(input), '/');
+  for (const input of ['/about', '/about/', '/about/index.html']) assert.equal(normalizePath(input), '/about/');
+  assert.equal(normalizePath('/services/family-coaching/index.html'), '/services/family-coaching/');
+});
 const fresh = { access_token: 'new-token', refresh_token: 'new-refresh', expires_at: 4102444800, user: { id: 'test-user' } };
 function fixture(session, fetch) {
   const storage = new Map(session ? [['mary_cms_session', JSON.stringify(session)]] : []);

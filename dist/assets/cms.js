@@ -16,8 +16,8 @@
   ].join(',');
 
   function normalizePath(path) {
-    if (!path || path === '/index.html') return '/';
-    return `/${path.replace(/^\/+|\/+$/g, '')}/`.replace('/index.html/', '/');
+    const route = (path || '/').replace(/\/index\.html\/?$/, '/').replace(/^\/+|\/+$/g, '');
+    return route ? `/${route}/` : '/';
   }
 
   function editableElements() {

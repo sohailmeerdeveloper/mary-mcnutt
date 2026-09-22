@@ -18,6 +18,7 @@ http.createServer(async (req, res) => {
     if (req.method !== 'GET' && req.headers.authorization !== 'Bearer test-token') return json({ message: 'JWT expired' }, 401);
     if (req.method === 'POST') {
       const data = JSON.parse(body);
+      if (data.page_path?.includes('//')) return json({ code: '23503', message: 'insert or update violates foreign key constraint cms_content_page_path_fkey' }, 409);
       if (table === 'cms_blocks' && data.position > 2147483647) return json({ code: '22003', message: 'integer out of range' }, 400);
       if (table === 'cms_posts' && state[table].some(row => row.slug === data.slug)) return json({ code: '23505', message: 'duplicate slug' }, 409);
       const existing = table === 'cms_content' && state[table].find(row => row.page_path === data.page_path && row.element_key === data.element_key);
