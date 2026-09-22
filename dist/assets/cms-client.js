@@ -74,7 +74,7 @@
     if (error.code === 'SESSION_EXPIRED') return error.message;
     if (/Invalid login credentials/i.test(error.message)) return 'The email or password is not correct.';
     if (error.code === '42501' || error.status === 403) return 'Your account does not have permission to save this change. Ask the site administrator to check CMS access.';
-    if (error.code === '23503') return 'This page is missing from the CMS page list. The database page setup needs to be repaired.';
+    if (error.code === '23503') return `The database could not match a referenced page or editor account. ${error.message} (${error.code})`;
     if (error.code === '23505') return 'An article with this address already exists. Choose a different title for the new article.';
     if (/schema cache|relation .* does not exist/i.test(error.message)) return 'The website code and database setup do not match. Please check the CMS migration.';
     if (error instanceof TypeError) return 'The database could not be reached. Check your connection and try again. Your changes have not been discarded.';
