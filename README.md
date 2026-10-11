@@ -6,6 +6,8 @@ The September 19, 2026 release adds a private Supabase-backed Website Studio at 
 
 The September 22 repair fixes homepage saves, renews administrator sessions across editing features, verifies database write responses, and preserves blog URLs when titles change. See `research/CMS-REPAIR-2026-09-22.md` for the cause, deployment, and verification scope. Run `node --test scripts/test-cms-client.mjs` for regression tests; `node scripts/serve-cms-test.mjs` starts a separate local-only CMS fixture on port 4174.
 
+The October 11 editor update adds a Delete block button to every saved custom block and preserves newlines, blank lines, and repeated spaces in edited text and added blocks. Deletion is saved immediately; a failed deletion leaves the block visible with a retryable error. Canceling or leaving the block composer removes its unsaved preview. With the local CMS fixture running, use `node scripts/test-cms-blocks.mjs` to check paragraphs, all five block types, deletion persistence, failure handling, and mobile layout. No database migration is needed.
+
 The September 16, 2026 refresh adds 36 page-specific AI scenes, researched titles for every interior page, circular number animations, and accessible scroll entrances. See `research/REFRESH-2026-09-16.md` for scope and verification. `dist/` is the authoritative authored site; the earlier migration/build scripts must not be rerun over it. The inquiry forms open an email draft and include a copyable fallback; they do not send from a server.
 
 ## Files

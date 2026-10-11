@@ -8,6 +8,7 @@
   const editMode = new URLSearchParams(location.search).get('cms-edit') === '1';
   const client = window.MaryCmsClient;
   const rich = window.MaryRichText;
+  let addBlockControls = () => {};
   let session = client.readSession();
   const { request, friendlyError, compressImage } = client;
   const editableSelector = [
@@ -77,6 +78,7 @@
     if (block.kind === 'image') shell.innerHTML = `<figure><img src="${escapeAttr(content.src || '')}" alt="${escapeAttr(content.alt || '')}">${content.caption ? `<figcaption>${escapeHtml(content.caption)}</figcaption>` : ''}</figure>`;
     if (block.kind === 'button') shell.innerHTML = `<a class="button primary" href="${escapeAttr(safeUrl(content.href || '#'))}">${escapeHtml(content.text || 'Learn more')}</a>`;
     document.querySelector('main')?.append(shell);
+    if (!provisional) addBlockControls(shell);
     return shell;
   }
 
@@ -150,7 +152,7 @@
     document.documentElement.classList.add('cms-editing');
     const style = document.createElement('link');
     style.rel = 'stylesheet';
-    style.href = '/assets/cms-editor.css?v=20260922-richtext';
+    style.href = '/assets/cms-editor.css?v=20261011-blocks';
     document.head.append(style);
 
     const toolbar = document.createElement('div');
@@ -170,6 +172,36 @@
     let revision = 0;
     let imageLoading = false;
     let textEditor = null;
+    let blockComposer = null;
+
+    addBlockControls = shell => {
+      const controls = document.createElement('div');
+      controls.className = 'cms-editor-ui cms-block-controls';
+      controls.innerHTML = '<button type="button" data-block-delete>Delete block</button><span role="status" aria-live="polite"></span>';
+      const button = controls.querySelector('button');
+      const status = controls.querySelector('[role="status"]');
+      button.addEventListener('click', async () => {
+        if (button.disabled) return;
+        button.disabled = true;
+        button.textContent = 'Deleting…';
+        status.textContent = '';
+        try {
+          const id = shell.dataset.cmsAddedBlock;
+          const rows = await request('cms_blocks', `?id=eq.${encodeURIComponent(id)}&page_path=eq.${encodeURIComponent(pagePath)}`, {
+            method: 'DELETE', authenticated: true, headers: { Prefer: 'return=representation' }
+          });
+          if (!rows?.some(row => row.id === id)) throw new Error('The database did not confirm this deletion. Try again.');
+          shell.remove();
+          toolbar.querySelector('[data-cms-add]').focus({ preventScroll: true });
+        } catch (error) {
+          button.disabled = false;
+          button.textContent = 'Delete block';
+          status.textContent = friendlyError(error);
+        }
+      });
+      shell.prepend(controls);
+    };
+    document.querySelectorAll('[data-cms-added-block]').forEach(addBlockControls);
 
     const setDirty = value => {
       dirty = value;
@@ -186,6 +218,7 @@
     };
 
     const closeInspector = () => {
+      blockComposer?.close(); blockComposer = null;
       textEditor?.destroy(); textEditor = null;
       selected?.classList.remove('cms-selected');
       selected = null;
@@ -196,7 +229,7 @@
     };
 
     const saveCurrent = async () => {
-      if (saving || imageLoading) throw new Error('Wait for the current operation to finish.');
+      if (saving || imageLoading || blockComposer?.busy) throw new Error('Wait for the current operation to finish.');
       if (!selected || !dirty) return;
       saving = true;
       const savedRevision = revision;
@@ -241,7 +274,8 @@
     };
 
     const openInspector = element => {
-      if (saving || imageLoading) return;
+      if (saving || imageLoading || blockComposer?.busy) return;
+      blockComposer?.close(); blockComposer = null;
       if (selected && dirty) cancelCurrent();
       textEditor?.destroy(); textEditor = null;
       selected?.classList.remove('cms-selected');
@@ -313,9 +347,10 @@
     toolbar.querySelector('[data-cms-add]').addEventListener('click', async () => {
       try { await saveCurrent(); } catch { return; }
       closeInspector();
-      openBlockComposer(inspector, session, request, pagePath, renderAddedBlock);
+      blockComposer = openBlockComposer(inspector, session, request, pagePath, renderAddedBlock);
     });
     toolbar.querySelector('[data-cms-exit]').addEventListener('click', async () => {
+      if (blockComposer?.busy) return;
       try { if (dirty) await saveCurrent(); } catch { return; }
       top.location.href = '/admin/';
     });
@@ -332,6 +367,18 @@
     const alt = inspector.querySelector('[data-block-alt]');
     const save = inspector.querySelector('[data-block-save]');
     let imageData = '';
+    let busy = false;
+    let closed = false;
+    const close = () => {
+      if (busy) return;
+      closed = true;
+      preview?.remove();
+      inspector.hidden = true;
+    };
+    const setBusy = value => {
+      busy = value;
+      inspector.querySelectorAll('input, textarea, select, button').forEach(control => { control.disabled = value; });
+    };
     const updateFields = () => {
       const isImage = kind.value === 'image';
       inspector.querySelector('[data-block-file-wrap]').hidden = !isImage;
@@ -345,6 +392,7 @@
       content: kind.value === 'image' ? { src: imageData, alt: alt.value, caption: text.value } : kind.value === 'button' ? { text: text.value, href: link.value } : { text: text.value }
     });
     const updatePreview = () => {
+      if (closed || busy) return;
       preview?.remove();
       const block = blockValue();
       const ready = kind.value === 'image' ? Boolean(imageData) : Boolean(text.value.trim());
@@ -358,14 +406,16 @@
     inspector.querySelector('[data-block-file]').addEventListener('change', async event => {
       const file = event.target.files?.[0];
       if (!file) return;
-      save.disabled = true;
-      try { imageData = (await compressImage(file)).dataUrl; updatePreview(); }
+      setBusy(true);
+      try { imageData = (await compressImage(file)).dataUrl; }
       catch (error) { inspector.querySelector('[data-cms-status]').textContent = friendlyError(error); }
+      finally { setBusy(false); updatePreview(); }
     });
-    inspector.querySelectorAll('[data-cms-close]').forEach(button => button.addEventListener('click', () => { preview?.remove(); inspector.hidden = true; }));
+    inspector.querySelectorAll('[data-cms-close]').forEach(button => button.addEventListener('click', close));
     save.addEventListener('click', async () => {
+      if (closed || busy || save.disabled) return;
       const block = blockValue();
-      save.disabled = true;
+      setBusy(true);
       save.textContent = 'Adding…';
       try {
         const rows = await requestFn('cms_blocks', '', {
@@ -373,18 +423,20 @@
           body: JSON.stringify({ page_path: path, position: Math.floor(Date.now() / 1000), kind: block.kind, content: block.content, published: true, updated_by: sessionValue.user?.id || null }),
           headers: { Prefer: 'return=representation' }
         });
-        if (!rows?.length) throw new Error('The database did not confirm this block. Try again.');
-        preview.dataset.cmsAddedBlock = rows[0].id;
-        preview.removeAttribute('data-provisional');
+        if (!rows?.[0]?.id) throw new Error('The database did not confirm this block. Try again.');
+        preview?.remove(); preview = null;
+        renderFn(rows[0]);
+        closed = true;
         inspector.hidden = true;
       } catch (error) {
-        save.disabled = false;
+        setBusy(false);
         save.textContent = 'Try adding again';
         inspector.querySelector('[data-cms-status]').textContent = friendlyError(error);
-      }
+      } finally { busy = false; }
     });
     updateFields();
     text.focus();
+    return { close, get busy() { return busy; } };
   }
 
   loadCms();

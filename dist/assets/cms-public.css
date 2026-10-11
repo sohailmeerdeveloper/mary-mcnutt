@@ -1,4 +1,5 @@
 .cms-added-block { width: min(80%,1500px); margin-inline: auto; padding-block: clamp(38px,6vw,76px); }
+.cms-rich-content, .cms-added-block h2, .cms-added-block h3, .cms-added-block p, .cms-added-block figcaption, .cms-added-block > a { white-space: pre-wrap; overflow-wrap: anywhere; }
 [data-cms-key] b { font-weight: 700; }
 [data-cms-key] i { font-style: italic; }
 [data-cms-key] u { text-decoration: underline; }

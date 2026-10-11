@@ -23,7 +23,7 @@
       if (!tags.has(node.tagName)) {
         if (['DIV', 'P', 'LI'].includes(node.tagName) && parent.lastChild && parent.lastChild.nodeName !== 'BR') parent.append(document.createElement('br'));
         [...node.childNodes].forEach(child => copy(child, parent));
-        if (['DIV', 'P', 'LI'].includes(node.tagName) && node.nextSibling) parent.append(document.createElement('br'));
+        if (['DIV', 'P', 'LI'].includes(node.tagName) && node.nextSibling && parent.lastChild?.nodeName !== 'BR') parent.append(document.createElement('br'));
         return;
       }
       const clean = document.createElement(node.tagName.toLowerCase());
@@ -85,12 +85,15 @@
       if (node.nodeType === Node.TEXT_NODE) {
         nodes.push(node);
         for (const token of node.data.match(/\s+|\S+/g) || []) entries.push({ token, node });
-      } else if (node.nodeName === 'BR') entries.push({ token: '\n', node: null });
+      } else if (node.nodeName === 'BR') {
+        const line = document.createTextNode('\n');
+        node.replaceWith(line); nodes.push(line); entries.push({ token: '\n', node: line });
+      }
       else if (!node.matches?.('[data-cms-slot]')) [...node.childNodes].forEach(visit);
     };
     visit(root);
     const incoming = String(value).match(/\s+|\S+/g) || [];
-    const equal = (a, b) => a === b || (/^\s+$/.test(a) && /^\s+$/.test(b));
+    const equal = (a, b) => a === b;
     if (entries.length === incoming.length && entries.every((entry, i) => equal(entry.token, incoming[i]))) return;
     if (!nodes.length) { root.append(document.createTextNode(value)); return; }
     // Bound memory for unusually long content; retain its wrappers with a text range edit.
@@ -125,6 +128,7 @@
     if (typeof value.html !== 'string' && typeof value.text === 'string') mergePlain(container, value.text);
     restoreSlots(container, template.slots);
     element.replaceChildren(...container.childNodes);
+    element.classList.add('cms-rich-content');
   }
 
   function markup(label = 'Text', attribute = 'data-cms-text') {
