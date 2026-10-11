@@ -53,6 +53,12 @@ document.querySelector('#run').onclick = () => {
     const html = rich.sanitize('First<div><br></div><div>Second</div>');
     check(rich.plain(html) === 'First\n\nSecond', html);
   });
+  test('Only validated device colors survive sanitization', () => {
+    const html = rich.sanitize('<span data-cms-color-desktop="#AABBCC" data-cms-color-mobile="#123456" style="--cms-color-desktop:red;position:fixed;color:red">Text</span><span data-cms-color-mobile="url(https://example.test)" style="--cms-color-mobile:red">Unsafe</span>');
+    check(html.includes('data-cms-color-desktop="#aabbcc"') && html.includes('--cms-color-desktop: #aabbcc'), html);
+    check(html.includes('data-cms-color-mobile="#123456"') && !/url\(|position|:red/.test(html), html);
+    check(rich.sanitize(html) === html, 'Repeated saves must preserve exactly the same safe color metadata');
+  });
   for (const command of ['bold', 'italic', 'underline']) test(command + ' applies only to the selected word and survives serialization', () => {
     const field = document.createElement('div'); field.className = 'fixture'; field.innerHTML = rich.markup(); document.body.append(field);
     const mounted = rich.mount(field, { html:'Mary coaching <strong>transforms lives</strong>' }, () => {});

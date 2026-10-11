@@ -34,6 +34,17 @@
 .cms-format-toolbar button[data-format="underline"] { text-decoration: underline; }
 .cms-format-toolbar button:hover { background: #f0f7f3; }
 .cms-format-toolbar button[aria-pressed="true"] { border-color: #052e28; background: #052e28; color: #fff; }
+.cms-color-panel { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 12px; margin-block: 12px; padding: 12px; background: #f0f7f3; }
+.cms-color-panel label { min-width: 0; margin: 0; }
+.cms-color-panel input[type="color"] { height: 46px; min-width: 44px; padding: 4px; cursor: pointer; }
+.cms-color-panel select { min-height: 46px; padding-inline: 8px; font-size: 16px; }
+.cms-color-panel button { grid-column: 1 / -1; min-height: 44px; border: 1px solid #13734f; background: #13734f; color: #fff; font: 800 14px/1.4 "Nunito Sans", Arial, sans-serif; cursor: pointer; }
+.cms-color-panel button:hover { background: #052e28; }
+.cms-color-panel button:disabled { background: #fff; color: #43584e; border-color: #9db3a8; cursor: not-allowed; }
+.cms-color-panel .cms-rich-hint { grid-column: 1 / -1; margin: 0; }
+.cms-rich-input[data-cms-color-preview] span[data-cms-color-desktop], .cms-rich-input[data-cms-color-preview] span[data-cms-color-mobile] { color: inherit; }
+.cms-rich-input[data-cms-color-preview="desktop"] span[data-cms-color-desktop] { color: var(--cms-color-desktop); }
+.cms-rich-input[data-cms-color-preview="mobile"] span[data-cms-color-mobile] { color: var(--cms-color-mobile); }
 .cms-rich-input { min-height: 140px; max-height: 35vh; overflow-y: auto; overflow-wrap: anywhere; padding: 12px; border: 1px solid #9db3a8; background: #fff; color: #263a32; font: 400 16px/1.5 "Nunito Sans", Arial, sans-serif; white-space: pre-wrap; }
 .cms-rich-input:focus { outline: 3px solid #2563eb; outline-offset: 2px; }
 .cms-rich-input strong, .cms-rich-input b { font-weight: 700; }

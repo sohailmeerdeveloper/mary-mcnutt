@@ -3,6 +3,12 @@
 [data-cms-key] b { font-weight: 700; }
 [data-cms-key] i { font-style: italic; }
 [data-cms-key] u { text-decoration: underline; }
+@media (width > 800px) {
+  span[data-cms-color-desktop] { color: var(--cms-color-desktop); }
+}
+@media (max-width: 800px) {
+  span[data-cms-color-mobile] { color: var(--cms-color-mobile); }
+}
 .cms-added-block + .cms-added-block { padding-top: 0; }
 .cms-added-block h2 { margin: 0 0 18px; color: #13734f; font: 200 clamp(36px,4vw,60px)/1.1 Roboto,Arial,sans-serif; letter-spacing: -.025em; }
 .cms-added-block h3 { margin: 0 0 16px; color: #052e28; font: 300 clamp(28px,3vw,42px)/1.2 Roboto,Arial,sans-serif; }

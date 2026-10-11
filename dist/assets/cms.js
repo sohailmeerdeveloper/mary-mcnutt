@@ -152,7 +152,7 @@
     document.documentElement.classList.add('cms-editing');
     const style = document.createElement('link');
     style.rel = 'stylesheet';
-    style.href = '/assets/cms-editor.css?v=20261011-blocks';
+    style.href = '/assets/cms-editor.css?v=20261011-colors';
     document.head.append(style);
 
     const toolbar = document.createElement('div');

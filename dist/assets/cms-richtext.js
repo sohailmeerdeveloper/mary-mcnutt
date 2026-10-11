@@ -3,6 +3,7 @@
   const templates = new WeakMap();
   const tags = new Set(['STRONG', 'B', 'EM', 'I', 'U', 'BR', 'SPAN', 'A', 'SMALL', 'SUP', 'SUB', 'S', 'CODE']);
   const blocked = new Set(['SCRIPT', 'STYLE', 'IFRAME', 'OBJECT', 'EMBED', 'SVG', 'MATH', 'IMG', 'INPUT', 'BUTTON', 'TEMPLATE']);
+  const colorPattern = /^#[0-9a-f]{6}$/i;
   const escape = text => String(text).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' })[c]);
   const safeHref = value => {
     try { return ['http:', 'https:', 'mailto:', 'tel:'].includes(new URL(value, location.href).protocol) ? value : '#'; }
@@ -38,6 +39,13 @@
       const permitted = { fontWeight: /^(normal|bold|[1-9]00)$/, fontStyle: /^(normal|italic)$/, textDecorationLine: /^(none|underline|line-through)( (underline|line-through))?$/ };
       for (const [property, pattern] of Object.entries(permitted)) {
         if (pattern.test(node.style[property])) clean.style[property] = node.style[property];
+      }
+      if (node.tagName === 'SPAN') for (const view of ['desktop', 'mobile']) {
+        const color = node.getAttribute(`data-cms-color-${view}`);
+        if (colorPattern.test(color || '')) {
+          clean.setAttribute(`data-cms-color-${view}`, color.toLowerCase());
+          clean.style.setProperty(`--cms-color-${view}`, color.toLowerCase());
+        }
       }
       [...node.childNodes].forEach(child => copy(child, clean)); parent.append(clean);
     };
@@ -132,13 +140,29 @@
   }
 
   function markup(label = 'Text', attribute = 'data-cms-text') {
-    return `<div class="cms-rich-field"><div class="cms-rich-label">${escape(label)}</div><div class="cms-format-toolbar" role="group" aria-label="Text formatting">${[['bold','Bold','B'],['italic','Italic','I'],['underline','Underline','U']].map(([command, name, key]) => `<button type="button" data-format="${command}" aria-label="${name}" aria-pressed="false" aria-keyshortcuts="Control+${key} Meta+${key}" title="${name} (Ctrl+${key})">${name}</button>`).join('')}</div><div class="cms-rich-input" ${attribute} contenteditable="true" role="textbox" aria-label="${escape(label)}" aria-multiline="true" spellcheck="true"></div><p class="cms-rich-hint">Select words to format them, or turn on a style before typing.</p></div>`;
+    return `<div class="cms-rich-field"><div class="cms-rich-label">${escape(label)}</div>
+      <div class="cms-format-toolbar" role="group" aria-label="Text formatting">${[['bold','Bold','B'],['italic','Italic','I'],['underline','Underline','U']].map(([command, name, key]) => `<button type="button" data-format="${command}" aria-label="${name}" aria-pressed="false" aria-keyshortcuts="Control+${key} Meta+${key}" title="${name} (Ctrl+${key})">${name}</button>`).join('')}<button type="button" data-color-toggle aria-expanded="false">Color</button></div>
+      <div class="cms-color-panel" data-color-panel hidden>
+        <label>Text color<input type="color" data-text-color value="#13734f"></label>
+        <label>Apply to<select data-color-scope><option value="">Choose views…</option><option value="both">Desktop and mobile</option><option value="desktop">Desktop only</option><option value="mobile">Mobile only</option></select></label>
+        <button type="button" data-color-apply disabled>Apply color</button>
+        <p class="cms-rich-hint" data-color-status role="status">Select text and choose which views should use this color.</p>
+      </div>
+      <div class="cms-rich-input" ${attribute} contenteditable="true" role="textbox" aria-label="${escape(label)}" aria-multiline="true" spellcheck="true"></div><p class="cms-rich-hint">Select letters, words, or paragraphs to format them. Save changes to keep your formatting.</p></div>`;
   }
   function mount(field, value, onChange, slots = []) {
     const editor = field.querySelector('[contenteditable="true"]');
     editor.innerHTML = sanitize(value.html ?? escape(value.text || '').replace(/\n/g, '<br>'));
     restoreSlots(editor, slots, true);
     let selectionRange = null;
+    const colorToggle = field.querySelector('[data-color-toggle]');
+    const colorPanel = field.querySelector('[data-color-panel]');
+    const colorInput = field.querySelector('[data-text-color]');
+    const colorScope = field.querySelector('[data-color-scope]');
+    const colorApply = field.querySelector('[data-color-apply]');
+    const colorStatus = field.querySelector('[data-color-status]');
+    const hasSelection = () => selectionRange && !selectionRange.collapsed && editor.contains(selectionRange.commonAncestorContainer);
+    const updateColorAction = () => { colorApply.disabled = !hasSelection() || !['both', 'desktop', 'mobile'].includes(colorScope.value); };
     const valueNow = () => { const html = sanitize(editor.innerHTML); return { html, text: plain(html) }; };
     const buttons = [...field.querySelectorAll('[data-format]')];
     const remember = () => {
@@ -146,6 +170,7 @@
       if (!selection?.rangeCount || !editor.contains(selection.anchorNode) || !editor.contains(selection.focusNode)) return;
       selectionRange = selection.getRangeAt(0).cloneRange();
       buttons.forEach(button => button.setAttribute('aria-pressed', String(document.queryCommandState(button.dataset.format))));
+      updateColorAction();
     };
     const changed = () => { remember(); onChange(valueNow()); };
     const focusSelection = () => {
@@ -165,6 +190,58 @@
     buttons.forEach(button => {
       button.addEventListener('mousedown', event => event.preventDefault());
       button.addEventListener('click', () => format(button.dataset.format));
+    });
+    // Keep the selected range when focus moves to the native picker or view menu.
+    colorPanel.addEventListener('pointerdown', remember, true);
+    colorToggle.addEventListener('mousedown', event => { remember(); event.preventDefault(); });
+    colorToggle.addEventListener('click', () => {
+      remember();
+      colorPanel.hidden = !colorPanel.hidden;
+      colorToggle.setAttribute('aria-expanded', String(!colorPanel.hidden));
+      if (!colorPanel.hidden) {
+        colorScope.value = '';
+        colorStatus.textContent = hasSelection() ? 'Choose a color and which views should use it.' : 'Select a letter, word, or paragraph in the text below first.';
+        updateColorAction();
+      } else editor.removeAttribute('data-cms-color-preview');
+    });
+    colorScope.addEventListener('change', () => {
+      if (['desktop', 'mobile'].includes(colorScope.value)) editor.dataset.cmsColorPreview = colorScope.value;
+      else editor.removeAttribute('data-cms-color-preview');
+      updateColorAction();
+    });
+    colorApply.addEventListener('mousedown', event => event.preventDefault());
+    colorApply.addEventListener('click', () => {
+      if (!hasSelection() || !colorPattern.test(colorInput.value) || colorApply.disabled) return;
+      const range = selectionRange.cloneRange();
+      const walker = document.createTreeWalker(editor, NodeFilter.SHOW_TEXT);
+      const parts = [];
+      while (walker.nextNode()) {
+        const node = walker.currentNode;
+        if (!range.intersectsNode(node) || node.parentElement.closest('[data-cms-slot]')) continue;
+        const start = node === range.startContainer ? range.startOffset : 0;
+        const end = node === range.endContainer ? range.endOffset : node.length;
+        if (end > start) parts.push({ node, start, end });
+      }
+      if (!parts.length) return;
+      const views = colorScope.value === 'both' ? ['desktop', 'mobile'] : [colorScope.value];
+      // Wrap individual text runs, preserving links, emphasis, line breaks, and
+      // the other view's existing color even across overlapping selections.
+      for (const part of parts) {
+        let { node, start, end } = part;
+        if (end < node.length) node.splitText(end);
+        if (start) node = node.splitText(start);
+        const span = document.createElement('span');
+        for (const view of views) {
+          span.setAttribute(`data-cms-color-${view}`, colorInput.value);
+          span.style.setProperty(`--cms-color-${view}`, colorInput.value);
+        }
+        node.replaceWith(span); span.append(node); part.selected = node;
+      }
+      selectionRange = document.createRange();
+      selectionRange.setStart(parts[0].selected, 0);
+      selectionRange.setEnd(parts.at(-1).selected, parts.at(-1).selected.length);
+      focusSelection(); changed();
+      colorStatus.textContent = `Color applied to ${colorScope.value === 'both' ? 'desktop and mobile' : colorScope.value + ' only'}. Save changes to keep it.`;
     });
     editor.addEventListener('input', changed);
     editor.addEventListener('keydown', event => {
