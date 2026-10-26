@@ -64,6 +64,18 @@
     activeAnimations.add(animation);
     animation.onfinish = animation.oncancel = () => activeAnimations.delete(animation);
   };
+  const goldilocksPortrait = document.querySelector('.goldilocks-portrait-mat');
+  if (goldilocksPortrait && !reducedMotion.matches && goldilocksPortrait.animate) {
+    const portraitArrival = goldilocksPortrait.animate(
+      [
+        { clipPath: 'inset(0 0 100% 0)', filter: 'blur(7px)', transform: 'translateY(24px)' },
+        { clipPath: 'inset(0 0 0 0)', filter: 'blur(0)', transform: 'translateY(0)' }
+      ],
+      { duration: 880, easing: 'cubic-bezier(.16,1,.3,1)' }
+    );
+    activeAnimations.add(portraitArrival);
+    portraitArrival.onfinish = portraitArrival.oncancel = () => activeAnimations.delete(portraitArrival);
+  }
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {

@@ -147,6 +147,7 @@ insert into public.cms_pages (path, title, kind) values
 ('/blog/understanding-addiction/', 'Understanding Addiction', 'article'),
 ('/blog/what-is-an-intervention/', 'What Is an Intervention?', 'article'),
 ('/center-for-excellence/', 'Center for Excellence', 'page'),
+('/goldilocks-story/', 'The Goldilocks Story', 'page'),
 ('/services/', 'Services', 'page'),
 ('/services/compulsive-shopping/', 'Compulsive Shopping', 'page'),
 ('/services/conflict-resolution/', 'Conflict Resolution', 'page'),

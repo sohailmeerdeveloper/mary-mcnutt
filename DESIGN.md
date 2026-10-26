@@ -126,6 +126,7 @@ The user-supplied Celeste desktop and mobile compositions establish the site's v
 - Panoramic interior heroes and structured grids that become a clear mobile reading sequence.
 - Editorial archives that lead into calm, generous article pages with contextual side rails.
 - Contact and pricing surfaces that make verified practical information prominent before the final invitation.
+- Recovery stories that frame source-backed archival art as evidence inside the current forest-and-white editorial world.
 
 ## Colors
 
@@ -184,6 +185,8 @@ Legacy service and resource hubs use a taller photographic hero (minimum 560px) 
 
 Legacy service details protect the source-faithful body as the primary reading experience: a flexible article column pairs with a fixed (330px) related-support rail and a generous (8vw) gap. The article keeps relaxed leading, a larger lede, clear heading intervals, and the care disclaimer inside the narrative; related services and the consultation action remain in the rail. Legal and recovery reading pages use the same dominant-column principle with a narrower (280px) contextual rail, sticky only on desktop. At (900px) all reading shells become one column; the service rail may briefly use two internal columns, then stacks fully at (600px).
 
+The Goldilocks Story is the legacy family's chaptered Read-mode story surface. It opens with an oversized title and human origin statement beside a restored archival portrait in a square White mat, moves through White and Pale Sage essay chapters, presents the recovery journey as a semantic five-part sequence, and ends on a solid green field with one explicit Facebook continuation. Its desktop splits collapse into a single source-ordered column at (800px); the five-step sequence reduces from five columns to two at (1150px), then one at (800px), without changing order or meaning.
+
 The Center for Excellence is the migration family's deliberate exception to the photographic legacy hero. It opens on Pale Sage with a copy-and-portrait split (1 / .62), follows with an asymmetric mission statement (1 / .75), a four-column numbered value grid separated by hairline seams, then a Forest service index in two columns. At (900px) the hero and mission stack and values reduce to two columns; at (600px) values and service links become one column.
 
 The Blog archive uses a dominant article feed with a narrower topic and author rail. Its lead story spans the feed and pairs image with copy; subsequent stories form a two-column editorial grid. Reusable Article pages keep the same dominant-content relationship, constrain the reading column to a comfortable measure, and reserve the secondary rail for recent reading and a relevant support route. Both families become a single, source-ordered column on mobile; related stories change from a compact grid to image-and-title rows.
@@ -215,6 +218,8 @@ Exact shadow declarations are recorded in the sidecar because the frontmatter co
 Buttons, panels, editorial cards, fields, and photos use square corners. The core button border is a visible outline when needed (2px); pale cards rely on tonal separation. Thin divider lines separate metadata, focus links, contact rows, and grouped form content.
 
 The compact brand mark has a clipped octagonal silhouette. Testimonial selectors and timeline markers are small circles, while large line illustrations use circular framing. The Coaching process label is a single compact, noninteractive pill-shaped caption. These are role-specific shapes, not a rounded-card or chip vocabulary. Keep ordinary controls and surfaces square while retaining the existing mark, marker, and illustration geometry.
+
+Archived raster artwork may sit inside a generous square White editorial mat with a quiet source caption. This treatment lets original material retain its character without being redrawn, recolored, or mistaken for the Mary McNutt brand mark.
 
 ## Components
 
@@ -261,6 +266,12 @@ Preserve migrated service copy as continuous long-form reading. The body precede
 ### Recovery Lists and Prayer
 
 Recovery sequences remain semantic ordered lists with generous line height and one fine divider per item; numbering is content, not decoration. Present prayers as inset Pale Sage quotation fields with a deep-leaf left rule, spacious padding, preserved line breaks, and a quiet attribution below. Keep these treatments solemn, highly readable, and free of card-grid ornament.
+
+### Goldilocks Story Surface
+
+Treat Goldilocks as a human recovery narrative rather than a generic addiction-information page. The forest opening balances the oversized story title, concise origin, primary Facebook action, and restored pink portrait; subsequent White and Pale Sage chapters keep the mission, character, and source-backed copy primary. The five recovery stages remain an ordered list with visible numbers, fine dividers, and an uninterrupted mobile reading order.
+
+Subtle botanical edge material may soften the Forest and Panel Green fields on this story, but it remains a Goldilocks-specific archival cue rather than a site-wide texture. The closing field names Facebook directly, uses the recognizable Facebook mark beside the copy, and provides one explicit external action. Do not promote either the botanical edge or the Facebook mark into a universal hero, banner, or call-to-action requirement.
 
 ### Center for Excellence Surface
 
@@ -312,6 +323,7 @@ The client-supplied circular dragonfly is the brand mark. Use `mary-mcnutt-drago
 - **Do** preserve the legacy hub sequence of photographic hero, editorial introduction, complete directory, and one clear consultation close.
 - **Do** keep migrated service copy continuous and source-faithful, with related routes and conversion actions separated into the side rail.
 - **Do** preserve ordered-list semantics, prayer line breaks, and quiet attribution in recovery resources.
+- **Do** preserve Goldilocks archival artwork inside square White mats with quiet source captions, and keep its five recovery stages in semantic source order.
 - **Do** retain the Center for Excellence's pale portrait opening, numbered value grid, and Forest service index as its distinctive layout family.
 - **Do** pair contact forms with direct phone and email routes, and explain what submission will do before the visitor acts.
 - **Do** distinguish a verified rate or practical term from program details that still require confirmation.
@@ -325,6 +337,7 @@ The client-supplied circular dragonfly is the brand mark. Use `mary-mcnutt-drago
 - **Don't** compress an alternating timeline into two narrow mobile columns or reorder steps for visual symmetry.
 - **Don't** let archive metadata, sidebars, or related content overpower the story title and reading column.
 - **Don't** use the soft heritage accent as small text on White or Pale Sage, or deep leaf green as small text on Forest.
+- **Don't** generalize the Goldilocks botanical edge treatment or Facebook mark into a requirement for other heroes, green fields, or closing actions.
 - **Don't** promote one migrated service above the others in the directory unless the content model explicitly introduces a featured tier.
 - **Don't** leave service, policy, or resource rails beside the article after the reading shell collapses at (900px).
 - **Don't** present location imagery as a verified office address or uncertain program pricing as a fixed offer.

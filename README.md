@@ -2,6 +2,8 @@
 
 Plain HTML, CSS, and a small vanilla JavaScript file. No React, package installation, or compilation is needed.
 
+The October 25, 2026 release adds `/goldilocks-story/`, a responsive chaptered story page built from Mary’s archived Goldilocks Wisdom copy and original artwork. The page is registered in the Website Studio and Supabase CMS through `20261025000000_goldilocks_story.sql`, so its text, buttons, images, and appended blocks remain editable in the existing admin workflow.
+
 The September 19, 2026 release adds a private Supabase-backed Website Studio at `/admin/`. Administrators can edit public text, buttons, and pictures directly on each page; append title, subheading, text, image, and button blocks; maintain a media library; and draft or publish articles with live preview. The public site remains a complete static fallback when CMS data is unavailable.
 
 The September 22 repair fixes homepage saves, renews administrator sessions across editing features, verifies database write responses, and preserves blog URLs when titles change. See `research/CMS-REPAIR-2026-09-22.md` for the cause, deployment, and verification scope. Run `node --test scripts/test-cms-client.mjs` for regression tests; `node scripts/serve-cms-test.mjs` starts a separate local-only CMS fixture on port 4174.
@@ -24,6 +26,7 @@ The September 16, 2026 refresh adds 36 page-specific AI scenes, researched title
 - `dist/services/` — complete service directory plus 19 source-backed specialist service pages.
 - `dist/resources/` — recovery resource hub, Serenity Prayer, Twelve Steps, and Twelve Traditions pages.
 - `dist/center-for-excellence/` — local Center for Excellence mission, values, and service overview.
+- `dist/goldilocks-story/` — editable Goldilocks Wisdom origin, character, recovery journey, and Facebook call to action.
 - `dist/privacy-policy/`, `dist/disclaimer/` — locally hosted legal pages.
 - `dist/assets/styles.css` — green theme and desktop/mobile layout.
 - `dist/assets/site.js` — mobile navigation and testimonial controls.
@@ -31,6 +34,7 @@ The September 16, 2026 refresh adds 36 page-specific AI scenes, researched title
 - `dist/assets/cms.js` — public content hydration and inline visual editor.
 - `dist/blog/post/` — reusable route for newly published CMS articles.
 - `supabase/migrations/20260919000000_cms.sql` — idempotent CMS schema, RLS policies, and page seed.
+- `supabase/migrations/20261025000000_goldilocks_story.sql` — idempotent CMS registration for the Goldilocks Story page.
 - `dist/assets/images/` — optimized local photos and map.
 - `dist/assets/fonts/` — self-hosted Roboto and Nunito Sans.
 - `dist/robots.txt`, `dist/sitemap.xml`, `dist/llms.txt` — discovery files for the intended canonical domain.

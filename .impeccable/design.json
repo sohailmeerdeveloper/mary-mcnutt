@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-14T16:38:23.923Z",
+  "generatedAt": "2026-10-26T20:50:39.5199755+05:00",
   "title": "Design System: Mary McNutt",
   "extensions": {
     "colorMeta": {
@@ -292,14 +292,17 @@
   ],
   "narrative": {
     "northStar": "The Personal Coaching Editorial",
-    "overview": "Mary's visual world combines personal, welcoming photography with restrained editorial typography. Thin headings leave room for conversation; bold phrases give the reader an immediate point of emphasis. White space, natural imagery, and green panels create a calm but confident public coaching presence.\n\nThe user-supplied Celeste desktop and mobile compositions establish the site's visual authority, while Center for Excellence supplies the green identity. The homepage expresses that world through broad portrait compositions and overlap; the About and Coaching pages extend it with panoramic photographic heroes, structured editorial grids, and sequential storytelling. Preserve Mary's likeness in any portrait work. The shipped system uses square surfaces and deliberate spatial relationships; it does not depend on a conventional rounded application-card aesthetic.",
+    "overview": "Mary's visual world combines personal, welcoming photography with restrained editorial typography. Thin headings leave room for conversation; bold phrases give the reader an immediate point of emphasis. White space, natural imagery, and green panels create a calm but confident public coaching presence.\n\nThe user-supplied Celeste desktop and mobile compositions establish the site's visual authority, while Center for Excellence supplies the green identity. The homepage expresses that world through broad portrait compositions and overlap; the interior families extend it through panoramic photographic heroes, structured editorial grids, sequential storytelling, long-form reading, and trust-first decision support. Preserve Mary's likeness in any portrait work. The shipped system uses square surfaces and deliberate spatial relationships; it does not depend on a conventional rounded application-card aesthetic.",
     "keyCharacteristics": [
       "Personal photography with open space for readable copy.",
       "Hairline Roboto headings with bold, colored emphasis.",
       "Nunito Sans paragraphs and compact, decisive action labels.",
       "White editorial space alternating with solid green surfaces.",
       "Square panels and controlled photographic overlaps.",
-      "Panoramic interior heroes and structured grids that become a clear mobile reading sequence."
+      "Panoramic interior heroes and structured grids that become a clear mobile reading sequence.",
+      "Editorial archives that lead into calm, generous article pages with contextual side rails.",
+      "Contact and pricing surfaces that make verified practical information prominent before the final invitation.",
+      "Recovery stories that frame source-backed archival art as evidence inside the current forest-and-white editorial world."
     ],
     "rules": [
       {
@@ -310,6 +313,11 @@
       {
         "name": "The Readable Reverse Type Rule",
         "body": "On Panel Green, set body copy, labels, metadata, compact headings, and other small reverse text in White. Reserve Mint for large display hierarchy and decorative accents; never use it where the smaller text would lose WCAG contrast.",
+        "section": "colors"
+      },
+      {
+        "name": "The Legacy Surface Contrast Rule",
+        "body": "On White and Pale Sage legacy-content surfaces, use the deeper leaf green (`#196b55`) for links, eyebrows, and bold phrases. Reserve the softer heritage accent (`#a8cb6a`) for large emphasis, numbering, or borders against Forest; it is not readable small text on light surfaces. Forest legacy panels pair White primary copy with the softer accent only for hierarchy.",
         "section": "colors"
       },
       {
@@ -328,9 +336,19 @@
         "section": "layout"
       },
       {
+        "name": "The Primary Narrative Rule",
+        "body": "On Read surfaces, the article or archive feed always owns the widest column. Side rails provide orientation, authorship, recent reading, or a support route; they must never compete with or interrupt the primary narrative, and they rejoin it after the main content on mobile.",
+        "section": "layout"
+      },
+      {
         "name": "The Flat Resting Surface Rule",
         "body": "Keep ordinary editorial cards flat at rest. Reserve shadows for the existing raised, overlay, and interactive roles.",
         "section": "elevation"
+      },
+      {
+        "name": "The Verified Offer Rule",
+        "body": "Give client-confirmed rates and terms the strongest numerical hierarchy. Preserve the $99 introductory hour and the supplied Starter ($249), Professional ($399), Expert ($499), and Premium ($549) plan prices; do not alter those prices without new client direction.",
+        "section": "components"
       }
     ],
     "dos": [
@@ -340,6 +358,15 @@
       "Do keep square buttons and panels, generous reading space, and the documented mobile reading order.",
       "Do keep small reverse text white on Panel Green and use Mint only for large display hierarchy or decorative accents.",
       "Do preserve the center-rail alternation on desktop and the source-ordered left-rail timeline on mobile.",
+      "Do keep archive and article side rails subordinate to the main reading column and move them after the narrative on mobile.",
+      "Do preserve generous article leading, clear heading intervals, visible provenance, and contextual related reading.",
+      "Do preserve the legacy hub sequence of photographic hero, editorial introduction, complete directory, and one clear consultation close.",
+      "Do keep migrated service copy continuous and source-faithful, with related routes and conversion actions separated into the side rail.",
+      "Do preserve ordered-list semantics, prayer line breaks, and quiet attribution in recovery resources.",
+      "Do preserve Goldilocks archival artwork inside square White mats with quiet source captions, and keep its five recovery stages in semantic source order.",
+      "Do retain the Center for Excellence's pale portrait opening, numbered value grid, and Forest service index as its distinctive layout family.",
+      "Do pair contact forms with direct phone and email routes, and explain what submission will do before the visitor acts.",
+      "Do distinguish a verified rate or practical term from program details that still require confirmation.",
       "Do preserve visible keyboard focus, reduced-motion handling, and explicit labels on icon controls."
     ],
     "donts": [
@@ -348,6 +375,12 @@
       "Don't carry desktop portrait crops and negative overlaps unchanged onto narrow screens.",
       "Don't use Mint for small body copy, metadata, compact headings, or labels on Panel Green.",
       "Don't compress an alternating timeline into two narrow mobile columns or reorder steps for visual symmetry.",
+      "Don't let archive metadata, sidebars, or related content overpower the story title and reading column.",
+      "Don't use the soft heritage accent as small text on White or Pale Sage, or deep leaf green as small text on Forest.",
+      "Don't generalize the Goldilocks botanical edge treatment or Facebook mark into a requirement for other heroes, green fields, or closing actions.",
+      "Don't promote one migrated service above the others in the directory unless the content model explicitly introduces a featured tier.",
+      "Don't leave service, policy, or resource rails beside the article after the reading shell collapses at (900px).",
+      "Don't present location imagery as a verified office address or uncertain program pricing as a fixed offer.",
       "Don't turn the existing small promotional eyebrows or text-character icons into reusable house styles; use meaningful headings and inline SVG where the role needs an icon."
     ]
   }

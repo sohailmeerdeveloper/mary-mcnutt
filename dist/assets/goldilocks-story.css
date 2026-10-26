@@ -1,0 +1,478 @@
+.goldilocks-page {
+  --goldilocks-line: rgba(5, 46, 40, 0.17);
+}
+
+.goldilocks-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 720px;
+  padding-top: 148px;
+  background: var(--forest);
+  color: var(--white);
+}
+
+.goldilocks-hero::before,
+.goldilocks-follow::before,
+.goldilocks-follow::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  width: min(34vw, 520px);
+  background: url('/assets/images/goldilocks-botanical-edge.png') left center / contain no-repeat;
+  pointer-events: none;
+}
+
+.goldilocks-hero::before {
+  inset: 110px auto -90px -145px;
+  opacity: 0.42;
+}
+
+.goldilocks-hero-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(340px, 0.65fr);
+  gap: clamp(56px, 8vw, 140px);
+  align-items: center;
+  min-height: 572px;
+}
+
+.goldilocks-hero-copy {
+  padding: 70px 0 88px;
+}
+
+.goldilocks-breadcrumb {
+  margin: 0 0 34px;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #dff4e7;
+}
+
+.goldilocks-breadcrumb a {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.goldilocks-hero h1 {
+  max-width: 890px;
+  font-size: clamp(4rem, 7.2vw, 6rem);
+  line-height: 0.96;
+  letter-spacing: -0.04em;
+  color: var(--white);
+}
+
+.goldilocks-hero h1 strong {
+  display: block;
+  color: var(--mint);
+}
+
+.goldilocks-hero-copy > p:not(.goldilocks-breadcrumb) {
+  max-width: 690px;
+  margin-top: 30px;
+  font-size: clamp(1.12rem, 1.5vw, 1.36rem);
+  line-height: 1.65;
+  color: #e8f4ec;
+}
+
+.goldilocks-hero .button {
+  margin-top: 40px;
+}
+
+.goldilocks-portrait {
+  align-self: end;
+  margin: 0;
+  padding-top: 36px;
+}
+
+.goldilocks-portrait-mat {
+  width: min(100%, 430px);
+  margin-left: auto;
+  padding: clamp(26px, 3vw, 44px);
+  background: var(--white);
+}
+
+.goldilocks-portrait img {
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.goldilocks-caption {
+  max-width: 430px;
+  margin: 18px 0 34px auto;
+  color: #dff4e7;
+  font-size: 0.8rem;
+  line-height: 1.55;
+}
+
+.goldilocks-origin {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: clamp(55px, 8vw, 140px);
+  padding-block: 118px;
+}
+
+.goldilocks-origin h2,
+.goldilocks-profile h2,
+.goldilocks-journey h2,
+.goldilocks-follow h2 {
+  font-size: clamp(2.8rem, 4.7vw, 4.8rem);
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+}
+
+.goldilocks-origin-copy {
+  align-self: end;
+  max-width: 760px;
+}
+
+.goldilocks-origin-copy p {
+  font-size: 1.08rem;
+  line-height: 1.84;
+}
+
+.goldilocks-profile {
+  background: var(--pale);
+}
+
+.goldilocks-profile-grid {
+  display: grid;
+  grid-template-columns: minmax(270px, 0.72fr) minmax(0, 1.28fr);
+  gap: clamp(60px, 9vw, 150px);
+  align-items: center;
+  padding-block: 110px;
+}
+
+.goldilocks-wordmark {
+  min-height: 330px;
+  display: grid;
+  place-items: center;
+  padding: 50px 34px;
+  background: var(--white);
+}
+
+.goldilocks-wordmark img {
+  width: min(100%, 360px);
+}
+
+.goldilocks-profile article {
+  max-width: 790px;
+}
+
+.goldilocks-profile article p {
+  font-size: 1.08rem;
+  line-height: 1.82;
+}
+
+.goldilocks-journey {
+  padding-block: 118px 132px;
+}
+
+.goldilocks-journey-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.88fr);
+  gap: clamp(55px, 8vw, 130px);
+  align-items: end;
+}
+
+.goldilocks-journey-intro > p {
+  font-size: 1.05rem;
+  line-height: 1.82;
+}
+
+.goldilocks-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0;
+  margin: 80px 0 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--goldilocks-line);
+  border-bottom: 1px solid var(--goldilocks-line);
+}
+
+.goldilocks-steps li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  gap: 16px;
+  min-width: 0;
+  padding: 34px 24px 38px;
+  border-right: 1px solid var(--goldilocks-line);
+}
+
+.goldilocks-steps li:last-child {
+  border-right: 0;
+}
+
+.goldilocks-steps li > span {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--mint);
+  color: var(--forest);
+  font-family: var(--heading);
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.goldilocks-steps h3 {
+  margin-top: 3px;
+  color: var(--green);
+  font-size: 1.27rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.goldilocks-steps p {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.goldilocks-follow {
+  position: relative;
+  overflow: hidden;
+  background: var(--panel);
+  color: var(--white);
+}
+
+.goldilocks-follow::before,
+.goldilocks-follow::after {
+  inset-block: -170px;
+  opacity: 0.28;
+}
+
+.goldilocks-follow::before {
+  left: -180px;
+}
+
+.goldilocks-follow::after {
+  right: -180px;
+  transform: scaleX(-1);
+}
+
+.goldilocks-follow-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(180px, 0.42fr) minmax(0, 1fr) auto;
+  gap: clamp(30px, 5vw, 82px);
+  align-items: center;
+  padding-block: 74px;
+}
+
+.goldilocks-facebook-mark {
+  width: 94px;
+  height: 94px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  color: var(--white);
+}
+
+.goldilocks-facebook-mark svg {
+  width: 54px;
+  height: 54px;
+  fill: currentColor;
+}
+
+.goldilocks-follow h2 {
+  color: var(--mint);
+}
+
+.goldilocks-follow h2 strong {
+  display: block;
+  color: var(--white);
+}
+
+.goldilocks-follow p {
+  max-width: 600px;
+  color: var(--white);
+}
+
+@media (max-width: 1150px) {
+  .goldilocks-hero-grid {
+    grid-template-columns: minmax(0, 1.2fr) minmax(300px, 0.8fr);
+    gap: 48px;
+  }
+
+  .goldilocks-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .goldilocks-steps li {
+    border-bottom: 1px solid var(--goldilocks-line);
+  }
+
+  .goldilocks-steps li:nth-child(2n) {
+    border-right: 0;
+  }
+
+  .goldilocks-steps li:last-child {
+    grid-column: 1 / -1;
+    border-bottom: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .goldilocks-hero {
+    min-height: 0;
+    padding-top: 0;
+  }
+
+  .goldilocks-hero-grid,
+  .goldilocks-origin,
+  .goldilocks-profile-grid,
+  .goldilocks-journey-intro,
+  .goldilocks-follow-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .goldilocks-hero-grid {
+    gap: 0;
+  }
+
+  .goldilocks-hero-copy {
+    padding: 72px 0 52px;
+  }
+
+  .goldilocks-breadcrumb {
+    margin-bottom: 26px;
+  }
+
+  .goldilocks-hero h1 {
+    max-width: 610px;
+    font-size: clamp(3.3rem, 13vw, 5.2rem);
+  }
+
+  .goldilocks-hero .button {
+    width: 100%;
+  }
+
+  .goldilocks-portrait {
+    width: 100%;
+    max-width: 510px;
+    justify-self: center;
+    padding-top: 0;
+  }
+
+  .goldilocks-portrait-mat {
+    width: 100%;
+    margin: 0;
+  }
+
+  .goldilocks-caption {
+    margin: 15px 0 35px;
+  }
+
+  .goldilocks-origin,
+  .goldilocks-profile-grid,
+  .goldilocks-journey {
+    padding-block: 78px;
+  }
+
+  .goldilocks-origin,
+  .goldilocks-profile-grid,
+  .goldilocks-journey-intro {
+    gap: 42px;
+  }
+
+  .goldilocks-origin h2,
+  .goldilocks-profile h2,
+  .goldilocks-journey h2,
+  .goldilocks-follow h2 {
+    font-size: clamp(2.55rem, 11vw, 3.55rem);
+  }
+
+  .goldilocks-wordmark {
+    min-height: 250px;
+  }
+
+  .goldilocks-steps {
+    grid-template-columns: 1fr;
+    margin-top: 52px;
+  }
+
+  .goldilocks-steps li,
+  .goldilocks-steps li:nth-child(2n) {
+    border-right: 0;
+    border-bottom: 1px solid var(--goldilocks-line);
+  }
+
+  .goldilocks-steps li:last-child {
+    grid-column: auto;
+  }
+
+  .goldilocks-follow-grid {
+    gap: 32px;
+    padding-block: 60px;
+  }
+
+  .goldilocks-hero::before {
+    inset: 220px auto -20px -110px;
+    width: 330px;
+    opacity: 0.32;
+  }
+
+  .goldilocks-follow::before,
+  .goldilocks-follow::after {
+    width: 310px;
+    opacity: 0.22;
+  }
+
+  .goldilocks-follow::before {
+    left: -165px;
+  }
+
+  .goldilocks-follow::after {
+    right: -165px;
+  }
+
+  .goldilocks-facebook-mark {
+    width: 82px;
+    height: 82px;
+  }
+
+  .goldilocks-follow .button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .goldilocks-hero-copy {
+    padding-top: 58px;
+  }
+
+  .goldilocks-hero h1 {
+    font-size: 3rem;
+  }
+
+  .goldilocks-origin-copy p,
+  .goldilocks-profile article p,
+  .goldilocks-journey-intro > p {
+    font-size: 1rem;
+  }
+
+  .goldilocks-steps li {
+    grid-template-columns: 44px 1fr;
+    padding: 28px 8px;
+  }
+
+  .goldilocks-steps li > span {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .goldilocks-page * {
+    scroll-behavior: auto;
+  }
+}
+
