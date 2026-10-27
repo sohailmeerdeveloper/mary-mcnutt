@@ -4,7 +4,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import crypto from 'node:crypto';
 const root = path.resolve('dist');
-const state = { cms_content: [], cms_blocks: [], cms_media: [], cms_posts: [], cms_admins: [{ user_id: 'test-user' }] };
+const state = { cms_pages: [], cms_content: [], cms_blocks: [], cms_media: [], cms_posts: [], cms_admins: [{ user_id: 'test-user' }] };
 const fresh = { access_token: 'test-token', refresh_token: 'test-refresh', user: { id: 'test-user', email: 'cms-test@example.test' }, expires_at: 4102444800 };
 http.createServer(async (req, res) => {
   const url = new URL(req.url, 'http://127.0.0.1:4174');

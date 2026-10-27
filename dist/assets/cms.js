@@ -22,6 +22,20 @@
     return route ? `/${route}/` : '/';
   }
 
+  async function ensurePageRegistration() {
+    const query = `?path=eq.${encodeURIComponent(pagePath)}&select=path&limit=1`;
+    const pages = await request('cms_pages', query, { authenticated: true });
+    if (pages?.length) return;
+    const title = document.title.replace(/\s*[|–-].*$/, '').trim() || pagePath;
+    const kind = /^\/blog\/[^/]+\/$/.test(pagePath) ? 'article' : 'page';
+    const rows = await request('cms_pages', '', {
+      method: 'POST', authenticated: true,
+      body: JSON.stringify({ path: pagePath, title, kind, published: true }),
+      headers: { Prefer: 'return=representation' }
+    });
+    if (!rows?.some(page => page.path === pagePath)) throw new Error('The database did not confirm this page registration. Try again.');
+  }
+
   function editableElements() {
     return [...document.querySelectorAll(editableSelector)].filter(element => {
       if (element.closest('[data-cms-added-block], .cms-editor-ui')) return false;
@@ -139,6 +153,7 @@
       session = await client.getSession();
       const admins = await request('cms_admins', '?select=user_id&limit=1', { authenticated: true });
       if (!admins?.length) throw Object.assign(new Error('CMS access required'), { status: 403 });
+      await ensurePageRegistration();
     } catch (error) {
       const notice = document.createElement('p');
       notice.className = 'cms-editor-ui';

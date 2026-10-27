@@ -4,12 +4,19 @@ import { chromium } from 'file:///C:/Users/sohai/.cache/codex-runtimes/codex-pri
 const browser = await chromium.launch({ headless:true, executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe' });
 const session = { access_token:'test-token', user:{ id:'test-user', email:'Mary@MaryMcNutt.com' }, expires_at:4102444800 };
 const saved = [];
+const registeredPages = [];
 
 {
   const context = await browser.newContext({ viewport:{ width:1280, height:900 } });
   await context.route('https://hqltzxmqrowllxcvejwe.supabase.co/**', async route => {
-    if (route.request().method() === 'POST') saved.push(JSON.parse(route.request().postData() || '{}'));
-    const body = route.request().method() === 'POST' ? JSON.stringify([saved.at(-1)]) : route.request().url().includes('/cms_admins') ? '[{"user_id":"test-user"}]' : '[]';
+    const url = route.request().url();
+    if (route.request().method() === 'POST') {
+      const payload = JSON.parse(route.request().postData() || '{}');
+      if (url.includes('/cms_pages')) registeredPages.push(payload);
+      else saved.push(payload);
+    }
+    const posted = url.includes('/cms_pages') ? registeredPages.at(-1) : saved.at(-1);
+    const body = route.request().method() === 'POST' ? JSON.stringify([posted]) : url.includes('/cms_admins') ? '[{"user_id":"test-user"}]' : '[]';
     await route.fulfill({ status:200, contentType:'application/json', body });
   });
   const page = await context.newPage();
@@ -17,6 +24,7 @@ const saved = [];
   await page.evaluate(value => localStorage.setItem('mary_cms_session', JSON.stringify(value)), session);
   await page.goto('http://127.0.0.1:4173/?cms-edit=1');
   await page.waitForSelector('.cms-toolbar');
+  assert.deepEqual(registeredPages.at(-1), { path:'/', title:'Mary McNutt', kind:'page', published:true });
   const title = page.locator('[data-cms-type="text"]:visible').first();
   const original = (await title.innerText()).trim();
   const originalMarkup = await title.innerHTML();
