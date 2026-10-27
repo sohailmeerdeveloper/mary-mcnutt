@@ -26,8 +26,8 @@
 
 @media print{.site-header{position:static}.menu-toggle,.nav-contact,.topbar,.button,.slide-controls,.contact-map{display:none!important}.hero,.philosophy,.begin{height:auto;min-height:300px}.hero-copy,.philosophy-copy,.begin-copy{margin:0;padding:35px 0;width:65%}.services,.together{margin-top:0}.section-photo,.hero-photo{opacity:.12}.services,.growth-grid,.journal-grid,.program-grid,.footer-grid{display:grid;grid-template-columns:repeat(2,1fr)}.together,.programs-panel,.contact-panel{background:#fff;color:#111}.contact{display:block}.programs{padding-top:0}.programs-photo{display:none}a{color:#111!important}.footer{background:white;color:#111}}
 
-/* Fill the CMS-expanded hero without exposing background above or below the portrait. */
-@media(min-width:801px){.hero{background:#f6f8f6;overflow:hidden}.hero-photo{inset:0;height:100%;object-fit:cover;object-position:left center}.hero:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,transparent 36%,rgba(246,248,246,.3) 43%,rgba(246,248,246,.93) 56%,#f6f8f6 88%)}.hero-copy{position:relative}}
+/* Keep the desktop header separate and preserve the portrait's natural scale as CMS copy grows. */
+@media(min-width:801px){.home-page .site-header{position:relative}.hero{background:#f6f8f6;overflow:hidden}.hero-photo{inset:0 auto auto 0;height:auto;object-fit:contain;object-position:left top}.hero:before{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,transparent 36%,rgba(246,248,246,.3) 43%,rgba(246,248,246,.93) 56%,#f6f8f6 88%)}.home-page .hero-inner{padding-top:64px}.hero-copy{position:relative}}
 /* Reference mobile footer retains two readable columns. */
 @media(max-width:539px){.footer-top{align-items:center;text-align:center}.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 20px}.footer-grid h2{font-size:18px}.footer-grid>div>a,.footer-grid p{font-size:13px;line-height:1.8}.footer-bottom>.wrap{align-items:center;text-align:center}.footer-bottom .wrap>div{justify-content:center}}
 
